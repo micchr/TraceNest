@@ -5,3 +5,4 @@
 #   make report     render an HTML report from the sample trace
 #   make clean      remove generated artifacts
 
+PY ?= python
