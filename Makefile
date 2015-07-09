@@ -6,3 +6,4 @@
 #   make clean      remove generated artifacts
 
 PY ?= python
+GO ?= go
