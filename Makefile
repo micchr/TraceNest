@@ -7,3 +7,4 @@
 
 PY ?= python
 GO ?= go
+TRACE ?= examples/agent_run.json
