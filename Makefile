@@ -11,3 +11,4 @@ TRACE ?= examples/agent_run.json
 
 .PHONY: compile py go demo report tree json clean
 
+compile: py go
