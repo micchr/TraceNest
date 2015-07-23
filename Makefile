@@ -13,3 +13,4 @@ TRACE ?= examples/agent_run.json
 
 compile: py go
 
+py:
