@@ -15,3 +15,4 @@ compile: py go
 
 py:
 	$(PY) -m compileall -q tracenest
+
