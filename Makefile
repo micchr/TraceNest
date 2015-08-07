@@ -17,3 +17,4 @@ py:
 	$(PY) -m compileall -q tracenest
 
 go:
+	cd nest && $(GO) build ./...
