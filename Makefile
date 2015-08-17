@@ -27,3 +27,4 @@ demo: compile
 	cd nest && $(GO) run . analyze ../$(TRACE)
 
 tree: compile
+	$(PY) -m tracenest tree $(TRACE)
