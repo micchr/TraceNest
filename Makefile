@@ -26,3 +26,4 @@ demo: compile
 	@echo "== go analyze =="
 	cd nest && $(GO) run . analyze ../$(TRACE)
 
+tree: compile
