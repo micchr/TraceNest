@@ -23,3 +23,4 @@ go:
 demo: compile
 	@echo "== python analyze =="
 	$(PY) -m tracenest analyze $(TRACE)
+	@echo "== go analyze =="
