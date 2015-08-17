@@ -25,3 +25,4 @@ demo: compile
 	$(PY) -m tracenest analyze $(TRACE)
 	@echo "== go analyze =="
 	cd nest && $(GO) run . analyze ../$(TRACE)
+
