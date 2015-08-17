@@ -21,3 +21,4 @@ go:
 	cd nest && $(GO) vet ./...
 
 demo: compile
+	@echo "== python analyze =="
