@@ -24,3 +24,4 @@ demo: compile
 	@echo "== python analyze =="
 	$(PY) -m tracenest analyze $(TRACE)
 	@echo "== go analyze =="
+	cd nest && $(GO) run . analyze ../$(TRACE)
