@@ -29,3 +29,4 @@ demo: compile
 tree: compile
 	$(PY) -m tracenest tree $(TRACE)
 
+json: compile
