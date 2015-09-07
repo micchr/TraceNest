@@ -31,3 +31,4 @@ tree: compile
 
 json: compile
 	$(PY) -m tracenest analyze $(TRACE) --json
+
