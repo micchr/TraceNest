@@ -33,3 +33,4 @@ json: compile
 	$(PY) -m tracenest analyze $(TRACE) --json
 
 report: compile
+	$(PY) -m tracenest report $(TRACE) --format html --out tracenest.report.html
