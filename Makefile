@@ -34,3 +34,4 @@ json: compile
 
 report: compile
 	$(PY) -m tracenest report $(TRACE) --format html --out tracenest.report.html
+	@echo "open tracenest.report.html"
