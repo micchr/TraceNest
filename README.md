@@ -39,3 +39,9 @@ the tree to find the **critical path** by cumulative self time, groups
 same-named sibling attempts into **retry clusters**, and lays it all out
 in a graphite/neon-green waterfall where the critical path glows.
 
+---
+
+## Install / run
+
+Nothing to install beyond a Python 3.11 interpreter and a Go toolchain.
+Clone the repository and run either CLI in place.
