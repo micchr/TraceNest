@@ -63,3 +63,9 @@ go run . analyze ../examples/agent_run.json
 
 Or use the Makefile to do both at once:
 
+```bash
+make compile     # compile Python + build/vet Go
+make demo        # run both CLIs on the sample trace
+make report      # render tracenest.report.html
+```
+
