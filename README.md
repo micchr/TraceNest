@@ -75,3 +75,9 @@ make report      # render tracenest.report.html
 
 A trace is a set of spans. tracenest accepts three container shapes and
 auto-detects which one you handed it:
+
+- a **JSON array** of span objects,
+- a **JSON object** with a `spans` (or `trace` / `events`) array,
+- **JSONL / NDJSON**, one span object per line.
+
+Each span needs only a start time; everything else has a sensible
