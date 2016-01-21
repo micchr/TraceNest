@@ -69,3 +69,9 @@ make demo        # run both CLIs on the sample trace
 make report      # render tracenest.report.html
 ```
 
+---
+
+## The trace format in 60 seconds
+
+A trace is a set of spans. tracenest accepts three container shapes and
+auto-detects which one you handed it:
