@@ -57,3 +57,9 @@ python -m tracenest analyze examples/agent_run.json
 
 ```bash
 cd nest
+go build ./...                              # build check
+go run . analyze ../examples/agent_run.json
+```
+
+Or use the Makefile to do both at once:
+
