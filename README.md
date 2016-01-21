@@ -81,3 +81,9 @@ auto-detects which one you handed it:
 - **JSONL / NDJSON**, one span object per line.
 
 Each span needs only a start time; everything else has a sensible
+default. Field names are matched flexibly, so traces from different
+frameworks parse as-is:
+
+```jsonc
+{
+  "id": "reason",            // span_id | spanId | id
