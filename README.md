@@ -51,3 +51,9 @@ Clone the repository and run either CLI in place.
 ```bash
 python -m compileall -q tracenest          # compile check
 python -m tracenest analyze examples/agent_run.json
+```
+
+**Go**
+
+```bash
+cd nest
