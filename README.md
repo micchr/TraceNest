@@ -45,3 +45,9 @@ in a graphite/neon-green waterfall where the critical path glows.
 
 Nothing to install beyond a Python 3.11 interpreter and a Go toolchain.
 Clone the repository and run either CLI in place.
+
+**Python**
+
+```bash
+python -m compileall -q tracenest          # compile check
+python -m tracenest analyze examples/agent_run.json
