@@ -87,3 +87,10 @@ frameworks parse as-is:
 ```jsonc
 {
   "id": "reason",            // span_id | spanId | id
+  "parent": "root",          // parent_id | parentSpanId | parentId | parent
+  "name": "reasoner.llm",    // name | label | operation | op
+  "start": 1340,             // start_ms | startTime | start | startedAt | ts
+  "end": 3200,               // end_ms | endTime | end | endedAt
+  "kind": "llm",             // kind | type | category
+  "status": "ok",            // status | state | outcome | result
+  "attributes": { "model": "gpt-large", "completion_tokens": 540 }
