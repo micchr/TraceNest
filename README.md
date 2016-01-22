@@ -94,3 +94,9 @@ frameworks parse as-is:
   "kind": "llm",             // kind | type | category
   "status": "ok",            // status | state | outcome | result
   "attributes": { "model": "gpt-large", "completion_tokens": 540 }
+}
+```
+
+Timestamps may be milliseconds (numbers or numeric strings) or ISO-8601
+datetimes. tracenest normalizes them to a millisecond float and **rebases**
+the whole trace so the earliest span starts at zero. Any top-level key
