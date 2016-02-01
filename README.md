@@ -100,3 +100,9 @@ frameworks parse as-is:
 Timestamps may be milliseconds (numbers or numeric strings) or ISO-8601
 datetimes. tracenest normalizes them to a millisecond float and **rebases**
 the whole trace so the earliest span starts at zero. Any top-level key
+that is not a recognized field alias is folded into the span's attribute
+bag, so you never lose framework-specific metadata.
+
+`kind` normalizes to `root | llm | tool | retrieval | chain | event |
+unknown` (with aliases such as `model → llm`, `function → tool`,
+`search → retrieval`). `status` normalizes to `ok | error | cancelled |
