@@ -106,3 +106,9 @@ bag, so you never lose framework-specific metadata.
 `kind` normalizes to `root | llm | tool | retrieval | chain | event |
 unknown` (with aliases such as `model → llm`, `function → tool`,
 `search → retrieval`). `status` normalizes to `ok | error | cancelled |
+unknown` (`success → ok`, `failure → error`, and so on). The full field
+and alias tables live in [docs/trace-format.md](docs/trace-format.md).
+
+---
+
+## Event lifecycle
