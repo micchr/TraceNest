@@ -112,3 +112,9 @@ and alias tables live in [docs/trace-format.md](docs/trace-format.md).
 ---
 
 ## Event lifecycle
+
+A span moves through four stages inside tracenest. Understanding them
+makes the report anatomy obvious.
+
+1. **Parse.** The reader detects the container shape, extracts each span
+   object, resolves field aliases, coerces `kind`/`status`, converts
