@@ -118,3 +118,9 @@ makes the report anatomy obvious.
 
 1. **Parse.** The reader detects the container shape, extracts each span
    object, resolves field aliases, coerces `kind`/`status`, converts
+   timestamps to milliseconds, and derives `end` from `start + duration`
+   when only a duration is present. Missing ids are synthesized as
+   `span-N`. The whole set is then rebased to a zero origin.
+
+2. **Nest.** Spans are linked to their declared parent. A span whose
+   `parent_id` points at a missing span is treated as a root rather than
