@@ -124,3 +124,9 @@ makes the report anatomy obvious.
 
 2. **Nest.** Spans are linked to their declared parent. A span whose
    `parent_id` points at a missing span is treated as a root rather than
+   being dropped. Children are ordered by start time for stable output.
+   If the trace ends up with more than one root, a synthetic `trace` root
+   is inserted so the report always has one entry point spanning the
+   whole run. Accidental cycles (a span reachable from itself) are broken
+   by re-rooting the offending child — analysis always runs on a DAG.
+
