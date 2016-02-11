@@ -130,3 +130,9 @@ makes the report anatomy obvious.
    whole run. Accidental cycles (a span reachable from itself) are broken
    by re-rooting the offending child — analysis always runs on a DAG.
 
+3. **Analyze.** For every span the engine computes self time by merging
+   its children's intervals and subtracting their union from the span's
+   own duration (concurrent children never double-count). A single
+   post-order pass then selects the critical path — the root-to-leaf
+   chain with the greatest cumulative self time. Per-kind durations,
+   per-kind self time, status counts, and error span ids are tallied.
