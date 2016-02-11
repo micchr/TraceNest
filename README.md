@@ -136,3 +136,9 @@ makes the report anatomy obvious.
    post-order pass then selects the critical path — the root-to-leaf
    chain with the greatest cumulative self time. Per-kind durations,
    per-kind self time, status counts, and error span ids are tallied.
+   Finally, same-named sibling spans are grouped into retry clusters and
+   the recovered-after-error pattern is flagged.
+
+4. **Report.** The normalized model is rendered either as JSON (for
+   downstream tooling) or as a single self-contained HTML page: summary
+   cards, a nested waterfall, and a retry table, with the full JSON
