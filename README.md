@@ -142,3 +142,10 @@ makes the report anatomy obvious.
 4. **Report.** The normalized model is rendered either as JSON (for
    downstream tooling) or as a single self-contained HTML page: summary
    cards, a nested waterfall, and a retry table, with the full JSON
+   payload embedded in a `<script type="application/json">` tag for
+   programmatic consumers.
+
+![span waterfall](docs/assets/waterfall.svg)
+
+---
+
