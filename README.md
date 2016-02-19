@@ -149,3 +149,9 @@ makes the report anatomy obvious.
 
 ---
 
+## Architecture
+
+Both implementations share the same four-stage shape and the same data
+model, which is why their output matches byte-for-byte on the same input.
+
+```
