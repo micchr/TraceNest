@@ -155,3 +155,9 @@ Both implementations share the same four-stage shape and the same data
 model, which is why their output matches byte-for-byte on the same input.
 
 ```
+                         ┌───────────────────────────────────────────┐
+   trace file            │                 tracenest                  │
+  (json / jsonl) ──────► │                                            │
+                         │   parser ──► tree ──► analyze ──► report    │
+                         │     │          │         │           │      │
+                         │  aliases    reattach   self-time    html    │
