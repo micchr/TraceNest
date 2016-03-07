@@ -161,3 +161,9 @@ model, which is why their output matches byte-for-byte on the same input.
                          │   parser ──► tree ──► analyze ──► report    │
                          │     │          │         │           │      │
                          │  aliases    reattach   self-time    html    │
+                         │  ts norm    synth root crit path    json    │
+                         │  rebase     de-cycle   retries      cards   │
+                         └───────────────────────────────────────────┘
+                                  │                        │
+                        Python: tracenest/*.py     Go: nest/trace/*.go
+                        CLI: python -m tracenest    CLI: nest (main.go)
