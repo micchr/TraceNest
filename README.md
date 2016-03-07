@@ -167,3 +167,9 @@ model, which is why their output matches byte-for-byte on the same input.
                                   │                        │
                         Python: tracenest/*.py     Go: nest/trace/*.go
                         CLI: python -m tracenest    CLI: nest (main.go)
+```
+
+### Python package (`tracenest/`)
+
+| Module        | Responsibility                                            |
+|---------------|-----------------------------------------------------------|
