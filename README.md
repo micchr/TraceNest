@@ -179,3 +179,9 @@ model, which is why their output matches byte-for-byte on the same input.
 | `analyze.py`  | self time, critical path, retry clusters, `TraceAnalysis` |
 | `report.py`   | HTML + JSON rendering, shared color palette               |
 | `cli.py`      | `analyze` / `tree` / `report` subcommands                 |
+
+### Go module (`nest/`)
+
+| File                   | Responsibility                                   |
+|------------------------|--------------------------------------------------|
+| `trace/model.go`       | `Span`, `Kind`, `Status`, coercion               |
