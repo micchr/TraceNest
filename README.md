@@ -173,3 +173,9 @@ model, which is why their output matches byte-for-byte on the same input.
 
 | Module        | Responsibility                                            |
 |---------------|-----------------------------------------------------------|
+| `model.py`    | `Span`, `SpanKind`, `SpanStatus` with alias coercion      |
+| `parser.py`   | Container detection, field aliasing, timestamp/rebase     |
+| `tree.py`     | `SpanTree`, orphan reattach, synthetic root, de-cycle     |
+| `analyze.py`  | self time, critical path, retry clusters, `TraceAnalysis` |
+| `report.py`   | HTML + JSON rendering, shared color palette               |
+| `cli.py`      | `analyze` / `tree` / `report` subcommands                 |
