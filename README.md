@@ -185,3 +185,9 @@ model, which is why their output matches byte-for-byte on the same input.
 | File                   | Responsibility                                   |
 |------------------------|--------------------------------------------------|
 | `trace/model.go`       | `Span`, `Kind`, `Status`, coercion               |
+| `trace/parser.go`      | container detection, aliasing, timestamps        |
+| `trace/tree.go`        | `Tree`, reattach, synthetic root, de-cycle       |
+| `trace/analyze.go`     | self time, critical path, retries                |
+| `trace/report.go`      | HTML + JSON rendering                            |
+| `main.go`              | `nest` CLI                                        |
+
