@@ -191,3 +191,9 @@ model, which is why their output matches byte-for-byte on the same input.
 | `trace/report.go`      | HTML + JSON rendering                            |
 | `main.go`              | `nest` CLI                                        |
 
+The two share nothing at runtime — they are independent programs — but
+they implement the same algorithms so a trace analyzed by one matches the
+other. The bundled fixtures let you confirm this yourself in seconds.
+
+---
+
