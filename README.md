@@ -197,3 +197,10 @@ other. The bundled fixtures let you confirm this yourself in seconds.
 
 ---
 
+## CLI recipes
+
+Every command takes a trace path, or `-` to read from standard input.
+
+**Timing + retry summary (text):**
+
+```bash
