@@ -216,3 +216,9 @@ critical path: 1340.0 ms (3 spans)
 by kind:
   chain          4200.0 ms  (1)
   llm            3240.0 ms  (3)
+  tool           1460.0 ms  (5)
+  retrieval       500.0 ms  (2)
+
+status:
+  error      2
+  ok         9
