@@ -222,3 +222,9 @@ by kind:
 status:
   error      2
   ok         9
+
+retries:
+  code.exec            attempts=3 errors=1 [recovered]
+  web.search           attempts=2 errors=1 [recovered]
+```
+
