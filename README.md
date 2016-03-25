@@ -204,3 +204,9 @@ Every command takes a trace path, or `-` to read from standard input.
 **Timing + retry summary (text):**
 
 ```bash
+python -m tracenest analyze examples/agent_run.json
+```
+
+```
+spans        : 11
+total        : 4200.0 ms
