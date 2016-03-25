@@ -210,3 +210,9 @@ python -m tracenest analyze examples/agent_run.json
 ```
 spans        : 11
 total        : 4200.0 ms
+max depth    : 2
+critical path: 1340.0 ms (3 spans)
+
+by kind:
+  chain          4200.0 ms  (1)
+  llm            3240.0 ms  (3)
