@@ -228,3 +228,9 @@ retries:
   web.search           attempts=2 errors=1 [recovered]
 ```
 
+**The nested tree, with per-span markers** (`+` ok, `x` error, `~`
+cancelled, `*` synthetic root):
+
+```bash
+python -m tracenest tree examples/agent_run.json
+```
