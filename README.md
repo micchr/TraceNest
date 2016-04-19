@@ -234,3 +234,9 @@ cancelled, `*` synthetic root):
 ```bash
 python -m tracenest tree examples/agent_run.json
 ```
+
+**Machine-readable analysis** for a dashboard or CI gate:
+
+```bash
+python -m tracenest analyze examples/agent_run.json --json
+```
