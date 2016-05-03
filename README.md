@@ -246,3 +246,9 @@ python -m tracenest analyze examples/agent_run.json --json
 ```bash
 python -m tracenest report examples/agent_run.json --format html --out report.html
 ```
+
+**Pipe a trace in from another tool:**
+
+```bash
+cat run.jsonl | python -m tracenest analyze -
+```
