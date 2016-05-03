@@ -240,3 +240,9 @@ python -m tracenest tree examples/agent_run.json
 ```bash
 python -m tracenest analyze examples/agent_run.json --json
 ```
+
+**Render a self-contained HTML report** you can open anywhere:
+
+```bash
+python -m tracenest report examples/agent_run.json --format html --out report.html
+```
