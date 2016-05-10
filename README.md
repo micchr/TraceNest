@@ -252,3 +252,10 @@ python -m tracenest report examples/agent_run.json --format html --out report.ht
 ```bash
 cat run.jsonl | python -m tracenest analyze -
 ```
+
+**The Go CLI is command-for-command identical:**
+
+```bash
+cd nest
+go run . analyze ../examples/agent_run.json
+go run . tree    ../examples/rag_session.jsonl
