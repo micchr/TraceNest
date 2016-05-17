@@ -259,3 +259,9 @@ cat run.jsonl | python -m tracenest analyze -
 cd nest
 go run . analyze ../examples/agent_run.json
 go run . tree    ../examples/rag_session.jsonl
+go run . report  ../examples/agent_run.json --format json --out report.json
+```
+
+---
+
+## Report anatomy
