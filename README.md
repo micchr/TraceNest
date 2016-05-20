@@ -271,3 +271,9 @@ vanilla JavaScript — no external assets, no network access. It has four
 parts:
 
 1. **Summary cards** — total time, span count, max depth, critical-path
+   time, error count, and retry-group count, in neon green on graphite.
+
+2. **Span waterfall** — one row per span, indented by nesting depth. Each
+   bar is positioned by start offset and sized by duration, colored by
+   kind (LLM green, tool teal, retrieval blue, chain lime). Rows on the
+   critical path carry a glowing neon rail on their left edge; error
