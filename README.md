@@ -277,3 +277,9 @@ parts:
    bar is positioned by start offset and sized by duration, colored by
    kind (LLM green, tool teal, retrieval blue, chain lime). Rows on the
    critical path carry a glowing neon rail on their left edge; error
+   spans render their label in red. Hovering a row brightens its bar.
+
+3. **Retry table** — every detected cluster with its attempt count, error
+   count, and state (`recovered`, `failing`, or `repeated`).
+
+4. **Embedded JSON** — the complete normalized report lives in a
