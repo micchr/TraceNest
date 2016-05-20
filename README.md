@@ -265,3 +265,9 @@ go run . report  ../examples/agent_run.json --format json --out report.json
 ---
 
 ## Report anatomy
+
+The HTML report is a single file with inline CSS and a tiny amount of
+vanilla JavaScript — no external assets, no network access. It has four
+parts:
+
+1. **Summary cards** — total time, span count, max depth, critical-path
