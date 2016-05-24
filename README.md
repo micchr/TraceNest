@@ -307,3 +307,10 @@ shell:
 ---
 
 ## What "self time" and "critical path" mean here
+
+These two ideas drive every number in the report, so they are worth
+stating precisely.
+
+**Self time** is a span's own duration minus the union of its children's
+intervals. Merging the intervals first means two tool calls that run
+concurrently under the same parent are counted once, not twice, and self
