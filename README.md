@@ -295,3 +295,9 @@ shell:
   "version": 1,
   "summary": {
     "total_ms": 4200.0,
+    "span_count": 11,
+    "critical_path": ["root", "reason", "tool_a"],
+    "critical_path_ms": 1340.0,
+    "retries": [ { "name": "code.exec", "attempts": 3, "recovered": true } ]
+  },
+  "spans": [ { "span_id": "root", "kind": "chain", "duration_ms": 4200.0 } ]
