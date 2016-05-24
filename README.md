@@ -301,3 +301,9 @@ shell:
     "retries": [ { "name": "code.exec", "attempts": 3, "recovered": true } ]
   },
   "spans": [ { "span_id": "root", "kind": "chain", "duration_ms": 4200.0 } ]
+}
+```
+
+---
+
+## What "self time" and "critical path" mean here
