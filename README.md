@@ -289,3 +289,9 @@ parts:
 
 The JSON report (`--format json`) is the same payload without the HTML
 shell:
+
+```json
+{
+  "version": 1,
+  "summary": {
+    "total_ms": 4200.0,
