@@ -283,3 +283,9 @@ parts:
    count, and state (`recovered`, `failing`, or `repeated`).
 
 4. **Embedded JSON** — the complete normalized report lives in a
+   `<script id="tracenest-data" type="application/json">` element and is
+   parsed into `window.tracenest` on load, so a downstream page can lift
+   the structured data straight out of the report.
+
+The JSON report (`--format json`) is the same payload without the HTML
+shell:
