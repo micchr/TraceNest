@@ -320,3 +320,9 @@ in this span itself, rather than in the work it delegates?*
 **Critical path** is the root-to-leaf chain that maximizes the sum of self
 times along it. It is not simply the longest span — a long parent that
 delegates all its time to children contributes little self time. tracenest
+solves it with one post-order pass: each node's best cost is its own self
+time plus the maximum best cost among its children. The reported path is
+the chain of ids following the best child at every level. This is the
+sequence to optimize first, and it is exactly the set of rows that glow in
+the waterfall.
+
