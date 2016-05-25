@@ -314,3 +314,9 @@ stating precisely.
 **Self time** is a span's own duration minus the union of its children's
 intervals. Merging the intervals first means two tool calls that run
 concurrently under the same parent are counted once, not twice, and self
+time can never go negative. It answers: *how much wall-clock time is spent
+in this span itself, rather than in the work it delegates?*
+
+**Critical path** is the root-to-leaf chain that maximizes the sum of self
+times along it. It is not simply the longest span — a long parent that
+delegates all its time to children contributes little self time. tracenest
