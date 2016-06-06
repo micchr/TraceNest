@@ -326,3 +326,9 @@ the chain of ids following the best child at every level. This is the
 sequence to optimize first, and it is exactly the set of rows that glow in
 the waterfall.
 
+The full derivation, including the retry-recovery rule and the tree
+normalization guarantees, is in [docs/analysis.md](docs/analysis.md).
+
+---
+
+## Examples / fixtures
