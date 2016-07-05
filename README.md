@@ -332,3 +332,9 @@ normalization guarantees, is in [docs/analysis.md](docs/analysis.md).
 ---
 
 ## Examples / fixtures
+
+Two ready-to-run traces live under `examples/`:
+
+- `agent_run.json` — a JSON-array trace of a reasoning agent with two
+  retry clusters (`web.search` recovered after a timeout, `code.exec`
+  recovered after a `NameError`), nested tool calls under an LLM turn,
