@@ -338,3 +338,9 @@ Two ready-to-run traces live under `examples/`:
 - `agent_run.json` — a JSON-array trace of a reasoning agent with two
   retry clusters (`web.search` recovered after a timeout, `code.exec`
   recovered after a `NameError`), nested tool calls under an LLM turn,
+  and a verifier pass.
+- `rag_session.jsonl` — a compact JSONL retrieval-augmented session:
+  retriever, LLM answer, and a guard check.
+
+They exercise every parser path (array vs JSONL, `id`/`parent` aliases,
+`start`+`end` vs `start`+`duration`, ISO and numeric timestamps) and both
