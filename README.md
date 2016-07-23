@@ -344,3 +344,9 @@ Two ready-to-run traces live under `examples/`:
 
 They exercise every parser path (array vs JSONL, `id`/`parent` aliases,
 `start`+`end` vs `start`+`duration`, ISO and numeric timestamps) and both
+retry-detection triggers (repeated name and explicit `retry` attribute).
+
+---
+
+## Project layout
+
