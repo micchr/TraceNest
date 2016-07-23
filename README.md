@@ -350,3 +350,9 @@ retry-detection triggers (repeated name and explicit `retry` attribute).
 
 ## Project layout
 
+```
+tracenest/
+├── tracenest/              # Python package
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── model.py
