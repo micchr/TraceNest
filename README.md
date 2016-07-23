@@ -356,3 +356,9 @@ tracenest/
 │   ├── __init__.py
 │   ├── __main__.py
 │   ├── model.py
+│   ├── parser.py
+│   ├── tree.py
+│   ├── analyze.py
+│   ├── report.py
+│   └── cli.py
+├── nest/                   # Go module
