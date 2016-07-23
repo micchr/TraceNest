@@ -362,3 +362,10 @@ tracenest/
 │   ├── report.py
 │   └── cli.py
 ├── nest/                   # Go module
+│   ├── go.mod
+│   ├── main.go
+│   └── trace/
+│       ├── model.go
+│       ├── parser.go
+│       ├── tree.go
+│       ├── analyze.go
