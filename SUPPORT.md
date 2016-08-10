@@ -5,3 +5,4 @@ please try the steps below — they cover nearly every report.
 
 ## Self-serve checklist
 
+1. Confirm the trace parses at all:
