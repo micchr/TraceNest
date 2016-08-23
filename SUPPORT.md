@@ -11,3 +11,4 @@ please try the steps below — they cover nearly every report.
    python -m tracenest analyze examples/agent_run.json
    ```
 
+2. Try your own trace on both CLIs and compare:
