@@ -14,3 +14,4 @@ please try the steps below — they cover nearly every report.
 2. Try your own trace on both CLIs and compare:
 
    ```bash
+   python -m tracenest analyze your_trace.json --json
