@@ -15,3 +15,4 @@ please try the steps below — they cover nearly every report.
 
    ```bash
    python -m tracenest analyze your_trace.json --json
+   cd nest && go run . analyze ../your_trace.json --json
