@@ -17,3 +17,4 @@ please try the steps below — they cover nearly every report.
    python -m tracenest analyze your_trace.json --json
    cd nest && go run . analyze ../your_trace.json --json
    ```
+
