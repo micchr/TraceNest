@@ -18,3 +18,4 @@ please try the steps below — they cover nearly every report.
    cd nest && go run . analyze ../your_trace.json --json
    ```
 
+   Both are expected to produce the same summary. If they differ, that
