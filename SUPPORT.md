@@ -20,3 +20,4 @@ please try the steps below — they cover nearly every report.
 
    Both are expected to produce the same summary. If they differ, that
    is a bug worth reporting with the trace attached (trimmed if needed).
+
