@@ -22,3 +22,4 @@ please try the steps below — they cover nearly every report.
    is a bug worth reporting with the trace attached (trimmed if needed).
 
 3. Check the reference docs:
+   - [docs/trace-format.md](../docs/trace-format.md) — accepted fields,
