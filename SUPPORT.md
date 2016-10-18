@@ -23,3 +23,4 @@ please try the steps below — they cover nearly every report.
 
 3. Check the reference docs:
    - [docs/trace-format.md](../docs/trace-format.md) — accepted fields,
+     aliases and container shapes.
