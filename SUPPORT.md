@@ -26,3 +26,4 @@ please try the steps below — they cover nearly every report.
      aliases and container shapes.
    - [docs/analysis.md](../docs/analysis.md) — what self time, critical
      path and retry clusters mean.
+
