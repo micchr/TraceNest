@@ -29,3 +29,4 @@ please try the steps below — they cover nearly every report.
 
 ## Asking questions
 
+Open a GitHub issue with the `question` label. Include the command, the
