@@ -32,3 +32,4 @@ please try the steps below — they cover nearly every report.
 Open a GitHub issue with the `question` label. Include the command, the
 toolchain (Python 3.11+ and/or a Go toolchain), and the smallest trace
 snippet that shows the behaviour.
+
