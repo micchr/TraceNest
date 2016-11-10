@@ -21,3 +21,8 @@ import (
 	"tracenest/nest/trace"
 )
 
+func main() {
+	os.Exit(run(os.Args[1:]))
+}
+
+func run(args []string) int {
