@@ -26,3 +26,7 @@ func main() {
 }
 
 func run(args []string) int {
+	if len(args) < 1 {
+		usage()
+		return 2
+	}
