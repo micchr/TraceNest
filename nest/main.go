@@ -34,3 +34,8 @@ func run(args []string) int {
 	rest := args[1:]
 
 	switch cmd {
+	case "analyze":
+		return cmdAnalyze(rest)
+	case "tree":
+		return cmdTree(rest)
+	case "report":
