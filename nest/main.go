@@ -30,3 +30,7 @@ func run(args []string) int {
 		usage()
 		return 2
 	}
+	cmd := args[0]
+	rest := args[1:]
+
+	switch cmd {
