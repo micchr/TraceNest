@@ -39,3 +39,7 @@ func run(args []string) int {
 	case "tree":
 		return cmdTree(rest)
 	case "report":
+		return cmdReport(rest)
+	case "-h", "--help", "help":
+		usage()
+		return 0
