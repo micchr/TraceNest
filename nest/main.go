@@ -47,3 +47,8 @@ func run(args []string) int {
 		fmt.Fprintf(os.Stderr, "nest: unknown command %q\n", cmd)
 		usage()
 		return 2
+	}
+}
+
+func usage() {
+	fmt.Fprint(os.Stderr, `nest — agent trace explorer
