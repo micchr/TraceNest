@@ -43,3 +43,7 @@ func run(args []string) int {
 	case "-h", "--help", "help":
 		usage()
 		return 0
+	default:
+		fmt.Fprintf(os.Stderr, "nest: unknown command %q\n", cmd)
+		usage()
+		return 2
