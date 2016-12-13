@@ -56,3 +56,7 @@ func usage() {
   nest analyze TRACE [--json]     print timing and retry summaries
   nest tree    TRACE              print the nested span tree
   nest report  TRACE [--out F] [--format html|json]
+
+TRACE may be a file path or - for stdin.
+`)
+}
