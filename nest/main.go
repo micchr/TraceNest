@@ -52,3 +52,7 @@ func run(args []string) int {
 
 func usage() {
 	fmt.Fprint(os.Stderr, `nest — agent trace explorer
+
+  nest analyze TRACE [--json]     print timing and retry summaries
+  nest tree    TRACE              print the nested span tree
+  nest report  TRACE [--out F] [--format html|json]
