@@ -65,3 +65,7 @@ func readTree(source string) (*trace.Tree, error) {
 	var data []byte
 	var err error
 	if source == "-" {
+		data, err = io.ReadAll(os.Stdin)
+	} else {
+		data, err = os.ReadFile(source)
+	}
