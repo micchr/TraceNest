@@ -69,3 +69,7 @@ func readTree(source string) (*trace.Tree, error) {
 	} else {
 		data, err = os.ReadFile(source)
 	}
+	if err != nil {
+		return nil, err
+	}
+	spans, err := trace.ParseSpans(data)
