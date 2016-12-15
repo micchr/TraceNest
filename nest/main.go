@@ -60,3 +60,8 @@ func usage() {
 TRACE may be a file path or - for stdin.
 `)
 }
+
+func readTree(source string) (*trace.Tree, error) {
+	var data []byte
+	var err error
+	if source == "-" {
