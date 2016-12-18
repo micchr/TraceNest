@@ -82,3 +82,7 @@ func readTree(source string) (*trace.Tree, error) {
 func firstPositional(args []string) (string, map[string]string) {
 	flags := map[string]string{}
 	pos := ""
+	for i := 0; i < len(args); i++ {
+		a := args[i]
+		if strings.HasPrefix(a, "--") {
+			key := strings.TrimPrefix(a, "--")
