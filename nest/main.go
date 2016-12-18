@@ -78,3 +78,7 @@ func readTree(source string) (*trace.Tree, error) {
 	}
 	return trace.BuildTree(spans), nil
 }
+
+func firstPositional(args []string) (string, map[string]string) {
+	flags := map[string]string{}
+	pos := ""
