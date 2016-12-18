@@ -73,3 +73,8 @@ func readTree(source string) (*trace.Tree, error) {
 		return nil, err
 	}
 	spans, err := trace.ParseSpans(data)
+	if err != nil {
+		return nil, err
+	}
+	return trace.BuildTree(spans), nil
+}
