@@ -91,3 +91,7 @@ func firstPositional(args []string) (string, map[string]string) {
 				continue
 			}
 			// Boolean-style or space-separated value.
+			if i+1 < len(args) && !strings.HasPrefix(args[i+1], "--") {
+				flags[key] = args[i+1]
+				i++
+			} else {
