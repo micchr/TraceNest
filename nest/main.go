@@ -86,3 +86,8 @@ func firstPositional(args []string) (string, map[string]string) {
 		a := args[i]
 		if strings.HasPrefix(a, "--") {
 			key := strings.TrimPrefix(a, "--")
+			if eq := strings.Index(key, "="); eq >= 0 {
+				flags[key[:eq]] = key[eq+1:]
+				continue
+			}
+			// Boolean-style or space-separated value.
