@@ -95,3 +95,7 @@ func firstPositional(args []string) (string, map[string]string) {
 				flags[key] = args[i+1]
 				i++
 			} else {
+				flags[key] = "true"
+			}
+		} else if pos == "" {
+			pos = a
