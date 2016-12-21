@@ -104,3 +104,7 @@ func firstPositional(args []string) (string, map[string]string) {
 	return pos, flags
 }
 
+func cmdAnalyze(args []string) int {
+	src, flags := firstPositional(args)
+	if src == "" {
+		fmt.Fprintln(os.Stderr, "nest analyze: missing TRACE")
