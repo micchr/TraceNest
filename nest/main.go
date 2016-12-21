@@ -99,3 +99,8 @@ func firstPositional(args []string) (string, map[string]string) {
 			}
 		} else if pos == "" {
 			pos = a
+		}
+	}
+	return pos, flags
+}
+
