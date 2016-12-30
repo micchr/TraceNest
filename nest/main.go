@@ -108,3 +108,7 @@ func cmdAnalyze(args []string) int {
 	src, flags := firstPositional(args)
 	if src == "" {
 		fmt.Fprintln(os.Stderr, "nest analyze: missing TRACE")
+		return 2
+	}
+	t, err := readTree(src)
+	if err != nil {
