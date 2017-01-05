@@ -112,3 +112,8 @@ func cmdAnalyze(args []string) int {
 	}
 	t, err := readTree(src)
 	if err != nil {
+		fmt.Fprintf(os.Stderr, "nest: %v\n", err)
+		return 2
+	}
+	a := trace.Analyze(t)
+	if flags["json"] == "true" {
