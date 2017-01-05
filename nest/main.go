@@ -117,3 +117,7 @@ func cmdAnalyze(args []string) int {
 	}
 	a := trace.Analyze(t)
 	if flags["json"] == "true" {
+		out, err := trace.RenderJSON(t, a)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "nest: %v\n", err)
+			return 1
