@@ -125,3 +125,8 @@ func cmdAnalyze(args []string) int {
 		fmt.Println(out)
 		return 0
 	}
+	fmt.Println(textSummary(a))
+	return 0
+}
+
+func textSummary(a trace.Analysis) string {
