@@ -134,3 +134,7 @@ func textSummary(a trace.Analysis) string {
 	fmt.Fprintf(&b, "spans        : %d\n", a.SpanCount)
 	fmt.Fprintf(&b, "total        : %.1f ms\n", a.TotalMS)
 	fmt.Fprintf(&b, "max depth    : %d\n", a.MaxDepth)
+	fmt.Fprintf(&b, "critical path: %.1f ms (%d spans)\n", a.CriticalPathMS, len(a.CriticalPath))
+	b.WriteString("\nby kind:\n")
+	kinds := make([]string, 0, len(a.KindMS))
+	for k := range a.KindMS {
