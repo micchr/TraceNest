@@ -121,3 +121,7 @@ func cmdAnalyze(args []string) int {
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "nest: %v\n", err)
 			return 1
+		}
+		fmt.Println(out)
+		return 0
+	}
