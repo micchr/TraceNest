@@ -130,3 +130,7 @@ func cmdAnalyze(args []string) int {
 }
 
 func textSummary(a trace.Analysis) string {
+	var b strings.Builder
+	fmt.Fprintf(&b, "spans        : %d\n", a.SpanCount)
+	fmt.Fprintf(&b, "total        : %.1f ms\n", a.TotalMS)
+	fmt.Fprintf(&b, "max depth    : %d\n", a.MaxDepth)
