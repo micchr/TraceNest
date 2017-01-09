@@ -156,3 +156,7 @@ func textSummary(a trace.Analysis) string {
 	if len(a.Retries) > 0 {
 		b.WriteString("\nretries:\n")
 		for _, r := range a.Retries {
+			tag := "repeated"
+			if r.Recovered {
+				tag = "recovered"
+			} else if r.Errors > 0 {
