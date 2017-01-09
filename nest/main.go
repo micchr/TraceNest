@@ -160,3 +160,7 @@ func textSummary(a trace.Analysis) string {
 			if r.Recovered {
 				tag = "recovered"
 			} else if r.Errors > 0 {
+				tag = "failing"
+			}
+			fmt.Fprintf(&b, "  %-20s attempts=%d errors=%d [%s]\n", r.Name, r.Attempts, r.Errors, tag)
+		}
