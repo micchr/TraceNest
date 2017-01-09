@@ -147,3 +147,7 @@ func textSummary(a trace.Analysis) string {
 	b.WriteString("\nstatus:\n")
 	statuses := make([]string, 0, len(a.StatusCounts))
 	for s := range a.StatusCounts {
+		statuses = append(statuses, s)
+	}
+	sort.Strings(statuses)
+	for _, s := range statuses {
