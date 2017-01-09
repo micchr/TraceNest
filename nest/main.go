@@ -138,3 +138,8 @@ func textSummary(a trace.Analysis) string {
 	b.WriteString("\nby kind:\n")
 	kinds := make([]string, 0, len(a.KindMS))
 	for k := range a.KindMS {
+		kinds = append(kinds, k)
+	}
+	sort.Slice(kinds, func(i, j int) bool { return a.KindMS[kinds[i]] > a.KindMS[kinds[j]] })
+	for _, k := range kinds {
+		fmt.Fprintf(&b, "  %-10s %10.1f ms  (%d)\n", k, a.KindMS[k], a.KindCounts[k])
