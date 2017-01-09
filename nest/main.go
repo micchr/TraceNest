@@ -151,3 +151,8 @@ func textSummary(a trace.Analysis) string {
 	}
 	sort.Strings(statuses)
 	for _, s := range statuses {
+		fmt.Fprintf(&b, "  %-10s %d\n", s, a.StatusCounts[s])
+	}
+	if len(a.Retries) > 0 {
+		b.WriteString("\nretries:\n")
+		for _, r := range a.Retries {
