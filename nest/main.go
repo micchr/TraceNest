@@ -164,3 +164,8 @@ func textSummary(a trace.Analysis) string {
 			}
 			fmt.Fprintf(&b, "  %-20s attempts=%d errors=%d [%s]\n", r.Name, r.Attempts, r.Errors, tag)
 		}
+	}
+	return b.String()
+}
+
+func cmdTree(args []string) int {
