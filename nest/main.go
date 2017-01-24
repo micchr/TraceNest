@@ -169,3 +169,7 @@ func textSummary(a trace.Analysis) string {
 }
 
 func cmdTree(args []string) int {
+	src, _ := firstPositional(args)
+	if src == "" {
+		fmt.Fprintln(os.Stderr, "nest tree: missing TRACE")
+		return 2
