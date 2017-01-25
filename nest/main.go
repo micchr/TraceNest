@@ -173,3 +173,7 @@ func cmdTree(args []string) int {
 	if src == "" {
 		fmt.Fprintln(os.Stderr, "nest tree: missing TRACE")
 		return 2
+	}
+	t, err := readTree(src)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "nest: %v\n", err)
