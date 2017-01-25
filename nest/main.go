@@ -182,3 +182,7 @@ func cmdTree(args []string) int {
 	t.Walk(func(n *trace.Node) {
 		marker := " "
 		if n.Span.ID == t.SyntheticRoot {
+			marker = "*"
+		} else {
+			switch n.Span.Status {
+			case trace.StatusError:
