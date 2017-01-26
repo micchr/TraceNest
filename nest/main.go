@@ -186,3 +186,7 @@ func cmdTree(args []string) int {
 		} else {
 			switch n.Span.Status {
 			case trace.StatusError:
+				marker = "x"
+			case trace.StatusOK:
+				marker = "+"
+			case trace.StatusCancelled:
