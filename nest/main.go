@@ -195,3 +195,7 @@ func cmdTree(args []string) int {
 		}
 		indent := strings.Repeat("  ", n.Depth)
 		fmt.Printf("%s %s%s [%s] %.1fms\n", marker, indent, n.Span.Name, n.Span.Kind, n.Span.DurationMS())
+	})
+	return 0
+}
+
