@@ -203,3 +203,8 @@ func cmdReport(args []string) int {
 	src, flags := firstPositional(args)
 	if src == "" {
 		fmt.Fprintln(os.Stderr, "nest report: missing TRACE")
+		return 2
+	}
+	t, err := readTree(src)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "nest: %v\n", err)
