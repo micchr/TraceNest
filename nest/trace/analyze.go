@@ -28,3 +28,8 @@ type Analysis struct {
 }
 
 func selfTime(n *Node) float64 {
+	total := n.Span.DurationMS()
+	if len(n.Children) == 0 {
+		return total
+	}
+	type iv struct{ s, e float64 }
