@@ -24,3 +24,7 @@ type Analysis struct {
 	CriticalPath   []string           `json:"critical_path"`
 	CriticalPathMS float64            `json:"critical_path_ms"`
 	Retries        []RetryCluster     `json:"retries"`
+	ErrorSpanIDs   []string           `json:"error_span_ids"`
+}
+
+func selfTime(n *Node) float64 {
