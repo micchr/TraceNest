@@ -43,3 +43,8 @@ func selfTime(n *Node) float64 {
 	have := false
 	for _, x := range ivs {
 		if have && x.s <= cur.e {
+			if x.e > cur.e {
+				cur.e = x.e
+			}
+		} else {
+			if have {
