@@ -38,3 +38,8 @@ func selfTime(n *Node) float64 {
 		ivs = append(ivs, iv{c.Span.StartMS, c.Span.EndMS})
 	}
 	sort.Slice(ivs, func(i, j int) bool { return ivs[i].s < ivs[j].s })
+	var covered float64
+	var cur iv
+	have := false
+	for _, x := range ivs {
+		if have && x.s <= cur.e {
