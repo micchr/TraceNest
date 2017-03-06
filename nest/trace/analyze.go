@@ -52,3 +52,8 @@ func selfTime(n *Node) float64 {
 			}
 			cur = x
 			have = true
+		}
+	}
+	if have {
+		covered += cur.e - cur.s
+	}
