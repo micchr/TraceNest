@@ -67,3 +67,7 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 	bestCost := map[string]float64{}
 	bestNext := map[string]string{}
 
+	var order []*Node
+	var collect func(*Node)
+	collect = func(n *Node) {
+		for _, c := range n.Children {
