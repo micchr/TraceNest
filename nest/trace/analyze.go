@@ -62,3 +62,8 @@ func selfTime(n *Node) float64 {
 	}
 	return 0
 }
+
+func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
+	bestCost := map[string]float64{}
+	bestNext := map[string]string{}
+
