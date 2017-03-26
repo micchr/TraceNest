@@ -71,3 +71,8 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 	var collect func(*Node)
 	collect = func(n *Node) {
 		for _, c := range n.Children {
+			collect(c)
+		}
+		order = append(order, n)
+	}
+	for _, r := range t.Roots {
