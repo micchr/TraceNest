@@ -76,3 +76,8 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 		order = append(order, n)
 	}
 	for _, r := range t.Roots {
+		collect(r)
+	}
+
+	for _, n := range order {
+		own := selfCache[n.Span.ID]
