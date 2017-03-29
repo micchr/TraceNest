@@ -81,3 +81,8 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 
 	for _, n := range order {
 		own := selfCache[n.Span.ID]
+		if len(n.Children) == 0 {
+			bestCost[n.Span.ID] = own
+			bestNext[n.Span.ID] = ""
+			continue
+		}
