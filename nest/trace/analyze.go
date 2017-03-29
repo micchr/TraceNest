@@ -86,3 +86,8 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 			bestNext[n.Span.ID] = ""
 			continue
 		}
+		var best *Node
+		for _, c := range n.Children {
+			if best == nil || bestCost[c.Span.ID] > bestCost[best.Span.ID] {
+				best = c
+			}
