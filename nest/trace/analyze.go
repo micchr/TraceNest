@@ -91,3 +91,7 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 			if best == nil || bestCost[c.Span.ID] > bestCost[best.Span.ID] {
 				best = c
 			}
+		}
+		bestCost[n.Span.ID] = own + bestCost[best.Span.ID]
+		bestNext[n.Span.ID] = best.Span.ID
+	}
