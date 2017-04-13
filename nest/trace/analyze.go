@@ -114,3 +114,8 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 	}
 	return path, total
 }
+
+func isMarkedRetry(s Span) bool {
+	for _, key := range []string{"retry", "retries", "attempt", "retry_count"} {
+		v, ok := s.Attributes[key]
+		if !ok {
