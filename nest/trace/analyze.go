@@ -100,3 +100,8 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 		return nil, 0
 	}
 	start := t.Roots[0]
+	for _, r := range t.Roots {
+		if bestCost[r.Span.ID] > bestCost[start.Span.ID] {
+			start = r
+		}
+	}
