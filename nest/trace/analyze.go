@@ -110,3 +110,7 @@ func criticalPath(t *Tree, selfCache map[string]float64) ([]string, float64) {
 	total := bestCost[start.Span.ID]
 	for cursor != "" {
 		path = append(path, cursor)
+		cursor = bestNext[cursor]
+	}
+	return path, total
+}
