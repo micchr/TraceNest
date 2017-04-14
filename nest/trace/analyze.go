@@ -119,3 +119,8 @@ func isMarkedRetry(s Span) bool {
 	for _, key := range []string{"retry", "retries", "attempt", "retry_count"} {
 		v, ok := s.Attributes[key]
 		if !ok {
+			continue
+		}
+		switch t := v.(type) {
+		case bool:
+			if t {
