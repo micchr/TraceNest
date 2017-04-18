@@ -124,3 +124,8 @@ func isMarkedRetry(s Span) bool {
 		switch t := v.(type) {
 		case bool:
 			if t {
+				return true
+			}
+		case float64:
+			if t > 0 {
+				return true
