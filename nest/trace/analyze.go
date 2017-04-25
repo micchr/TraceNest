@@ -138,3 +138,8 @@ func isMarkedRetry(s Span) bool {
 		}
 	}
 	return false
+}
+
+func detectRetries(t *Tree) []RetryCluster {
+	var clusters []RetryCluster
+	t.Walk(func(parent *Node) {
