@@ -134,3 +134,7 @@ func isMarkedRetry(s Span) bool {
 			switch normalize(t) {
 			case "true", "yes", "retry":
 				return true
+			}
+		}
+	}
+	return false
