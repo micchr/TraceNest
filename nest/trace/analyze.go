@@ -143,3 +143,8 @@ func isMarkedRetry(s Span) bool {
 func detectRetries(t *Tree) []RetryCluster {
 	var clusters []RetryCluster
 	t.Walk(func(parent *Node) {
+		if len(parent.Children) == 0 {
+			return
+		}
+		buckets := map[string][]*Node{}
+		var names []string
