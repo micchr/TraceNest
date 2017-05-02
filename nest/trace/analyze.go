@@ -153,3 +153,7 @@ func detectRetries(t *Tree) []RetryCluster {
 				names = append(names, c.Span.Name)
 			}
 			buckets[c.Span.Name] = append(buckets[c.Span.Name], c)
+		}
+		for _, name := range names {
+			group := buckets[name]
+			marked := false
