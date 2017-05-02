@@ -167,3 +167,8 @@ func detectRetries(t *Tree) []RetryCluster {
 				continue
 			}
 			sort.Slice(group, func(i, j int) bool {
+				return group[i].Span.StartMS < group[j].Span.StartMS
+			})
+			errors := 0
+			for _, c := range group {
+				if c.Span.Status == StatusError {
