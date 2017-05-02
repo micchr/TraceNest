@@ -162,3 +162,8 @@ func detectRetries(t *Tree) []RetryCluster {
 					marked = true
 					break
 				}
+			}
+			if len(group) < 2 && !marked {
+				continue
+			}
+			sort.Slice(group, func(i, j int) bool {
