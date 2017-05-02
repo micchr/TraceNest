@@ -172,3 +172,7 @@ func detectRetries(t *Tree) []RetryCluster {
 			errors := 0
 			for _, c := range group {
 				if c.Span.Status == StatusError {
+					errors++
+				}
+			}
+			recovered := errors > 0 && group[len(group)-1].Span.Status == StatusOK
