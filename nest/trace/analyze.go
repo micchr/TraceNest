@@ -157,3 +157,8 @@ func detectRetries(t *Tree) []RetryCluster {
 		for _, name := range names {
 			group := buckets[name]
 			marked := false
+			for _, c := range group {
+				if isMarkedRetry(c.Span) {
+					marked = true
+					break
+				}
