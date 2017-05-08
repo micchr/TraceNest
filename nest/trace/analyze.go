@@ -176,3 +176,8 @@ func detectRetries(t *Tree) []RetryCluster {
 				}
 			}
 			recovered := errors > 0 && group[len(group)-1].Span.Status == StatusOK
+			ids := make([]string, len(group))
+			for i, c := range group {
+				ids[i] = c.Span.ID
+			}
+			clusters = append(clusters, RetryCluster{
