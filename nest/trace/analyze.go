@@ -181,3 +181,8 @@ func detectRetries(t *Tree) []RetryCluster {
 				ids[i] = c.Span.ID
 			}
 			clusters = append(clusters, RetryCluster{
+				Name: name, ParentID: parent.Span.ID, Attempts: len(group),
+				Errors: errors, SpanIDs: ids, Recovered: recovered,
+			})
+		}
+	})
