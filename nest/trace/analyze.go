@@ -186,3 +186,8 @@ func detectRetries(t *Tree) []RetryCluster {
 			})
 		}
 	})
+	sort.SliceStable(clusters, func(i, j int) bool {
+		if clusters[i].Attempts != clusters[j].Attempts {
+			return clusters[i].Attempts > clusters[j].Attempts
+		}
+		return clusters[i].Name < clusters[j].Name
