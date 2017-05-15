@@ -191,3 +191,8 @@ func detectRetries(t *Tree) []RetryCluster {
 			return clusters[i].Attempts > clusters[j].Attempts
 		}
 		return clusters[i].Name < clusters[j].Name
+	})
+	return clusters
+}
+
+// Analyze computes the full analysis for a span tree.
