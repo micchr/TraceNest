@@ -196,3 +196,7 @@ func detectRetries(t *Tree) []RetryCluster {
 }
 
 // Analyze computes the full analysis for a span tree.
+func Analyze(t *Tree) Analysis {
+	kindMS := map[string]float64{}
+	kindCounts := map[string]int{}
+	statusCounts := map[string]int{}
