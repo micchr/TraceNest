@@ -205,3 +205,8 @@ func Analyze(t *Tree) Analysis {
 	var errorIDs []string
 
 	t.Walk(func(n *Node) { selfCache[n.Span.ID] = selfTime(n) })
+
+	t.Walk(func(n *Node) {
+		s := n.Span
+		if s.ID == t.SyntheticRoot {
+			return
