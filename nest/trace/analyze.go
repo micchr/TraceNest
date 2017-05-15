@@ -200,3 +200,8 @@ func Analyze(t *Tree) Analysis {
 	kindMS := map[string]float64{}
 	kindCounts := map[string]int{}
 	statusCounts := map[string]int{}
+	selfMS := map[string]float64{}
+	selfCache := map[string]float64{}
+	var errorIDs []string
+
+	t.Walk(func(n *Node) { selfCache[n.Span.ID] = selfTime(n) })
