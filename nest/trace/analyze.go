@@ -210,3 +210,8 @@ func Analyze(t *Tree) Analysis {
 		s := n.Span
 		if s.ID == t.SyntheticRoot {
 			return
+		}
+		k := string(s.Kind)
+		kindMS[k] += s.DurationMS()
+		kindCounts[k]++
+		statusCounts[string(s.Status)]++
