@@ -215,3 +215,7 @@ func Analyze(t *Tree) Analysis {
 		kindMS[k] += s.DurationMS()
 		kindCounts[k]++
 		statusCounts[string(s.Status)]++
+		selfMS[k] += selfCache[s.ID]
+		if s.Status == StatusError {
+			errorIDs = append(errorIDs, s.ID)
+		}
