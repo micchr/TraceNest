@@ -219,3 +219,8 @@ func Analyze(t *Tree) Analysis {
 		if s.Status == StatusError {
 			errorIDs = append(errorIDs, s.ID)
 		}
+	})
+
+	var total float64
+	if len(t.Roots) > 0 {
+		minS, maxE := t.Roots[0].Span.StartMS, t.Roots[0].Span.EndMS
