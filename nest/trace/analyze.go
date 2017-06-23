@@ -224,3 +224,8 @@ func Analyze(t *Tree) Analysis {
 	var total float64
 	if len(t.Roots) > 0 {
 		minS, maxE := t.Roots[0].Span.StartMS, t.Roots[0].Span.EndMS
+		for _, r := range t.Roots {
+			if r.Span.StartMS < minS {
+				minS = r.Span.StartMS
+			}
+			if r.Span.EndMS > maxE {
