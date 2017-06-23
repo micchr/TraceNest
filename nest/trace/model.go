@@ -6,3 +6,4 @@ package trace
 // Kind is the category of work a span represents.
 type Kind string
 
+const (
