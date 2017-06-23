@@ -229,3 +229,8 @@ func Analyze(t *Tree) Analysis {
 				minS = r.Span.StartMS
 			}
 			if r.Span.EndMS > maxE {
+				maxE = r.Span.EndMS
+			}
+		}
+		total = maxE - minS
+	}
