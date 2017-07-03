@@ -7,3 +7,5 @@ package trace
 type Kind string
 
 const (
+	KindRoot      Kind = "root"
+	KindLLM       Kind = "llm"
