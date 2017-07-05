@@ -11,3 +11,4 @@ const (
 	KindLLM       Kind = "llm"
 	KindTool      Kind = "tool"
 	KindRetrieval Kind = "retrieval"
+	KindChain     Kind = "chain"
