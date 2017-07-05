@@ -9,3 +9,5 @@ type Kind string
 const (
 	KindRoot      Kind = "root"
 	KindLLM       Kind = "llm"
+	KindTool      Kind = "tool"
+	KindRetrieval Kind = "retrieval"
