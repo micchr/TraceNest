@@ -14,3 +14,5 @@ const (
 	KindChain     Kind = "chain"
 	KindEvent     Kind = "event"
 	KindUnknown   Kind = "unknown"
+)
+
