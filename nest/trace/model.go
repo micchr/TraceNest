@@ -17,3 +17,5 @@ const (
 )
 
 // CoerceKind maps a raw string (including common aliases) to a Kind.
+func CoerceKind(s string) Kind {
+	switch normalize(s) {
