@@ -12,3 +12,5 @@ const (
 	KindTool      Kind = "tool"
 	KindRetrieval Kind = "retrieval"
 	KindChain     Kind = "chain"
+	KindEvent     Kind = "event"
+	KindUnknown   Kind = "unknown"
