@@ -16,3 +16,4 @@ const (
 	KindUnknown   Kind = "unknown"
 )
 
+// CoerceKind maps a raw string (including common aliases) to a Kind.
