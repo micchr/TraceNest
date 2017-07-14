@@ -22,3 +22,5 @@ func CoerceKind(s string) Kind {
 	case "root":
 		return KindRoot
 	case "llm", "model", "completion", "generation":
+		return KindLLM
+	case "tool", "function", "action":
