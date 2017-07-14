@@ -20,3 +20,5 @@ const (
 func CoerceKind(s string) Kind {
 	switch normalize(s) {
 	case "root":
+		return KindRoot
+	case "llm", "model", "completion", "generation":
