@@ -25,3 +25,5 @@ func CoerceKind(s string) Kind {
 		return KindLLM
 	case "tool", "function", "action":
 		return KindTool
+	case "retrieval", "search", "embed":
+		return KindRetrieval
