@@ -29,3 +29,4 @@ func CoerceKind(s string) Kind {
 		return KindRetrieval
 	case "chain":
 		return KindChain
+	case "event", "span":
