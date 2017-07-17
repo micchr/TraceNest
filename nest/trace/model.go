@@ -27,3 +27,5 @@ func CoerceKind(s string) Kind {
 		return KindTool
 	case "retrieval", "search", "embed":
 		return KindRetrieval
+	case "chain":
+		return KindChain
