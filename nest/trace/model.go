@@ -30,3 +30,5 @@ func CoerceKind(s string) Kind {
 	case "chain":
 		return KindChain
 	case "event", "span":
+		return KindEvent
+	default:
