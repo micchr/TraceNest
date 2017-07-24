@@ -34,3 +34,4 @@ func CoerceKind(s string) Kind {
 	default:
 		return KindUnknown
 	}
+}
