@@ -35,3 +35,5 @@ func CoerceKind(s string) Kind {
 		return KindUnknown
 	}
 }
+
+// Status is the terminal disposition of a span.
