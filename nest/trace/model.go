@@ -42,3 +42,4 @@ type Status string
 const (
 	StatusOK        Status = "ok"
 	StatusError     Status = "error"
+	StatusCancelled Status = "cancelled"
