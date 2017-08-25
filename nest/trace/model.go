@@ -40,3 +40,5 @@ func CoerceKind(s string) Kind {
 type Status string
 
 const (
+	StatusOK        Status = "ok"
+	StatusError     Status = "error"
