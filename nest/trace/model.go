@@ -39,3 +39,4 @@ func CoerceKind(s string) Kind {
 // Status is the terminal disposition of a span.
 type Status string
 
+const (
