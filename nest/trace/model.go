@@ -43,3 +43,5 @@ const (
 	StatusOK        Status = "ok"
 	StatusError     Status = "error"
 	StatusCancelled Status = "cancelled"
+	StatusUnknown   Status = "unknown"
+)
