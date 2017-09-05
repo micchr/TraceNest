@@ -45,3 +45,5 @@ const (
 	StatusCancelled Status = "cancelled"
 	StatusUnknown   Status = "unknown"
 )
+
+// CoerceStatus maps a raw string (including common aliases) to a Status.
