@@ -48,3 +48,5 @@ const (
 
 // CoerceStatus maps a raw string (including common aliases) to a Status.
 func CoerceStatus(s string) Status {
+	switch normalize(s) {
+	case "ok", "success", "succeeded", "completed":
