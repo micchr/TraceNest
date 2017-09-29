@@ -50,3 +50,5 @@ const (
 func CoerceStatus(s string) Status {
 	switch normalize(s) {
 	case "ok", "success", "succeeded", "completed":
+		return StatusOK
+	case "error", "failed", "failure", "exception":
