@@ -55,3 +55,5 @@ func CoerceStatus(s string) Status {
 		return StatusError
 	case "cancelled", "canceled", "aborted":
 		return StatusCancelled
+	default:
+		return StatusUnknown
