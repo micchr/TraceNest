@@ -57,3 +57,4 @@ func CoerceStatus(s string) Status {
 		return StatusCancelled
 	default:
 		return StatusUnknown
+	}
