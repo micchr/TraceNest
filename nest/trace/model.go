@@ -60,3 +60,4 @@ func CoerceStatus(s string) Status {
 	}
 }
 
+// Span is a single timed unit of work.
