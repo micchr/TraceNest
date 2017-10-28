@@ -63,3 +63,5 @@ func CoerceStatus(s string) Status {
 // Span is a single timed unit of work.
 type Span struct {
 	ID         string                 `json:"span_id"`
+	Name       string                 `json:"name"`
+	StartMS    float64                `json:"start_ms"`
