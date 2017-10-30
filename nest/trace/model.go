@@ -65,3 +65,4 @@ type Span struct {
 	ID         string                 `json:"span_id"`
 	Name       string                 `json:"name"`
 	StartMS    float64                `json:"start_ms"`
+	EndMS      float64                `json:"end_ms"`
