@@ -66,3 +66,5 @@ type Span struct {
 	Name       string                 `json:"name"`
 	StartMS    float64                `json:"start_ms"`
 	EndMS      float64                `json:"end_ms"`
+	ParentID   string                 `json:"parent_id,omitempty"`
+	Kind       Kind                   `json:"kind"`
