@@ -70,3 +70,4 @@ type Span struct {
 	Kind       Kind                   `json:"kind"`
 	Status     Status                 `json:"status"`
 	Attributes map[string]interface{} `json:"attributes,omitempty"`
+}
