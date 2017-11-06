@@ -68,3 +68,5 @@ type Span struct {
 	EndMS      float64                `json:"end_ms"`
 	ParentID   string                 `json:"parent_id,omitempty"`
 	Kind       Kind                   `json:"kind"`
+	Status     Status                 `json:"status"`
+	Attributes map[string]interface{} `json:"attributes,omitempty"`
