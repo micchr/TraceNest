@@ -27,3 +27,8 @@ var (
 )
 
 var reserved = func() map[string]bool {
+	m := map[string]bool{"attributes": true, "attrs": true, "meta": true,
+		"metadata": true, "tags": true}
+	for _, group := range [][]string{idKeys, parentKeys, nameKeys, startKeys,
+		endKeys, durKeys, kindKeys, statusKeys} {
+		for _, k := range group {
