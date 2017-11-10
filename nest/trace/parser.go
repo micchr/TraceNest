@@ -23,3 +23,7 @@ var (
 	endKeys    = []string{"end_ms", "endTime", "end", "endedAt"}
 	durKeys    = []string{"duration_ms", "duration", "elapsed_ms", "elapsed"}
 	kindKeys   = []string{"kind", "type", "category"}
+	statusKeys = []string{"status", "state", "outcome", "result"}
+)
+
+var reserved = func() map[string]bool {
