@@ -32,3 +32,7 @@ var reserved = func() map[string]bool {
 	for _, group := range [][]string{idKeys, parentKeys, nameKeys, startKeys,
 		endKeys, durKeys, kindKeys, statusKeys} {
 		for _, k := range group {
+			m[k] = true
+		}
+	}
+	return m
