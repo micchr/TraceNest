@@ -36,3 +36,8 @@ var reserved = func() map[string]bool {
 		}
 	}
 	return m
+}()
+
+func first(obj map[string]interface{}, keys []string) interface{} {
+	for _, k := range keys {
+		if v, ok := obj[k]; ok && v != nil {
