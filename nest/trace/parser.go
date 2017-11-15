@@ -45,3 +45,8 @@ func first(obj map[string]interface{}, keys []string) interface{} {
 		}
 	}
 	return nil
+}
+
+func firstString(obj map[string]interface{}, keys []string) (string, bool) {
+	v := first(obj, keys)
+	if v == nil {
