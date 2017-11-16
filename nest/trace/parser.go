@@ -50,3 +50,7 @@ func first(obj map[string]interface{}, keys []string) interface{} {
 func firstString(obj map[string]interface{}, keys []string) (string, bool) {
 	v := first(obj, keys)
 	if v == nil {
+		return "", false
+	}
+	switch t := v.(type) {
+	case string:
