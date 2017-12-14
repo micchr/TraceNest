@@ -54,3 +54,8 @@ func firstString(obj map[string]interface{}, keys []string) (string, bool) {
 	}
 	switch t := v.(type) {
 	case string:
+		return t, true
+	case float64:
+		return strconv.FormatFloat(t, 'f', -1, 64), true
+	default:
+		return fmt.Sprintf("%v", t), true
