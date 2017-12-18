@@ -59,3 +59,8 @@ func firstString(obj map[string]interface{}, keys []string) (string, bool) {
 		return strconv.FormatFloat(t, 'f', -1, 64), true
 	default:
 		return fmt.Sprintf("%v", t), true
+	}
+}
+
+// toMS reduces a timestamp value to milliseconds. Returns ok=false when
+// the value is absent or unparseable.
