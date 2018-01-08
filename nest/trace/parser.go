@@ -68,3 +68,8 @@ func toMS(v interface{}) (float64, bool) {
 	if v == nil {
 		return 0, false
 	}
+	switch t := v.(type) {
+	case float64:
+		return t, true
+	case int:
+		return float64(t), true
