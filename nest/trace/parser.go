@@ -73,3 +73,7 @@ func toMS(v interface{}) (float64, bool) {
 		return t, true
 	case int:
 		return float64(t), true
+	case string:
+		s := strings.TrimSpace(t)
+		if s == "" {
+			return 0, false
