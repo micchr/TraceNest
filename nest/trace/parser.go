@@ -82,3 +82,7 @@ func toMS(v interface{}) (float64, bool) {
 			return f, true
 		}
 		if strings.HasSuffix(s, "Z") {
+			s = strings.TrimSuffix(s, "Z") + "+00:00"
+		}
+		for _, layout := range []string{time.RFC3339Nano, time.RFC3339} {
+			if ts, err := time.Parse(layout, s); err == nil {
