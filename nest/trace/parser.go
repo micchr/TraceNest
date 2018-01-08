@@ -64,3 +64,7 @@ func firstString(obj map[string]interface{}, keys []string) (string, bool) {
 
 // toMS reduces a timestamp value to milliseconds. Returns ok=false when
 // the value is absent or unparseable.
+func toMS(v interface{}) (float64, bool) {
+	if v == nil {
+		return 0, false
+	}
