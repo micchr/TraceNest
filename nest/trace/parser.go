@@ -91,3 +91,7 @@ func toMS(v interface{}) (float64, bool) {
 		}
 	}
 	return 0, false
+}
+
+func extractAttributes(obj map[string]interface{}) map[string]interface{} {
+	attrs := map[string]interface{}{}
