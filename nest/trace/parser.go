@@ -77,3 +77,8 @@ func toMS(v interface{}) (float64, bool) {
 		s := strings.TrimSpace(t)
 		if s == "" {
 			return 0, false
+		}
+		if f, err := strconv.ParseFloat(s, 64); err == nil {
+			return f, true
+		}
+		if strings.HasSuffix(s, "Z") {
