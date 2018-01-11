@@ -100,3 +100,8 @@ func extractAttributes(obj map[string]interface{}) map[string]interface{} {
 			for k, v := range b {
 				attrs[k] = v
 			}
+		}
+	}
+	for k, v := range obj {
+		if !reserved[k] {
+			if _, exists := attrs[k]; !exists {
