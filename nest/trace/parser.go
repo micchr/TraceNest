@@ -95,3 +95,8 @@ func toMS(v interface{}) (float64, bool) {
 
 func extractAttributes(obj map[string]interface{}) map[string]interface{} {
 	attrs := map[string]interface{}{}
+	for _, bag := range []string{"attributes", "attrs", "meta", "metadata", "tags"} {
+		if b, ok := obj[bag].(map[string]interface{}); ok {
+			for k, v := range b {
+				attrs[k] = v
+			}
