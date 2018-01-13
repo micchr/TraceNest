@@ -109,3 +109,8 @@ func extractAttributes(obj map[string]interface{}) map[string]interface{} {
 			}
 		}
 	}
+	return attrs
+}
+
+func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
+	var s Span
