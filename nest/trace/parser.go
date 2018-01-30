@@ -114,3 +114,7 @@ func extractAttributes(obj map[string]interface{}) map[string]interface{} {
 
 func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 	var s Span
+	if id, ok := firstString(obj, idKeys); ok {
+		s.ID = id
+	} else {
+		s.ID = fmt.Sprintf("span-%d", index)
