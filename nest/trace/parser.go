@@ -118,3 +118,8 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 		s.ID = id
 	} else {
 		s.ID = fmt.Sprintf("span-%d", index)
+	}
+	if p, ok := firstString(obj, parentKeys); ok {
+		s.ParentID = p
+	}
+	if n, ok := firstString(obj, nameKeys); ok {
