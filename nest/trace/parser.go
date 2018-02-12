@@ -123,3 +123,7 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 		s.ParentID = p
 	}
 	if n, ok := firstString(obj, nameKeys); ok {
+		s.Name = n
+	} else {
+		s.Name = s.ID
+	}
