@@ -127,3 +127,8 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 	} else {
 		s.Name = s.ID
 	}
+
+	start, hasStart := toMS(first(obj, startKeys))
+	if !hasStart {
+		return s, &ParseError{Msg: fmt.Sprintf("span '%s' is missing a start timestamp", s.ID)}
+	}
