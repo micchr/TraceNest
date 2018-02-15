@@ -150,3 +150,8 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 	statusStr, _ := firstString(obj, statusKeys)
 	s.Status = CoerceStatus(statusStr)
 	s.Attributes = extractAttributes(obj)
+	return s, nil
+}
+
+func rebase(spans []Span) []Span {
+	if len(spans) == 0 {
