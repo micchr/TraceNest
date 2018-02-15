@@ -155,3 +155,7 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 
 func rebase(spans []Span) []Span {
 	if len(spans) == 0 {
+		return spans
+	}
+	origin := spans[0].StartMS
+	for _, s := range spans {
