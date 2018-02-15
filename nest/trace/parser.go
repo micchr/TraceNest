@@ -146,3 +146,7 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 	}
 
 	kindStr, _ := firstString(obj, kindKeys)
+	s.Kind = CoerceKind(kindStr)
+	statusStr, _ := firstString(obj, statusKeys)
+	s.Status = CoerceStatus(statusStr)
+	s.Attributes = extractAttributes(obj)
