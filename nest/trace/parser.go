@@ -141,3 +141,8 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 	} else {
 		s.EndMS = start
 	}
+	if s.EndMS < s.StartMS {
+		s.EndMS = s.StartMS
+	}
+
+	kindStr, _ := firstString(obj, kindKeys)
