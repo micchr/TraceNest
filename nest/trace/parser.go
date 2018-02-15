@@ -136,3 +136,8 @@ func spanFromObj(obj map[string]interface{}, index int) (Span, error) {
 
 	if end, ok := toMS(first(obj, endKeys)); ok {
 		s.EndMS = end
+	} else if dur, ok := toMS(first(obj, durKeys)); ok {
+		s.EndMS = start + dur
+	} else {
+		s.EndMS = start
+	}
