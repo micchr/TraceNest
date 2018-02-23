@@ -173,3 +173,7 @@ func rebase(spans []Span) []Span {
 	return spans
 }
 
+// ParseSpans parses trace text (JSON array, JSON object envelope, or
+// JSONL) into a rebased slice of spans.
+func ParseSpans(data []byte) ([]Span, error) {
+	trimmed := strings.TrimSpace(string(data))
