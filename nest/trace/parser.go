@@ -177,3 +177,8 @@ func rebase(spans []Span) []Span {
 // JSONL) into a rebased slice of spans.
 func ParseSpans(data []byte) ([]Span, error) {
 	trimmed := strings.TrimSpace(string(data))
+	if trimmed == "" {
+		return nil, &ParseError{Msg: "empty trace input"}
+	}
+
+	var records []map[string]interface{}
