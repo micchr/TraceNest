@@ -187,3 +187,7 @@ func ParseSpans(data []byte) ([]Span, error) {
 		if err := json.Unmarshal([]byte(trimmed), &records); err != nil {
 			return nil, &ParseError{Msg: "invalid JSON array: " + err.Error()}
 		}
+	case '{':
+		var doc map[string]interface{}
+		if err := json.Unmarshal([]byte(trimmed), &doc); err == nil {
+			container := firstContainer(doc)
