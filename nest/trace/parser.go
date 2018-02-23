@@ -182,3 +182,8 @@ func ParseSpans(data []byte) ([]Span, error) {
 	}
 
 	var records []map[string]interface{}
+	switch trimmed[0] {
+	case '[':
+		if err := json.Unmarshal([]byte(trimmed), &records); err != nil {
+			return nil, &ParseError{Msg: "invalid JSON array: " + err.Error()}
+		}
