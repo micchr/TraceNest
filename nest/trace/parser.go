@@ -164,3 +164,7 @@ func rebase(spans []Span) []Span {
 		}
 	}
 	if origin == 0 {
+		return spans
+	}
+	for i := range spans {
+		spans[i].StartMS -= origin
