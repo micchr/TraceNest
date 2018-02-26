@@ -205,3 +205,7 @@ func ParseSpans(data []byte) ([]Span, error) {
 		}
 	default:
 		return nil, &ParseError{Msg: fmt.Sprintf("unrecognized trace format (starts with %q)", trimmed[0])}
+	}
+
+	spans := make([]Span, 0, len(records))
+	for i, obj := range records {
