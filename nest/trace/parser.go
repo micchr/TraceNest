@@ -191,3 +191,8 @@ func ParseSpans(data []byte) ([]Span, error) {
 		var doc map[string]interface{}
 		if err := json.Unmarshal([]byte(trimmed), &doc); err == nil {
 			container := firstContainer(doc)
+			if container != nil {
+				records = container
+			} else {
+				records = []map[string]interface{}{doc}
+			}
