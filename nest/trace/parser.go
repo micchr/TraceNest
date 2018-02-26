@@ -200,3 +200,8 @@ func ParseSpans(data []byte) ([]Span, error) {
 			r, lerr := parseJSONL(trimmed)
 			if lerr != nil {
 				return nil, lerr
+			}
+			records = r
+		}
+	default:
+		return nil, &ParseError{Msg: fmt.Sprintf("unrecognized trace format (starts with %q)", trimmed[0])}
