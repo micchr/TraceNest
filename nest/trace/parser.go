@@ -196,3 +196,7 @@ func ParseSpans(data []byte) ([]Span, error) {
 			} else {
 				records = []map[string]interface{}{doc}
 			}
+		} else {
+			r, lerr := parseJSONL(trimmed)
+			if lerr != nil {
+				return nil, lerr
