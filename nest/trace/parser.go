@@ -209,3 +209,8 @@ func ParseSpans(data []byte) ([]Span, error) {
 
 	spans := make([]Span, 0, len(records))
 	for i, obj := range records {
+		s, err := spanFromObj(obj, i)
+		if err != nil {
+			return nil, err
+		}
+		spans = append(spans, s)
