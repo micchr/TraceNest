@@ -214,3 +214,7 @@ func ParseSpans(data []byte) ([]Span, error) {
 			return nil, err
 		}
 		spans = append(spans, s)
+	}
+	return rebase(spans), nil
+}
+
