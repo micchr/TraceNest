@@ -25,3 +25,7 @@ type reportDoc struct {
 	Spans   []Span   `json:"spans"`
 }
 
+func buildDoc(t *Tree, a Analysis) reportDoc {
+	var spans []Span
+	t.Walk(func(n *Node) {
+		if n.Span.ID != t.SyntheticRoot {
