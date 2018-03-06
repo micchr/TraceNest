@@ -218,3 +218,8 @@ func ParseSpans(data []byte) ([]Span, error) {
 	return rebase(spans), nil
 }
 
+func firstContainer(doc map[string]interface{}) []map[string]interface{} {
+	for _, key := range []string{"spans", "trace", "events"} {
+		if arr, ok := doc[key].([]interface{}); ok {
+			out := make([]map[string]interface{}, 0, len(arr))
+			for _, item := range arr {
