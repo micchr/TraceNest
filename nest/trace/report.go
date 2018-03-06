@@ -29,3 +29,7 @@ func buildDoc(t *Tree, a Analysis) reportDoc {
 	var spans []Span
 	t.Walk(func(n *Node) {
 		if n.Span.ID != t.SyntheticRoot {
+			spans = append(spans, n.Span)
+		}
+	})
+	return reportDoc{Version: 1, Summary: a, Spans: spans}
