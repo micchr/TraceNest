@@ -21,3 +21,7 @@ var kindColors = map[string]string{
 
 type reportDoc struct {
 	Version int      `json:"version"`
+	Summary Analysis `json:"summary"`
+	Spans   []Span   `json:"spans"`
+}
+
