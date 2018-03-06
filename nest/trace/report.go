@@ -33,3 +33,7 @@ func buildDoc(t *Tree, a Analysis) reportDoc {
 		}
 	})
 	return reportDoc{Version: 1, Summary: a, Spans: spans}
+}
+
+// RenderJSON returns a normalized JSON report.
+func RenderJSON(t *Tree, a Analysis) (string, error) {
