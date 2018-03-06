@@ -37,3 +37,7 @@ func buildDoc(t *Tree, a Analysis) reportDoc {
 
 // RenderJSON returns a normalized JSON report.
 func RenderJSON(t *Tree, a Analysis) (string, error) {
+	b, err := json.MarshalIndent(buildDoc(t, a), "", "  ")
+	if err != nil {
+		return "", err
+	}
