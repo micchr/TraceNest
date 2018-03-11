@@ -41,3 +41,7 @@ func RenderJSON(t *Tree, a Analysis) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	return string(b), nil
+}
+
+func fmtMS(ms float64) string {
