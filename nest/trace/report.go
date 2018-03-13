@@ -49,3 +49,7 @@ func fmtMS(ms float64) string {
 		return fmt.Sprintf("%.2fs", ms/1000)
 	}
 	return fmt.Sprintf("%.1fms", ms)
+}
+
+func bars(t *Tree, a Analysis) string {
+	total := a.TotalMS
