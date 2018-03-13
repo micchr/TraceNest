@@ -45,3 +45,7 @@ func RenderJSON(t *Tree, a Analysis) (string, error) {
 }
 
 func fmtMS(ms float64) string {
+	if ms >= 1000 {
+		return fmt.Sprintf("%.2fs", ms/1000)
+	}
+	return fmt.Sprintf("%.1fms", ms)
