@@ -53,3 +53,7 @@ func fmtMS(ms float64) string {
 
 func bars(t *Tree, a Analysis) string {
 	total := a.TotalMS
+	if total == 0 {
+		total = 1
+	}
+	var origin float64
