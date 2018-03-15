@@ -65,3 +65,7 @@ func bars(t *Tree, a Analysis) string {
 			}
 		}
 	}
+	crit := map[string]bool{}
+	for _, id := range a.CriticalPath {
+		crit[id] = true
+	}
