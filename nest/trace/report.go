@@ -61,3 +61,7 @@ func bars(t *Tree, a Analysis) string {
 		origin = t.Roots[0].Span.StartMS
 		for _, r := range t.Roots {
 			if r.Span.StartMS < origin {
+				origin = r.Span.StartMS
+			}
+		}
+	}
