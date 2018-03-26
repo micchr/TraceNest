@@ -69,3 +69,7 @@ func bars(t *Tree, a Analysis) string {
 	for _, id := range a.CriticalPath {
 		crit[id] = true
 	}
+	var sb strings.Builder
+	t.Walk(func(n *Node) {
+		s := n.Span
+		if s.ID == t.SyntheticRoot {
