@@ -73,3 +73,7 @@ func bars(t *Tree, a Analysis) string {
 	t.Walk(func(n *Node) {
 		s := n.Span
 		if s.ID == t.SyntheticRoot {
+			return
+		}
+		left := (s.StartMS - origin) / total * 100
+		width := s.DurationMS() / total * 100
