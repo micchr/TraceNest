@@ -77,3 +77,7 @@ func bars(t *Tree, a Analysis) string {
 		}
 		left := (s.StartMS - origin) / total * 100
 		width := s.DurationMS() / total * 100
+		if width < 0.6 {
+			width = 0.6
+		}
+		color := kindColors[string(s.Kind)]
