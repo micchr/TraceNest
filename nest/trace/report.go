@@ -81,3 +81,7 @@ func bars(t *Tree, a Analysis) string {
 			width = 0.6
 		}
 		color := kindColors[string(s.Kind)]
+		if color == "" {
+			color = kindColors["unknown"]
+		}
+		classes := "row"
