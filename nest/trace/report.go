@@ -93,3 +93,7 @@ func bars(t *Tree, a Analysis) string {
 		}
 		label := html.EscapeString(s.Name)
 		meta := html.EscapeString(fmt.Sprintf("%s · %s", s.Kind, fmtMS(s.DurationMS())))
+		fmt.Fprintf(&sb,
+			`<div class="%s" style="padding-left:%dpx"><div class="lbl" title="%s">%s`+
+				`<span class="sub">%s</span></div><div class="track"><div class="bar" `+
+				`style="left:%.3f%%;width:%.3f%%;background:%s"></div></div></div>`+"\n",
