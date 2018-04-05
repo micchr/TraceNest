@@ -89,3 +89,7 @@ func bars(t *Tree, a Analysis) string {
 			classes += " crit"
 		}
 		if s.Status == StatusError {
+			classes += " err"
+		}
+		label := html.EscapeString(s.Name)
+		meta := html.EscapeString(fmt.Sprintf("%s · %s", s.Kind, fmtMS(s.DurationMS())))
