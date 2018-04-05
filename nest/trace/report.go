@@ -85,3 +85,7 @@ func bars(t *Tree, a Analysis) string {
 			color = kindColors["unknown"]
 		}
 		classes := "row"
+		if crit[s.ID] {
+			classes += " crit"
+		}
+		if s.Status == StatusError {
