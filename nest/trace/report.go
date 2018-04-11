@@ -97,3 +97,7 @@ func bars(t *Tree, a Analysis) string {
 			`<div class="%s" style="padding-left:%dpx"><div class="lbl" title="%s">%s`+
 				`<span class="sub">%s</span></div><div class="track"><div class="bar" `+
 				`style="left:%.3f%%;width:%.3f%%;background:%s"></div></div></div>`+"\n",
+			classes, n.Depth*16, label, label, meta, left, width, color)
+	})
+	return sb.String()
+}
