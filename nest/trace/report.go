@@ -101,3 +101,7 @@ func bars(t *Tree, a Analysis) string {
 	})
 	return sb.String()
 }
+
+func legend() string {
+	order := []string{"root", "llm", "tool", "retrieval", "chain", "event"}
+	var sb strings.Builder
