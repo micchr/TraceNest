@@ -105,3 +105,7 @@ func bars(t *Tree, a Analysis) string {
 func legend() string {
 	order := []string{"root", "llm", "tool", "retrieval", "chain", "event"}
 	var sb strings.Builder
+	for _, k := range order {
+		fmt.Fprintf(&sb, `<span class="chip"><i style="background:%s"></i>%s</span>`, kindColors[k], k)
+	}
+	return sb.String()
