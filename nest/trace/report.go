@@ -113,3 +113,7 @@ func legend() string {
 
 func cards(a Analysis) string {
 	pairs := [][2]string{
+		{"total", fmtMS(a.TotalMS)},
+		{"spans", fmt.Sprintf("%d", a.SpanCount)},
+		{"depth", fmt.Sprintf("%d", a.MaxDepth)},
+		{"critical path", fmtMS(a.CriticalPathMS)},
