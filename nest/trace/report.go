@@ -117,3 +117,7 @@ func cards(a Analysis) string {
 		{"spans", fmt.Sprintf("%d", a.SpanCount)},
 		{"depth", fmt.Sprintf("%d", a.MaxDepth)},
 		{"critical path", fmtMS(a.CriticalPathMS)},
+		{"errors", fmt.Sprintf("%d", len(a.ErrorSpanIDs))},
+		{"retry groups", fmt.Sprintf("%d", len(a.Retries))},
+	}
+	var sb strings.Builder
