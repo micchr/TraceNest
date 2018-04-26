@@ -109,3 +109,7 @@ func legend() string {
 		fmt.Fprintf(&sb, `<span class="chip"><i style="background:%s"></i>%s</span>`, kindColors[k], k)
 	}
 	return sb.String()
+}
+
+func cards(a Analysis) string {
+	pairs := [][2]string{
