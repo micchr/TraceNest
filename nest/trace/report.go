@@ -121,3 +121,7 @@ func cards(a Analysis) string {
 		{"retry groups", fmt.Sprintf("%d", len(a.Retries))},
 	}
 	var sb strings.Builder
+	for _, p := range pairs {
+		fmt.Fprintf(&sb, `<div class="card"><div class="k">%s</div><div class="v">%s</div></div>`,
+			html.EscapeString(p[0]), html.EscapeString(p[1]))
+	}
