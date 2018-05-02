@@ -129,3 +129,7 @@ func cards(a Analysis) string {
 }
 
 func retryRows(a Analysis) string {
+	if len(a.Retries) == 0 {
+		return `<tr><td colspan="4" class="muted">no retry clusters detected</td></tr>`
+	}
+	var sb strings.Builder
