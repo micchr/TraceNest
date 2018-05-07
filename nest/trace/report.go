@@ -137,3 +137,7 @@ func retryRows(a Analysis) string {
 		state := "repeated"
 		if r.Recovered {
 			state = "recovered"
+		} else if r.Errors > 0 {
+			state = "failing"
+		}
+		fmt.Fprintf(&sb, `<tr><td>%s</td><td>%d</td><td>%d</td><td>%s</td></tr>`,
