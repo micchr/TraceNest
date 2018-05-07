@@ -141,3 +141,7 @@ func retryRows(a Analysis) string {
 			state = "failing"
 		}
 		fmt.Fprintf(&sb, `<tr><td>%s</td><td>%d</td><td>%d</td><td>%s</td></tr>`,
+			html.EscapeString(r.Name), r.Attempts, r.Errors, state)
+	}
+	return sb.String()
+}
