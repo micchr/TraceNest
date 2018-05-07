@@ -133,3 +133,7 @@ func retryRows(a Analysis) string {
 		return `<tr><td colspan="4" class="muted">no retry clusters detected</td></tr>`
 	}
 	var sb strings.Builder
+	for _, r := range a.Retries {
+		state := "repeated"
+		if r.Recovered {
+			state = "recovered"
