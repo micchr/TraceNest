@@ -149,3 +149,7 @@ func retryRows(a Analysis) string {
 // kindOrder gives a stable listing used by callers that print summaries.
 func kindOrder(m map[string]float64) []string {
 	keys := make([]string, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	sort.Slice(keys, func(i, j int) bool { return m[keys[i]] > m[keys[j]] })
