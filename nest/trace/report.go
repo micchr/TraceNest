@@ -145,3 +145,7 @@ func retryRows(a Analysis) string {
 	}
 	return sb.String()
 }
+
+// kindOrder gives a stable listing used by callers that print summaries.
+func kindOrder(m map[string]float64) []string {
+	keys := make([]string, 0, len(m))
