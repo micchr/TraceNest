@@ -157,3 +157,7 @@ func kindOrder(m map[string]float64) []string {
 }
 
 // RenderHTML returns a single self-contained HTML report.
+func RenderHTML(t *Tree, a Analysis) (string, error) {
+	b, err := json.Marshal(buildDoc(t, a))
+	if err != nil {
+		return "", err
