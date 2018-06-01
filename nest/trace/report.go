@@ -153,3 +153,7 @@ func kindOrder(m map[string]float64) []string {
 		keys = append(keys, k)
 	}
 	sort.Slice(keys, func(i, j int) bool { return m[keys[i]] > m[keys[j]] })
+	return keys
+}
+
+// RenderHTML returns a single self-contained HTML report.
