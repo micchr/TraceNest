@@ -169,3 +169,7 @@ func RenderHTML(t *Tree, a Analysis) (string, error) {
 	page = strings.ReplaceAll(page, "{{BARS}}", bars(t, a))
 	page = strings.ReplaceAll(page, "{{RETRIES}}", retryRows(a))
 	page = strings.ReplaceAll(page, "{{PAYLOAD}}", payload)
+	return page, nil
+}
+
+const htmlTemplate = `<!doctype html>
