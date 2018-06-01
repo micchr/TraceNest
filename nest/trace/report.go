@@ -165,3 +165,7 @@ func RenderHTML(t *Tree, a Analysis) (string, error) {
 	payload := strings.ReplaceAll(string(b), "</", "<\\/")
 	page := htmlTemplate
 	page = strings.ReplaceAll(page, "{{CARDS}}", cards(a))
+	page = strings.ReplaceAll(page, "{{LEGEND}}", legend())
+	page = strings.ReplaceAll(page, "{{BARS}}", bars(t, a))
+	page = strings.ReplaceAll(page, "{{RETRIES}}", retryRows(a))
+	page = strings.ReplaceAll(page, "{{PAYLOAD}}", payload)
