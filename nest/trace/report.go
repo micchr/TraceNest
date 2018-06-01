@@ -161,3 +161,7 @@ func RenderHTML(t *Tree, a Analysis) (string, error) {
 	b, err := json.Marshal(buildDoc(t, a))
 	if err != nil {
 		return "", err
+	}
+	payload := strings.ReplaceAll(string(b), "</", "<\\/")
+	page := htmlTemplate
+	page = strings.ReplaceAll(page, "{{CARDS}}", cards(a))
