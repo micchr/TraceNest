@@ -185,3 +185,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-monospace,M
 header{padding:20px 24px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#12161d,#0e1116);}
 header h1{margin:0;font-size:18px;letter-spacing:.5px;}
 header h1 span{color:var(--neon);}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 24px 60px;}
+.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:18px 0;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+.card .k{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.8px;}
