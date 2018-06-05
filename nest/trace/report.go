@@ -177,3 +177,7 @@ const htmlTemplate = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tracenest report</title>
+<style>
+:root{--bg:#0e1116;--panel:#161b22;--panel2:#1c2230;--ink:#d7e0ea;--muted:#8a94a6;--neon:#39ff14;--line:#242c38;}
+*{box-sizing:border-box;}
