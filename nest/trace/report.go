@@ -193,3 +193,7 @@ header h1 span{color:var(--neon);}
 h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin:26px 0 10px;}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px;}
 .chip{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:12px;}
+.chip i{width:10px;height:10px;border-radius:2px;display:inline-block;}
+.waterfall{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;}
+.row{display:grid;grid-template-columns:280px 1fr;gap:12px;align-items:center;padding:3px 6px;border-radius:6px;}
+.row:hover{background:var(--panel2);}
