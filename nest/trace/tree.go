@@ -16,3 +16,6 @@ type Tree struct {
 	SyntheticRoot string
 }
 
+const syntheticID = "__tracenest_root__"
+
+// Walk visits nodes depth-first, pre-order.
