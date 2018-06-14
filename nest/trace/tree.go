@@ -13,3 +13,6 @@ type Node struct {
 type Tree struct {
 	Roots         []*Node
 	Index         map[string]*Node
+	SyntheticRoot string
+}
+
