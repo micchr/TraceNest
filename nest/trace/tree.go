@@ -32,3 +32,6 @@ func (t *Tree) Walk(fn func(*Node)) {
 	}
 }
 
+// Len returns the number of indexed spans.
+func (t *Tree) Len() int { return len(t.Index) }
+
