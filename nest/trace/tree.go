@@ -19,3 +19,7 @@ type Tree struct {
 const syntheticID = "__tracenest_root__"
 
 // Walk visits nodes depth-first, pre-order.
+func (t *Tree) Walk(fn func(*Node)) {
+	var visit func(*Node)
+	visit = func(n *Node) {
+		fn(n)
