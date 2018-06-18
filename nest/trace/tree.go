@@ -23,3 +23,6 @@ func (t *Tree) Walk(fn func(*Node)) {
 	var visit func(*Node)
 	visit = func(n *Node) {
 		fn(n)
+		for _, c := range n.Children {
+			visit(c)
+		}
