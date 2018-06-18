@@ -29,3 +29,6 @@ func (t *Tree) Walk(fn func(*Node)) {
 	}
 	for _, r := range t.Roots {
 		visit(r)
+	}
+}
+
