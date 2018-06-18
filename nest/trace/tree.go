@@ -35,3 +35,6 @@ func (t *Tree) Walk(fn func(*Node)) {
 // Len returns the number of indexed spans.
 func (t *Tree) Len() int { return len(t.Index) }
 
+// MaxDepth returns the deepest depth in the tree.
+func (t *Tree) MaxDepth() int {
+	max := 0
