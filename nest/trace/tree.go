@@ -47,3 +47,6 @@ func (t *Tree) MaxDepth() int {
 }
 
 // BuildTree assembles a Tree from a flat span slice, reattaching orphans
+// and breaking cycles so the result is always a DAG with a single entry.
+func BuildTree(spans []Span) *Tree {
+	nodes := make(map[string]*Node, len(spans))
