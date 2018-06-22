@@ -38,3 +38,6 @@ func (t *Tree) Len() int { return len(t.Index) }
 // MaxDepth returns the deepest depth in the tree.
 func (t *Tree) MaxDepth() int {
 	max := 0
+	t.Walk(func(n *Node) {
+		if n.Depth > max {
+			max = n.Depth
