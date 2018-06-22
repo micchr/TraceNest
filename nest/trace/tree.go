@@ -41,3 +41,6 @@ func (t *Tree) MaxDepth() int {
 	t.Walk(func(n *Node) {
 		if n.Depth > max {
 			max = n.Depth
+		}
+	})
+	return max
