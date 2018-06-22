@@ -44,3 +44,6 @@ func (t *Tree) MaxDepth() int {
 		}
 	})
 	return max
+}
+
+// BuildTree assembles a Tree from a flat span slice, reattaching orphans
