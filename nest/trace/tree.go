@@ -50,3 +50,6 @@ func (t *Tree) MaxDepth() int {
 // and breaking cycles so the result is always a DAG with a single entry.
 func BuildTree(spans []Span) *Tree {
 	nodes := make(map[string]*Node, len(spans))
+	order := make([]string, 0, len(spans))
+	for _, s := range spans {
+		if _, exists := nodes[s.ID]; !exists {
