@@ -60,3 +60,6 @@ func BuildTree(spans []Span) *Tree {
 
 	var roots []*Node
 	for _, id := range order {
+		n := nodes[id]
+		p := n.Span.ParentID
+		if p != "" && p != n.Span.ID {
