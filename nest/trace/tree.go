@@ -56,3 +56,7 @@ func BuildTree(spans []Span) *Tree {
 			order = append(order, s.ID)
 		}
 		nodes[s.ID] = &Node{Span: s}
+	}
+
+	var roots []*Node
+	for _, id := range order {
