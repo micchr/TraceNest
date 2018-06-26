@@ -53,3 +53,6 @@ func BuildTree(spans []Span) *Tree {
 	order := make([]string, 0, len(spans))
 	for _, s := range spans {
 		if _, exists := nodes[s.ID]; !exists {
+			order = append(order, s.ID)
+		}
+		nodes[s.ID] = &Node{Span: s}
