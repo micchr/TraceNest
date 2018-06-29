@@ -63,3 +63,6 @@ func BuildTree(spans []Span) *Tree {
 		n := nodes[id]
 		p := n.Span.ParentID
 		if p != "" && p != n.Span.ID {
+			if parent, ok := nodes[p]; ok {
+				parent.Children = append(parent.Children, n)
+				continue
