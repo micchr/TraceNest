@@ -66,3 +66,6 @@ func BuildTree(spans []Span) *Tree {
 			if parent, ok := nodes[p]; ok {
 				parent.Children = append(parent.Children, n)
 				continue
+			}
+		}
+		roots = append(roots, n)
