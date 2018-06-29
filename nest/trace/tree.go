@@ -69,3 +69,6 @@ func BuildTree(spans []Span) *Tree {
 			}
 		}
 		roots = append(roots, n)
+	}
+
+	roots = breakCycles(nodes, roots)
