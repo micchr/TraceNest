@@ -72,3 +72,6 @@ func BuildTree(spans []Span) *Tree {
 	}
 
 	roots = breakCycles(nodes, roots)
+
+	for _, n := range nodes {
+		sort.SliceStable(n.Children, func(i, j int) bool {
