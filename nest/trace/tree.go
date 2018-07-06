@@ -81,3 +81,6 @@ func BuildTree(spans []Span) *Tree {
 			return n.Children[i].Span.ID < n.Children[j].Span.ID
 		})
 	}
+	sort.SliceStable(roots, func(i, j int) bool {
+		if roots[i].Span.StartMS != roots[j].Span.StartMS {
+			return roots[i].Span.StartMS < roots[j].Span.StartMS
