@@ -78,3 +78,6 @@ func BuildTree(spans []Span) *Tree {
 			if n.Children[i].Span.StartMS != n.Children[j].Span.StartMS {
 				return n.Children[i].Span.StartMS < n.Children[j].Span.StartMS
 			}
+			return n.Children[i].Span.ID < n.Children[j].Span.ID
+		})
+	}
