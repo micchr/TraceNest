@@ -87,3 +87,6 @@ func BuildTree(spans []Span) *Tree {
 		}
 		return roots[i].Span.ID < roots[j].Span.ID
 	})
+
+	syn := ""
+	if len(roots) > 1 {
