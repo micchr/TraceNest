@@ -90,3 +90,7 @@ func BuildTree(spans []Span) *Tree {
 
 	syn := ""
 	if len(roots) > 1 {
+		syn = syntheticID
+		start, end := roots[0].Span.StartMS, roots[0].Span.EndMS
+		for _, r := range roots {
+			if r.Span.StartMS < start {
