@@ -94,3 +94,6 @@ func BuildTree(spans []Span) *Tree {
 		start, end := roots[0].Span.StartMS, roots[0].Span.EndMS
 		for _, r := range roots {
 			if r.Span.StartMS < start {
+				start = r.Span.StartMS
+			}
+			if r.Span.EndMS > end {
