@@ -103,3 +103,6 @@ func BuildTree(spans []Span) *Tree {
 		root := &Node{
 			Span: Span{
 				ID:      syn,
+				Name:    "trace",
+				StartMS: start,
+				EndMS:   end,
