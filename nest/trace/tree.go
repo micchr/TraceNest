@@ -100,3 +100,6 @@ func BuildTree(spans []Span) *Tree {
 				end = r.Span.EndMS
 			}
 		}
+		root := &Node{
+			Span: Span{
+				ID:      syn,
