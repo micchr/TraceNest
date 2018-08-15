@@ -106,3 +106,6 @@ func BuildTree(spans []Span) *Tree {
 				Name:    "trace",
 				StartMS: start,
 				EndMS:   end,
+				Kind:    KindRoot,
+				Status:  StatusOK,
+				Attributes: map[string]interface{}{
