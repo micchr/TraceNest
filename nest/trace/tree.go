@@ -109,3 +109,6 @@ func BuildTree(spans []Span) *Tree {
 				Kind:    KindRoot,
 				Status:  StatusOK,
 				Attributes: map[string]interface{}{
+					"synthetic":  true,
+					"root_count": len(roots),
+				},
