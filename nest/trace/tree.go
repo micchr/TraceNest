@@ -112,3 +112,6 @@ func BuildTree(spans []Span) *Tree {
 					"synthetic":  true,
 					"root_count": len(roots),
 				},
+			},
+			Children: roots,
+		}
