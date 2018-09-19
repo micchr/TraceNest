@@ -115,3 +115,6 @@ func BuildTree(spans []Span) *Tree {
 			},
 			Children: roots,
 		}
+		nodes[syn] = root
+		roots = []*Node{root}
+	}
