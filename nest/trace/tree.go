@@ -118,3 +118,6 @@ func BuildTree(spans []Span) *Tree {
 		nodes[syn] = root
 		roots = []*Node{root}
 	}
+
+	assignDepth(roots, 0)
+	return &Tree{Roots: roots, Index: nodes, SyntheticRoot: syn}
