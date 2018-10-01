@@ -121,3 +121,6 @@ func BuildTree(spans []Span) *Tree {
 
 	assignDepth(roots, 0)
 	return &Tree{Roots: roots, Index: nodes, SyntheticRoot: syn}
+}
+
+func assignDepth(nodes []*Node, depth int) {
