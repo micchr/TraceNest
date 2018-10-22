@@ -124,3 +124,6 @@ func BuildTree(spans []Span) *Tree {
 }
 
 func assignDepth(nodes []*Node, depth int) {
+	for _, n := range nodes {
+		n.Depth = depth
+		assignDepth(n.Children, depth+1)
