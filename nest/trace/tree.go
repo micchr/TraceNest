@@ -127,3 +127,7 @@ func assignDepth(nodes []*Node, depth int) {
 	for _, n := range nodes {
 		n.Depth = depth
 		assignDepth(n.Children, depth+1)
+	}
+}
+
+func breakCycles(nodes map[string]*Node, roots []*Node) []*Node {
