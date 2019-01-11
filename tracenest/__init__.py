@@ -8,3 +8,4 @@ self-contained HTML/JSON report.
 Public surface:
     load_spans        -- parse a trace file (JSON, JSONL, or NDJSON) into Span objects
     build_tree        -- assemble a SpanTree from a flat span list
+    analyze           -- produce a TraceAnalysis (critical path, timings, retries)
