@@ -6,3 +6,4 @@ path and timing summaries, detects retry clusters, and renders a
 self-contained HTML/JSON report.
 
 Public surface:
+    load_spans        -- parse a trace file (JSON, JSONL, or NDJSON) into Span objects
