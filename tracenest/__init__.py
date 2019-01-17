@@ -11,3 +11,4 @@ Public surface:
     analyze           -- produce a TraceAnalysis (critical path, timings, retries)
     render_html       -- emit a single self-contained HTML report
     render_json       -- emit a normalized JSON report
+"""
