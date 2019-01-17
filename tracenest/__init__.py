@@ -10,3 +10,4 @@ Public surface:
     build_tree        -- assemble a SpanTree from a flat span list
     analyze           -- produce a TraceAnalysis (critical path, timings, retries)
     render_html       -- emit a single self-contained HTML report
+    render_json       -- emit a normalized JSON report
