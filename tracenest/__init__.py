@@ -13,3 +13,4 @@ Public surface:
     render_json       -- emit a normalized JSON report
 """
 
+from .model import Span, SpanKind, SpanStatus
