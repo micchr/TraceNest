@@ -12,3 +12,4 @@ Public surface:
     render_html       -- emit a single self-contained HTML report
     render_json       -- emit a normalized JSON report
 """
+
