@@ -14,3 +14,4 @@ Public surface:
 """
 
 from .model import Span, SpanKind, SpanStatus
+from .parser import load_spans, parse_spans, ParseError
