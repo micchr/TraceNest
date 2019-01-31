@@ -18,3 +18,4 @@ from .parser import load_spans, parse_spans, ParseError
 from .tree import SpanTree, build_tree
 from .analyze import TraceAnalysis, analyze
 from .report import render_html, render_json
+
