@@ -19,3 +19,4 @@ from .tree import SpanTree, build_tree
 from .analyze import TraceAnalysis, analyze
 from .report import render_html, render_json
 
+__version__ = "1.0.0"
