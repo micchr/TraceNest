@@ -25,3 +25,4 @@ __all__ = [
     "Span",
     "SpanKind",
     "SpanStatus",
+    "load_spans",
