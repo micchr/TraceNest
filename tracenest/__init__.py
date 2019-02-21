@@ -26,3 +26,4 @@ __all__ = [
     "SpanKind",
     "SpanStatus",
     "load_spans",
+    "parse_spans",
