@@ -28,3 +28,4 @@ __all__ = [
     "load_spans",
     "parse_spans",
     "ParseError",
+    "SpanTree",
