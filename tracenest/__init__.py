@@ -27,3 +27,4 @@ __all__ = [
     "SpanStatus",
     "load_spans",
     "parse_spans",
+    "ParseError",
