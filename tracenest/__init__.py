@@ -30,3 +30,4 @@ __all__ = [
     "ParseError",
     "SpanTree",
     "build_tree",
+    "TraceAnalysis",
