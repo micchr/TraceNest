@@ -25,3 +25,8 @@ from .tree import SpanTree, TreeNode
 
 @dataclass
 class RetryCluster:
+    """A group of same-named sibling attempts."""
+
+    name: str
+    parent_id: Optional[str]
+    attempts: int
