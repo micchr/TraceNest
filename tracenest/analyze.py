@@ -21,3 +21,7 @@ from typing import Dict, List, Optional, Tuple
 
 from .model import Span, SpanKind, SpanStatus
 from .tree import SpanTree, TreeNode
+
+
+@dataclass
+class RetryCluster:
