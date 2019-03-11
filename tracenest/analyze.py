@@ -35,3 +35,8 @@ class RetryCluster:
     recovered: bool  # ended OK after at least one error
 
     def to_dict(self) -> Dict[str, object]:
+        return {
+            "name": self.name,
+            "parent_id": self.parent_id,
+            "attempts": self.attempts,
+            "errors": self.errors,
