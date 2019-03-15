@@ -40,3 +40,8 @@ class RetryCluster:
             "parent_id": self.parent_id,
             "attempts": self.attempts,
             "errors": self.errors,
+            "span_ids": self.span_ids,
+            "recovered": self.recovered,
+        }
+
+
