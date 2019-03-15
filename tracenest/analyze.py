@@ -45,3 +45,8 @@ class RetryCluster:
         }
 
 
+@dataclass
+class TraceAnalysis:
+    """The full result of analyzing a trace."""
+
+    total_ms: float
