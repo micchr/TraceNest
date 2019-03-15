@@ -50,3 +50,8 @@ class TraceAnalysis:
     """The full result of analyzing a trace."""
 
     total_ms: float
+    span_count: int
+    max_depth: int
+    kind_ms: Dict[str, float]
+    kind_counts: Dict[str, int]
+    status_counts: Dict[str, int]
