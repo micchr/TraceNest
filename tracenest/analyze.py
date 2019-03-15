@@ -59,3 +59,8 @@ class TraceAnalysis:
     critical_path: List[str]
     critical_path_ms: float
     retries: List[RetryCluster] = field(default_factory=list)
+    error_span_ids: List[str] = field(default_factory=list)
+
+    def to_dict(self) -> Dict[str, object]:
+        return {
+            "total_ms": self.total_ms,
