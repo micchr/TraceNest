@@ -55,3 +55,7 @@ class TraceAnalysis:
     kind_ms: Dict[str, float]
     kind_counts: Dict[str, int]
     status_counts: Dict[str, int]
+    self_ms: Dict[str, float]
+    critical_path: List[str]
+    critical_path_ms: float
+    retries: List[RetryCluster] = field(default_factory=list)
