@@ -64,3 +64,8 @@ class TraceAnalysis:
     def to_dict(self) -> Dict[str, object]:
         return {
             "total_ms": self.total_ms,
+            "span_count": self.span_count,
+            "max_depth": self.max_depth,
+            "kind_ms": self.kind_ms,
+            "kind_counts": self.kind_counts,
+            "status_counts": self.status_counts,
