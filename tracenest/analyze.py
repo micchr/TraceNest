@@ -69,3 +69,8 @@ class TraceAnalysis:
             "kind_ms": self.kind_ms,
             "kind_counts": self.kind_counts,
             "status_counts": self.status_counts,
+            "self_ms": self.self_ms,
+            "critical_path": self.critical_path,
+            "critical_path_ms": self.critical_path_ms,
+            "retries": [r.to_dict() for r in self.retries],
+            "error_span_ids": self.error_span_ids,
