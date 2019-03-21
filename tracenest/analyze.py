@@ -74,3 +74,8 @@ class TraceAnalysis:
             "critical_path_ms": self.critical_path_ms,
             "retries": [r.to_dict() for r in self.retries],
             "error_span_ids": self.error_span_ids,
+        }
+
+
+def _self_time(node: TreeNode) -> float:
+    """Duration of a span minus the union of its children's intervals."""
