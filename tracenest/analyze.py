@@ -79,3 +79,8 @@ class TraceAnalysis:
 
 def _self_time(node: TreeNode) -> float:
     """Duration of a span minus the union of its children's intervals."""
+    total = node.span.duration_ms
+    if not node.children:
+        return total
+    intervals = sorted(
+        (c.span.start_ms, c.span.end_ms) for c in node.children
