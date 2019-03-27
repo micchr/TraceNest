@@ -84,3 +84,8 @@ def _self_time(node: TreeNode) -> float:
         return total
     intervals = sorted(
         (c.span.start_ms, c.span.end_ms) for c in node.children
+    )
+    merged: List[Tuple[float, float]] = []
+    for start, end in intervals:
+        if merged and start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
