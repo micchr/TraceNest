@@ -93,3 +93,8 @@ def _self_time(node: TreeNode) -> float:
             merged.append((start, end))
     covered = sum(e - s for s, e in merged)
     return max(0.0, total - covered)
+
+
+def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
+    """Chain from a root to a leaf maximizing cumulative self time."""
+    best_cost: Dict[str, float] = {}
