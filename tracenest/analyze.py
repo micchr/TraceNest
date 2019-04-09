@@ -98,3 +98,8 @@ def _self_time(node: TreeNode) -> float:
 def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
     """Chain from a root to a leaf maximizing cumulative self time."""
     best_cost: Dict[str, float] = {}
+    best_next: Dict[str, Optional[str]] = {}
+
+    # Post-order so children are solved before parents.
+    order: List[TreeNode] = []
+
