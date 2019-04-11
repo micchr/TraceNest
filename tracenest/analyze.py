@@ -103,3 +103,8 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
     # Post-order so children are solved before parents.
     order: List[TreeNode] = []
 
+    def collect(node: TreeNode) -> None:
+        for child in node.children:
+            collect(child)
+        order.append(node)
+
