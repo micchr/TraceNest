@@ -108,3 +108,8 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
             collect(child)
         order.append(node)
 
+    for root in tree.roots:
+        collect(root)
+
+    self_cache = {node.span_id: _self_time(node) for node in tree}
+
