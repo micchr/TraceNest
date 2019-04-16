@@ -113,3 +113,8 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
 
     self_cache = {node.span_id: _self_time(node) for node in tree}
 
+    for node in order:
+        own = self_cache[node.span_id]
+        if not node.children:
+            best_cost[node.span_id] = own
+            best_next[node.span_id] = None
