@@ -123,3 +123,7 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
         best_cost[node.span_id] = own + best_cost[best_child.span_id]
         best_next[node.span_id] = best_child.span_id
 
+    if not tree.roots:
+        return [], 0.0
+
+    start = max(tree.roots, key=lambda r: best_cost[r.span_id])
