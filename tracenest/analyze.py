@@ -137,3 +137,8 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
 
 
 def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
+    """Find sibling attempts sharing a name (retry signature)."""
+    clusters: List[RetryCluster] = []
+    # Group children by (parent_id, name).
+    parents: List[TreeNode] = [n for n in tree if n.children]
+    for parent in parents:
