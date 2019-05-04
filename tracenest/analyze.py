@@ -132,3 +132,8 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
     total = best_cost[start.span_id]
     while cursor is not None:
         path.append(cursor)
+        cursor = best_next[cursor]
+    return path, total
+
+
+def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
