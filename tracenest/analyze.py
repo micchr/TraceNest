@@ -127,3 +127,8 @@ def _critical_path(tree: SpanTree) -> Tuple[List[str], float]:
         return [], 0.0
 
     start = max(tree.roots, key=lambda r: best_cost[r.span_id])
+    path: List[str] = []
+    cursor: Optional[str] = start.span_id
+    total = best_cost[start.span_id]
+    while cursor is not None:
+        path.append(cursor)
