@@ -147,3 +147,8 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
             buckets[child.span.name].append(child)
         for name, group in buckets.items():
             # Also honor explicit retry markers in attributes.
+            marked = any(
+                _is_marked_retry(c.span) for c in group
+            )
+            if len(group) < 2 and not marked:
+                continue
