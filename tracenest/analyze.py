@@ -142,3 +142,8 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
     # Group children by (parent_id, name).
     parents: List[TreeNode] = [n for n in tree if n.children]
     for parent in parents:
+        buckets: Dict[str, List[TreeNode]] = defaultdict(list)
+        for child in parent.children:
+            buckets[child.span.name].append(child)
+        for name, group in buckets.items():
+            # Also honor explicit retry markers in attributes.
