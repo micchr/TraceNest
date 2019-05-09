@@ -152,3 +152,8 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
             )
             if len(group) < 2 and not marked:
                 continue
+            group.sort(key=lambda c: c.span.start_ms)
+            errors = sum(1 for c in group if c.span.status is SpanStatus.ERROR)
+            recovered = errors > 0 and group[-1].span.status is SpanStatus.OK
+            clusters.append(
+                RetryCluster(
