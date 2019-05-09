@@ -161,3 +161,8 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
                     parent_id=parent.span_id,
                     attempts=len(group),
                     errors=errors,
+                    span_ids=[c.span_id for c in group],
+                    recovered=recovered,
+                )
+            )
+    clusters.sort(key=lambda c: (-c.attempts, c.name))
