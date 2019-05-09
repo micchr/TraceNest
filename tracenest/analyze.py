@@ -157,3 +157,7 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
             recovered = errors > 0 and group[-1].span.status is SpanStatus.OK
             clusters.append(
                 RetryCluster(
+                    name=name,
+                    parent_id=parent.span_id,
+                    attempts=len(group),
+                    errors=errors,
