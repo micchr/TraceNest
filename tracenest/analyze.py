@@ -166,3 +166,8 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
                 )
             )
     clusters.sort(key=lambda c: (-c.attempts, c.name))
+    return clusters
+
+
+def _is_marked_retry(span: Span) -> bool:
+    for key in ("retry", "retries", "attempt", "retry_count"):
