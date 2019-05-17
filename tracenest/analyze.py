@@ -171,3 +171,8 @@ def _detect_retries(tree: SpanTree) -> List[RetryCluster]:
 
 def _is_marked_retry(span: Span) -> bool:
     for key in ("retry", "retries", "attempt", "retry_count"):
+        val = span.attr(key)
+        if isinstance(val, bool) and val:
+            return True
+        if isinstance(val, (int, float)) and val and val > 0:
+            return True
