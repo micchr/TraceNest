@@ -176,3 +176,8 @@ def _is_marked_retry(span: Span) -> bool:
             return True
         if isinstance(val, (int, float)) and val and val > 0:
             return True
+        if isinstance(val, str) and val.strip().lower() in {"true", "yes", "retry"}:
+            return True
+    return False
+
+
