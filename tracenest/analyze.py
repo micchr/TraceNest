@@ -181,3 +181,8 @@ def _is_marked_retry(span: Span) -> bool:
     return False
 
 
+def analyze(tree: SpanTree) -> TraceAnalysis:
+    """Compute the full analysis for a span tree."""
+    spans = tree.spans()
+    kind_ms: Dict[str, float] = defaultdict(float)
+    kind_counts: Dict[str, int] = defaultdict(int)
