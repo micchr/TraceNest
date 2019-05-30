@@ -186,3 +186,8 @@ def analyze(tree: SpanTree) -> TraceAnalysis:
     spans = tree.spans()
     kind_ms: Dict[str, float] = defaultdict(float)
     kind_counts: Dict[str, int] = defaultdict(int)
+    status_counts: Dict[str, int] = defaultdict(int)
+    self_ms: Dict[str, float] = defaultdict(float)
+    error_ids: List[str] = []
+
+    for node in tree:
