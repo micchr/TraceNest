@@ -191,3 +191,7 @@ def analyze(tree: SpanTree) -> TraceAnalysis:
     error_ids: List[str] = []
 
     for node in tree:
+        span = node.span
+        if span.span_id == tree.synthetic_root_id:
+            continue
+        kind_ms[span.kind.value] += span.duration_ms
