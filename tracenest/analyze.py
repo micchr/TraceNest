@@ -200,3 +200,8 @@ def analyze(tree: SpanTree) -> TraceAnalysis:
         self_ms[span.kind.value] += _self_time(node)
         if span.status is SpanStatus.ERROR:
             error_ids.append(span.span_id)
+
+    if tree.roots:
+        total = max(r.span.end_ms for r in tree.roots) - min(
+            r.span.start_ms for r in tree.roots
+        )
