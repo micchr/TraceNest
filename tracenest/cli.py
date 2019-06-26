@@ -14,3 +14,7 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+from typing import List, Optional
+
+from .analyze import analyze
+from .parser import ParseError, load_spans, parse_spans
