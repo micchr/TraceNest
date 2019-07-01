@@ -18,3 +18,6 @@ from typing import List, Optional
 
 from .analyze import analyze
 from .parser import ParseError, load_spans, parse_spans
+from .report import render_html, render_json
+from .tree import SpanTree, build_tree
+
