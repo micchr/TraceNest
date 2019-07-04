@@ -24,3 +24,6 @@ from .tree import SpanTree, build_tree
 
 def _read(source: str) -> SpanTree:
     if source == "-":
+        spans = parse_spans(sys.stdin.read())
+    else:
+        spans = load_spans(source)
