@@ -27,3 +27,6 @@ def _read(source: str) -> SpanTree:
         spans = parse_spans(sys.stdin.read())
     else:
         spans = load_spans(source)
+    return build_tree(spans)
+
+
