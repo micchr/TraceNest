@@ -30,3 +30,6 @@ def _read(source: str) -> SpanTree:
     return build_tree(spans)
 
 
+def _cmd_analyze(args: argparse.Namespace) -> int:
+    tree = _read(args.trace)
+    result = analyze(tree)
