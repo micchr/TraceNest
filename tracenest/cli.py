@@ -40,3 +40,6 @@ def _cmd_analyze(args: argparse.Namespace) -> int:
     return 0
 
 
+def _text_summary(result) -> str:
+    lines: List[str] = []
+    lines.append(f"spans        : {result.span_count}")
