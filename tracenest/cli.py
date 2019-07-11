@@ -36,3 +36,7 @@ def _cmd_analyze(args: argparse.Namespace) -> int:
     if args.json:
         print(render_json(tree, result))
         return 0
+    print(_text_summary(result))
+    return 0
+
+
