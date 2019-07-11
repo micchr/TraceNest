@@ -33,3 +33,6 @@ def _read(source: str) -> SpanTree:
 def _cmd_analyze(args: argparse.Namespace) -> int:
     tree = _read(args.trace)
     result = analyze(tree)
+    if args.json:
+        print(render_json(tree, result))
+        return 0
