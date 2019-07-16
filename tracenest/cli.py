@@ -43,3 +43,6 @@ def _cmd_analyze(args: argparse.Namespace) -> int:
 def _text_summary(result) -> str:
     lines: List[str] = []
     lines.append(f"spans        : {result.span_count}")
+    lines.append(f"total        : {result.total_ms:.1f} ms")
+    lines.append(f"max depth    : {result.max_depth}")
+    lines.append(f"critical path: {result.critical_path_ms:.1f} ms "
