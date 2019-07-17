@@ -46,3 +46,6 @@ def _text_summary(result) -> str:
     lines.append(f"total        : {result.total_ms:.1f} ms")
     lines.append(f"max depth    : {result.max_depth}")
     lines.append(f"critical path: {result.critical_path_ms:.1f} ms "
+                 f"({len(result.critical_path)} spans)")
+    lines.append("")
+    lines.append("by kind:")
