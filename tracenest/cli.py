@@ -49,3 +49,6 @@ def _text_summary(result) -> str:
                  f"({len(result.critical_path)} spans)")
     lines.append("")
     lines.append("by kind:")
+    for kind, ms in sorted(result.kind_ms.items(), key=lambda kv: -kv[1]):
+        count = result.kind_counts.get(kind, 0)
+        lines.append(f"  {kind:<10} {ms:>10.1f} ms  ({count})")
