@@ -55,3 +55,6 @@ def _text_summary(result) -> str:
     lines.append("")
     lines.append("status:")
     for status, count in sorted(result.status_counts.items()):
+        lines.append(f"  {status:<10} {count}")
+    if result.retries:
+        lines.append("")
