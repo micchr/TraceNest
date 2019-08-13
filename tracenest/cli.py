@@ -71,3 +71,6 @@ def _cmd_tree(args: argparse.Namespace) -> int:
         if node.span_id == tree.synthetic_root_id:
             marker = "*"
         else:
+            marker = {"error": "x", "ok": "+", "cancelled": "~"}.get(
+                node.span.status.value, " "
+            )
