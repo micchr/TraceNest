@@ -58,3 +58,7 @@ def _text_summary(result) -> str:
         lines.append(f"  {status:<10} {count}")
     if result.retries:
         lines.append("")
+        lines.append("retries:")
+        for r in result.retries:
+            tag = "recovered" if r.recovered else ("failing" if r.errors else "repeated")
+            lines.append(f"  {r.name:<20} attempts={r.attempts} errors={r.errors} [{tag}]")
