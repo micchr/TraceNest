@@ -74,3 +74,6 @@ def _cmd_tree(args: argparse.Namespace) -> int:
             marker = {"error": "x", "ok": "+", "cancelled": "~"}.get(
                 node.span.status.value, " "
             )
+        indent = "  " * node.depth
+        dur = node.span.duration_ms
+        print(f"{marker} {indent}{node.span.name} "
