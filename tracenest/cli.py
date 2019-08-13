@@ -65,3 +65,6 @@ def _text_summary(result) -> str:
     return "\n".join(lines)
 
 
+def _cmd_tree(args: argparse.Namespace) -> int:
+    tree = _read(args.trace)
+    for node in tree:
