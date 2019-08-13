@@ -68,3 +68,6 @@ def _text_summary(result) -> str:
 def _cmd_tree(args: argparse.Namespace) -> int:
     tree = _read(args.trace)
     for node in tree:
+        if node.span_id == tree.synthetic_root_id:
+            marker = "*"
+        else:
