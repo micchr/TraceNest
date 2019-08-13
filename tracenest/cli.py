@@ -77,3 +77,6 @@ def _cmd_tree(args: argparse.Namespace) -> int:
         indent = "  " * node.depth
         dur = node.span.duration_ms
         print(f"{marker} {indent}{node.span.name} "
+              f"[{node.span.kind.value}] {dur:.1f}ms")
+    return 0
+
