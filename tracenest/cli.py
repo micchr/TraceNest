@@ -80,3 +80,7 @@ def _cmd_tree(args: argparse.Namespace) -> int:
               f"[{node.span.kind.value}] {dur:.1f}ms")
     return 0
 
+
+def _cmd_report(args: argparse.Namespace) -> int:
+    tree = _read(args.trace)
+    result = analyze(tree)
