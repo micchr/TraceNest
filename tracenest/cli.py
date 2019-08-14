@@ -87,3 +87,6 @@ def _cmd_report(args: argparse.Namespace) -> int:
     if args.format == "json":
         text = render_json(tree, result)
     else:
+        text = render_html(tree, result)
+    if args.out:
+        Path(args.out).write_text(text, encoding="utf-8")
