@@ -90,3 +90,6 @@ def _cmd_report(args: argparse.Namespace) -> int:
         text = render_html(tree, result)
     if args.out:
         Path(args.out).write_text(text, encoding="utf-8")
+        print(f"wrote {args.out} ({len(text)} bytes)")
+    else:
+        sys.stdout.write(text)
