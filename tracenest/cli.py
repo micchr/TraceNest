@@ -93,3 +93,6 @@ def _cmd_report(args: argparse.Namespace) -> int:
         print(f"wrote {args.out} ({len(text)} bytes)")
     else:
         sys.stdout.write(text)
+    return 0
+
+
