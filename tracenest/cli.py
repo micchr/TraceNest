@@ -84,3 +84,6 @@ def _cmd_tree(args: argparse.Namespace) -> int:
 def _cmd_report(args: argparse.Namespace) -> int:
     tree = _read(args.trace)
     result = analyze(tree)
+    if args.format == "json":
+        text = render_json(tree, result)
+    else:
