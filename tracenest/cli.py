@@ -99,3 +99,6 @@ def _cmd_report(args: argparse.Namespace) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="tracenest",
+        description="agent trace explorer: nest spans, find the critical path, render reports",
+    )
+    sub = parser.add_subparsers(dest="command", required=True)
