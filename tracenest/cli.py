@@ -96,3 +96,6 @@ def _cmd_report(args: argparse.Namespace) -> int:
     return 0
 
 
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="tracenest",
