@@ -106,3 +106,6 @@ def build_parser() -> argparse.ArgumentParser:
     p_an = sub.add_parser("analyze", help="print timing and retry summaries")
     p_an.add_argument("trace", help="trace file path or - for stdin")
     p_an.add_argument("--json", action="store_true", help="emit JSON instead of text")
+    p_an.set_defaults(func=_cmd_analyze)
+
+    p_tr = sub.add_parser("tree", help="print the nested span tree")
