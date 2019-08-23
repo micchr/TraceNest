@@ -102,3 +102,7 @@ def build_parser() -> argparse.ArgumentParser:
         description="agent trace explorer: nest spans, find the critical path, render reports",
     )
     sub = parser.add_subparsers(dest="command", required=True)
+
+    p_an = sub.add_parser("analyze", help="print timing and retry summaries")
+    p_an.add_argument("trace", help="trace file path or - for stdin")
+    p_an.add_argument("--json", action="store_true", help="emit JSON instead of text")
