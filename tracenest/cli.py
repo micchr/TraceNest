@@ -109,3 +109,6 @@ def build_parser() -> argparse.ArgumentParser:
     p_an.set_defaults(func=_cmd_analyze)
 
     p_tr = sub.add_parser("tree", help="print the nested span tree")
+    p_tr.add_argument("trace", help="trace file path or - for stdin")
+    p_tr.set_defaults(func=_cmd_tree)
+
