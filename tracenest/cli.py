@@ -115,3 +115,6 @@ def build_parser() -> argparse.ArgumentParser:
     p_re = sub.add_parser("report", help="render a self-contained HTML or JSON report")
     p_re.add_argument("trace", help="trace file path or - for stdin")
     p_re.add_argument("--out", help="output file (default: stdout)")
+    p_re.add_argument("--format", choices=("html", "json"), default="html")
+    p_re.set_defaults(func=_cmd_report)
+
