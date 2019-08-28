@@ -118,3 +118,6 @@ def build_parser() -> argparse.ArgumentParser:
     p_re.add_argument("--format", choices=("html", "json"), default="html")
     p_re.set_defaults(func=_cmd_report)
 
+    return parser
+
+
