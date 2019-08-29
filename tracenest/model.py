@@ -14,3 +14,6 @@ from typing import Any, Dict, Optional
 
 
 class SpanKind(str, Enum):
+    """The category of work a span represents."""
+
+    ROOT = "root"
