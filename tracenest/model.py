@@ -20,3 +20,6 @@ class SpanKind(str, Enum):
     LLM = "llm"
     TOOL = "tool"
     RETRIEVAL = "retrieval"
+    CHAIN = "chain"
+    EVENT = "event"
+    UNKNOWN = "unknown"
