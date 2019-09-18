@@ -17,3 +17,6 @@ class SpanKind(str, Enum):
     """The category of work a span represents."""
 
     ROOT = "root"
+    LLM = "llm"
+    TOOL = "tool"
+    RETRIEVAL = "retrieval"
