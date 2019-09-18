@@ -23,3 +23,6 @@ class SpanKind(str, Enum):
     CHAIN = "chain"
     EVENT = "event"
     UNKNOWN = "unknown"
+
+    @classmethod
+    def coerce(cls, value: Any) -> "SpanKind":
