@@ -26,3 +26,6 @@ class SpanKind(str, Enum):
 
     @classmethod
     def coerce(cls, value: Any) -> "SpanKind":
+        if isinstance(value, cls):
+            return value
+        if value is None:
