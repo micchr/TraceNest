@@ -29,3 +29,6 @@ class SpanKind(str, Enum):
         if isinstance(value, cls):
             return value
         if value is None:
+            return cls.UNKNOWN
+        text = str(value).strip().lower()
+        for member in cls:
