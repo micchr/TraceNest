@@ -32,3 +32,6 @@ class SpanKind(str, Enum):
             return cls.UNKNOWN
         text = str(value).strip().lower()
         for member in cls:
+            if member.value == text:
+                return member
+        # Common aliases emitted by various agent frameworks.
