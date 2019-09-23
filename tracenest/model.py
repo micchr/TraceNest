@@ -35,3 +35,6 @@ class SpanKind(str, Enum):
             if member.value == text:
                 return member
         # Common aliases emitted by various agent frameworks.
+        aliases = {
+            "model": cls.LLM,
+            "completion": cls.LLM,
