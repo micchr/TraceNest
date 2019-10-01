@@ -47,3 +47,6 @@ class SpanKind(str, Enum):
         }
         return aliases.get(text, cls.UNKNOWN)
 
+
+class SpanStatus(str, Enum):
+    """Terminal disposition of a span."""
