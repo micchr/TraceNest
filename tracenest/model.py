@@ -38,3 +38,6 @@ class SpanKind(str, Enum):
         aliases = {
             "model": cls.LLM,
             "completion": cls.LLM,
+            "generation": cls.LLM,
+            "function": cls.TOOL,
+            "action": cls.TOOL,
