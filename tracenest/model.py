@@ -50,3 +50,7 @@ class SpanKind(str, Enum):
 
 class SpanStatus(str, Enum):
     """Terminal disposition of a span."""
+
+    OK = "ok"
+    ERROR = "error"
+    CANCELLED = "cancelled"
