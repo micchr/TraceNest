@@ -44,3 +44,6 @@ class SpanKind(str, Enum):
             "search": cls.RETRIEVAL,
             "embed": cls.RETRIEVAL,
             "span": cls.EVENT,
+        }
+        return aliases.get(text, cls.UNKNOWN)
+
