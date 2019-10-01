@@ -41,3 +41,6 @@ class SpanKind(str, Enum):
             "generation": cls.LLM,
             "function": cls.TOOL,
             "action": cls.TOOL,
+            "search": cls.RETRIEVAL,
+            "embed": cls.RETRIEVAL,
+            "span": cls.EVENT,
