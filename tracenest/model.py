@@ -66,3 +66,6 @@ class SpanStatus(str, Enum):
         for member in cls:
             if member.value == text:
                 return member
+        aliases = {
+            "success": cls.OK,
+            "succeeded": cls.OK,
