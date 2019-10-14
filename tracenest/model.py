@@ -57,3 +57,6 @@ class SpanStatus(str, Enum):
     UNKNOWN = "unknown"
 
     @classmethod
+    def coerce(cls, value: Any) -> "SpanStatus":
+        if isinstance(value, cls):
+            return value
