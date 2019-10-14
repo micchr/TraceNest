@@ -54,3 +54,6 @@ class SpanStatus(str, Enum):
     OK = "ok"
     ERROR = "error"
     CANCELLED = "cancelled"
+    UNKNOWN = "unknown"
+
+    @classmethod
