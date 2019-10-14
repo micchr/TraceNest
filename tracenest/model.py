@@ -63,3 +63,6 @@ class SpanStatus(str, Enum):
         if value is None:
             return cls.UNKNOWN
         text = str(value).strip().lower()
+        for member in cls:
+            if member.value == text:
+                return member
