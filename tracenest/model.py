@@ -60,3 +60,6 @@ class SpanStatus(str, Enum):
     def coerce(cls, value: Any) -> "SpanStatus":
         if isinstance(value, cls):
             return value
+        if value is None:
+            return cls.UNKNOWN
+        text = str(value).strip().lower()
