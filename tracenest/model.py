@@ -69,3 +69,6 @@ class SpanStatus(str, Enum):
         aliases = {
             "success": cls.OK,
             "succeeded": cls.OK,
+            "completed": cls.OK,
+            "failed": cls.ERROR,
+            "failure": cls.ERROR,
