@@ -72,3 +72,6 @@ class SpanStatus(str, Enum):
             "completed": cls.OK,
             "failed": cls.ERROR,
             "failure": cls.ERROR,
+            "exception": cls.ERROR,
+            "aborted": cls.CANCELLED,
+            "canceled": cls.CANCELLED,
