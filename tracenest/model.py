@@ -78,3 +78,6 @@ class SpanStatus(str, Enum):
         }
         return aliases.get(text, cls.UNKNOWN)
 
+
+@dataclass
+class Span:
