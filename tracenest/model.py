@@ -75,3 +75,6 @@ class SpanStatus(str, Enum):
             "exception": cls.ERROR,
             "aborted": cls.CANCELLED,
             "canceled": cls.CANCELLED,
+        }
+        return aliases.get(text, cls.UNKNOWN)
+
