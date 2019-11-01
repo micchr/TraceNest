@@ -81,3 +81,6 @@ class SpanStatus(str, Enum):
 
 @dataclass
 class Span:
+    """A single timed unit of work.
+
+    Attributes
