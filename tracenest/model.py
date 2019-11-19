@@ -84,3 +84,6 @@ class Span:
     """A single timed unit of work.
 
     Attributes
+    ----------
+    span_id:
+        Unique identifier within the trace.
