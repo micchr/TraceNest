@@ -87,3 +87,6 @@ class Span:
     ----------
     span_id:
         Unique identifier within the trace.
+    name:
+        Human-readable label (tool name, model name, chain step).
+    start_ms / end_ms:
