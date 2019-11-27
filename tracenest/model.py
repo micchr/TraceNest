@@ -90,3 +90,6 @@ class Span:
     name:
         Human-readable label (tool name, model name, chain step).
     start_ms / end_ms:
+        Wall-clock offsets in milliseconds. ``end_ms >= start_ms``.
+    parent_id:
+        Identifier of the enclosing span, or ``None`` for a root.
