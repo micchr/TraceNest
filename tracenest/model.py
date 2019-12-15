@@ -93,3 +93,7 @@ class Span:
         Wall-clock offsets in milliseconds. ``end_ms >= start_ms``.
     parent_id:
         Identifier of the enclosing span, or ``None`` for a root.
+    kind / status:
+        Enumerated category and disposition.
+    attributes:
+        Arbitrary key/value bag (token counts, model name, error text,
