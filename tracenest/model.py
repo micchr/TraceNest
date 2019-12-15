@@ -97,3 +97,6 @@ class Span:
         Enumerated category and disposition.
     attributes:
         Arbitrary key/value bag (token counts, model name, error text,
+        retry markers, etc.).
+    """
+
