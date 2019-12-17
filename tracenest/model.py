@@ -109,3 +109,6 @@ class Span:
     status: SpanStatus = SpanStatus.UNKNOWN
     attributes: Dict[str, Any] = field(default_factory=dict)
 
+    @property
+    def duration_ms(self) -> float:
+        """Elapsed time of the span, never negative."""
