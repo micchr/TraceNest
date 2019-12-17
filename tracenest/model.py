@@ -106,3 +106,6 @@ class Span:
     end_ms: float
     parent_id: Optional[str] = None
     kind: SpanKind = SpanKind.UNKNOWN
+    status: SpanStatus = SpanStatus.UNKNOWN
+    attributes: Dict[str, Any] = field(default_factory=dict)
+
