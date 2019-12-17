@@ -103,3 +103,6 @@ class Span:
     span_id: str
     name: str
     start_ms: float
+    end_ms: float
+    parent_id: Optional[str] = None
+    kind: SpanKind = SpanKind.UNKNOWN
