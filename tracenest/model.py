@@ -100,3 +100,6 @@ class Span:
         retry markers, etc.).
     """
 
+    span_id: str
+    name: str
+    start_ms: float
