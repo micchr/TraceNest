@@ -112,3 +112,6 @@ class Span:
     @property
     def duration_ms(self) -> float:
         """Elapsed time of the span, never negative."""
+        return max(0.0, self.end_ms - self.start_ms)
+
+    def attr(self, key: str, default: Any = None) -> Any:
