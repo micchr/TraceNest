@@ -20,3 +20,7 @@ frameworks parse without a translation layer:
     status / state / outcome            -> status
 
 Timestamps may be given in milliseconds (numbers) or ISO-8601 strings;
+both are reduced to a millisecond float relative to the earliest span.
+"""
+
+from __future__ import annotations
