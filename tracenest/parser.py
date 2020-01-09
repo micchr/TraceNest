@@ -34,3 +34,7 @@ from .model import Span, SpanKind, SpanStatus
 
 PathLike = Union[str, Path]
 
+
+class ParseError(ValueError):
+    """Raised when a trace cannot be interpreted."""
+
