@@ -43,3 +43,8 @@ _ID_KEYS = ("span_id", "spanId", "id")
 _PARENT_KEYS = ("parent_id", "parentSpanId", "parentId", "parent")
 _NAME_KEYS = ("name", "label", "operation", "op")
 _START_KEYS = ("start_ms", "startTime", "start", "startedAt", "ts")
+_END_KEYS = ("end_ms", "endTime", "end", "endedAt")
+_DUR_KEYS = ("duration_ms", "duration", "elapsed_ms", "elapsed")
+_KIND_KEYS = ("kind", "type", "category")
+_STATUS_KEYS = ("status", "state", "outcome", "result")
+
