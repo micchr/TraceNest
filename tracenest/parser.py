@@ -38,3 +38,8 @@ PathLike = Union[str, Path]
 class ParseError(ValueError):
     """Raised when a trace cannot be interpreted."""
 
+
+_ID_KEYS = ("span_id", "spanId", "id")
+_PARENT_KEYS = ("parent_id", "parentSpanId", "parentId", "parent")
+_NAME_KEYS = ("name", "label", "operation", "op")
+_START_KEYS = ("start_ms", "startTime", "start", "startedAt", "ts")
