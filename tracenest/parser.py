@@ -48,3 +48,8 @@ _DUR_KEYS = ("duration_ms", "duration", "elapsed_ms", "elapsed")
 _KIND_KEYS = ("kind", "type", "category")
 _STATUS_KEYS = ("status", "state", "outcome", "result")
 
+_RESERVED = set(
+    _ID_KEYS + _PARENT_KEYS + _NAME_KEYS + _START_KEYS
+    + _END_KEYS + _DUR_KEYS + _KIND_KEYS + _STATUS_KEYS
+) | {"attributes", "attrs", "meta", "metadata", "tags"}
+
