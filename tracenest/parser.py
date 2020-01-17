@@ -57,3 +57,8 @@ _RESERVED = set(
 def _first(obj: Dict[str, Any], keys) -> Any:
     for key in keys:
         if key in obj and obj[key] is not None:
+            return obj[key]
+    return None
+
+
+def _to_ms(value: Any) -> Optional[float]:
