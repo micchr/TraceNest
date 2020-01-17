@@ -53,3 +53,7 @@ _RESERVED = set(
     + _END_KEYS + _DUR_KEYS + _KIND_KEYS + _STATUS_KEYS
 ) | {"attributes", "attrs", "meta", "metadata", "tags"}
 
+
+def _first(obj: Dict[str, Any], keys) -> Any:
+    for key in keys:
+        if key in obj and obj[key] is not None:
