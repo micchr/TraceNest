@@ -81,3 +81,8 @@ def _to_ms(value: Any) -> Optional[float]:
         return float(text)
     except ValueError:
         pass
+    # ISO-8601, tolerate a trailing Z.
+    try:
+        if text.endswith("Z"):
+            text = text[:-1] + "+00:00"
+        dt = datetime.fromisoformat(text)
