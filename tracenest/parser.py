@@ -62,3 +62,8 @@ def _first(obj: Dict[str, Any], keys) -> Any:
 
 
 def _to_ms(value: Any) -> Optional[float]:
+    """Reduce a timestamp to milliseconds.
+
+    Accepts numeric epoch/relative milliseconds or ISO-8601 datetime
+    strings. Returns ``None`` if the value is absent or unparseable.
+    """
