@@ -76,3 +76,8 @@ def _to_ms(value: Any) -> Optional[float]:
     text = str(value).strip()
     if not text:
         return None
+    # Numeric string.
+    try:
+        return float(text)
+    except ValueError:
+        pass
