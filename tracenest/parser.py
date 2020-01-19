@@ -86,3 +86,8 @@ def _to_ms(value: Any) -> Optional[float]:
         if text.endswith("Z"):
             text = text[:-1] + "+00:00"
         dt = datetime.fromisoformat(text)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.timestamp() * 1000.0
+    except ValueError:
+        return None
