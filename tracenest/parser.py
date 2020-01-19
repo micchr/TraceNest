@@ -67,3 +67,8 @@ def _to_ms(value: Any) -> Optional[float]:
     Accepts numeric epoch/relative milliseconds or ISO-8601 datetime
     strings. Returns ``None`` if the value is absent or unparseable.
     """
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
