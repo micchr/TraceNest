@@ -105,3 +105,8 @@ def _extract_attributes(obj: Dict[str, Any]) -> Dict[str, Any]:
             attrs.setdefault(key, value)
     return attrs
 
+
+def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
+    if not isinstance(obj, dict):
+        raise ParseError(f"span #{index} is not an object: {type(obj).__name__}")
+
