@@ -100,3 +100,8 @@ def _extract_attributes(obj: Dict[str, Any]) -> Dict[str, Any]:
         if isinstance(bag, dict):
             attrs.update(bag)
     # Fold any unreserved top-level keys into attributes.
+    for key, value in obj.items():
+        if key not in _RESERVED:
+            attrs.setdefault(key, value)
+    return attrs
+
