@@ -95,3 +95,8 @@ def _to_ms(value: Any) -> Optional[float]:
 
 def _extract_attributes(obj: Dict[str, Any]) -> Dict[str, Any]:
     attrs: Dict[str, Any] = {}
+    for bag_key in ("attributes", "attrs", "meta", "metadata", "tags"):
+        bag = obj.get(bag_key)
+        if isinstance(bag, dict):
+            attrs.update(bag)
+    # Fold any unreserved top-level keys into attributes.
