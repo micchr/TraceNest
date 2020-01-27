@@ -110,3 +110,7 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
     if not isinstance(obj, dict):
         raise ParseError(f"span #{index} is not an object: {type(obj).__name__}")
 
+    raw_id = _first(obj, _ID_KEYS)
+    span_id = str(raw_id) if raw_id is not None else f"span-{index}"
+
+    raw_parent = _first(obj, _PARENT_KEYS)
