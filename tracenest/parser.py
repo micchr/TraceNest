@@ -91,3 +91,7 @@ def _to_ms(value: Any) -> Optional[float]:
         return dt.timestamp() * 1000.0
     except ValueError:
         return None
+
+
+def _extract_attributes(obj: Dict[str, Any]) -> Dict[str, Any]:
+    attrs: Dict[str, Any] = {}
