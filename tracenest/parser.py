@@ -114,3 +114,8 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
     span_id = str(raw_id) if raw_id is not None else f"span-{index}"
 
     raw_parent = _first(obj, _PARENT_KEYS)
+    parent_id = str(raw_parent) if raw_parent is not None else None
+
+    name = _first(obj, _NAME_KEYS)
+    name = str(name) if name is not None else span_id
+
