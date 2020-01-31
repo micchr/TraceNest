@@ -129,3 +129,7 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
         if dur is not None:
             end = start + dur
         else:
+            end = start
+    if end < start:
+        end = start
+
