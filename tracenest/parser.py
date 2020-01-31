@@ -124,3 +124,8 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
     dur = _to_ms(_first(obj, _DUR_KEYS))
 
     if start is None:
+        raise ParseError(f"span '{span_id}' is missing a start timestamp")
+    if end is None:
+        if dur is not None:
+            end = start + dur
+        else:
