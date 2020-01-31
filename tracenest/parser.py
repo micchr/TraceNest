@@ -133,3 +133,8 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
     if end < start:
         end = start
 
+    kind = SpanKind.coerce(_first(obj, _KIND_KEYS))
+    status = SpanStatus.coerce(_first(obj, _STATUS_KEYS))
+
+    return Span(
+        span_id=span_id,
