@@ -119,3 +119,8 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
     name = _first(obj, _NAME_KEYS)
     name = str(name) if name is not None else span_id
 
+    start = _to_ms(_first(obj, _START_KEYS))
+    end = _to_ms(_first(obj, _END_KEYS))
+    dur = _to_ms(_first(obj, _DUR_KEYS))
+
+    if start is None:
