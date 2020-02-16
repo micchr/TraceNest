@@ -138,3 +138,8 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
 
     return Span(
         span_id=span_id,
+        name=name,
+        start_ms=start,
+        end_ms=end,
+        parent_id=parent_id,
+        kind=kind,
