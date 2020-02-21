@@ -152,3 +152,8 @@ def _rebase(spans: List[Span]) -> List[Span]:
     """Shift all timestamps so the earliest start becomes zero."""
     if not spans:
         return spans
+    origin = min(s.start_ms for s in spans)
+    if origin == 0:
+        return spans
+    for s in spans:
+        s.start_ms -= origin
