@@ -148,3 +148,7 @@ def _span_from_obj(obj: Dict[str, Any], index: int) -> Span:
     )
 
 
+def _rebase(spans: List[Span]) -> List[Span]:
+    """Shift all timestamps so the earliest start becomes zero."""
+    if not spans:
+        return spans
