@@ -157,3 +157,8 @@ def _rebase(spans: List[Span]) -> List[Span]:
         return spans
     for s in spans:
         s.start_ms -= origin
+        s.end_ms -= origin
+    return spans
+
+
+def parse_spans(text: str) -> List[Span]:
