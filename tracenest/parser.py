@@ -162,3 +162,8 @@ def _rebase(spans: List[Span]) -> List[Span]:
 
 
 def parse_spans(text: str) -> List[Span]:
+    """Parse trace text (JSON array, JSON object, or JSONL) into spans."""
+    stripped = text.strip()
+    if not stripped:
+        raise ParseError("empty trace input")
+
