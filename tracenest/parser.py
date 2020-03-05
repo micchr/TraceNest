@@ -171,3 +171,8 @@ def parse_spans(text: str) -> List[Span]:
     first = stripped[0]
     if first == "[":
         try:
+            records = json.loads(stripped)
+        except json.JSONDecodeError as exc:
+            raise ParseError(f"invalid JSON array: {exc}") from exc
+    elif first == "{":
+        # Could be a single object envelope OR JSONL whose first line is
