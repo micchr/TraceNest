@@ -167,3 +167,7 @@ def parse_spans(text: str) -> List[Span]:
     if not stripped:
         raise ParseError("empty trace input")
 
+    records: List[Any]
+    first = stripped[0]
+    if first == "[":
+        try:
