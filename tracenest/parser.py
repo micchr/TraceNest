@@ -186,3 +186,7 @@ def parse_spans(text: str) -> List[Span]:
                 else:
                     records = [doc]
             else:
+                records = doc  # unlikely, but handle a bare list
+        except json.JSONDecodeError:
+            records = _parse_jsonl(stripped)
+    else:
