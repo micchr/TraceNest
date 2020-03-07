@@ -190,3 +190,8 @@ def parse_spans(text: str) -> List[Span]:
         except json.JSONDecodeError:
             records = _parse_jsonl(stripped)
     else:
+        raise ParseError(f"unrecognized trace format (starts with {first!r})")
+
+    if not isinstance(records, list):
+        raise ParseError("trace did not resolve to a list of spans")
+
