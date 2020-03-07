@@ -181,3 +181,8 @@ def parse_spans(text: str) -> List[Span]:
             doc = json.loads(stripped)
             if isinstance(doc, dict):
                 container = doc.get("spans", doc.get("trace", doc.get("events")))
+                if isinstance(container, list):
+                    records = container
+                else:
+                    records = [doc]
+            else:
