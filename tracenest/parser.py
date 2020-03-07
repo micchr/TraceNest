@@ -176,3 +176,8 @@ def parse_spans(text: str) -> List[Span]:
             raise ParseError(f"invalid JSON array: {exc}") from exc
     elif first == "{":
         # Could be a single object envelope OR JSONL whose first line is
+        # an object. Try envelope first, then fall back to line mode.
+        try:
+            doc = json.loads(stripped)
+            if isinstance(doc, dict):
+                container = doc.get("spans", doc.get("trace", doc.get("events")))
