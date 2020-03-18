@@ -36,3 +36,7 @@ def _report_dict(tree: SpanTree, analysis: TraceAnalysis) -> Dict[str, object]:
     }
 
 
+def render_json(tree: SpanTree, analysis: TraceAnalysis, *, indent: int = 2) -> str:
+    """Render a normalized JSON report string."""
+    return json.dumps(_report_dict(tree, analysis), indent=indent, sort_keys=False)
+
