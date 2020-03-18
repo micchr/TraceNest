@@ -40,3 +40,8 @@ def render_json(tree: SpanTree, analysis: TraceAnalysis, *, indent: int = 2) -> 
     """Render a normalized JSON report string."""
     return json.dumps(_report_dict(tree, analysis), indent=indent, sort_keys=False)
 
+
+def _fmt_ms(ms: float) -> str:
+    if ms >= 1000:
+        return f"{ms / 1000:.2f}s"
+    return f"{ms:.1f}ms"
