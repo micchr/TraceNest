@@ -23,3 +23,7 @@ _KIND_COLORS = {
     "tool": "#00e0a4",
     "retrieval": "#5bd6ff",
     "chain": "#c8ff5b",
+    "event": "#a0f0c0",
+    "unknown": "#6b7280",
+}
+
