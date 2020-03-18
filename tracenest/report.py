@@ -27,3 +27,7 @@ _KIND_COLORS = {
     "unknown": "#6b7280",
 }
 
+
+def _report_dict(tree: SpanTree, analysis: TraceAnalysis) -> Dict[str, object]:
+    return {
+        "version": 1,
