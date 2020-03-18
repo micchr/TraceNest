@@ -31,3 +31,8 @@ _KIND_COLORS = {
 def _report_dict(tree: SpanTree, analysis: TraceAnalysis) -> Dict[str, object]:
     return {
         "version": 1,
+        "summary": analysis.to_dict(),
+        "spans": [n.span.to_dict() for n in tree if n.span_id != tree.synthetic_root_id],
+    }
+
+
