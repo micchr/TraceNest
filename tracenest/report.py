@@ -18,3 +18,8 @@ from .tree import SpanTree, TreeNode
 
 # Graphite / neon-green palette shared with the SVG assets.
 _KIND_COLORS = {
+    "root": "#8a94a6",
+    "llm": "#39ff14",
+    "tool": "#00e0a4",
+    "retrieval": "#5bd6ff",
+    "chain": "#c8ff5b",
