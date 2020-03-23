@@ -53,3 +53,8 @@ def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
     origin = min((r.span.start_ms for r in tree.roots), default=0.0)
     crit = set(analysis.critical_path)
     rows: List[str] = []
+
+    for node in tree:
+        span = node.span
+        if span.span_id == tree.synthetic_root_id:
+            continue
