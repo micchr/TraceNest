@@ -49,3 +49,7 @@ def _fmt_ms(ms: float) -> str:
 
 def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
     """Render the nested waterfall rows as HTML."""
+    total = analysis.total_ms or 1.0
+    origin = min((r.span.start_ms for r in tree.roots), default=0.0)
+    crit = set(analysis.critical_path)
+    rows: List[str] = []
