@@ -45,3 +45,7 @@ def _fmt_ms(ms: float) -> str:
     if ms >= 1000:
         return f"{ms / 1000:.2f}s"
     return f"{ms:.1f}ms"
+
+
+def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
+    """Render the nested waterfall rows as HTML."""
