@@ -58,3 +58,7 @@ def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
         span = node.span
         if span.span_id == tree.synthetic_root_id:
             continue
+        left = (span.start_ms - origin) / total * 100.0
+        width = max(0.6, span.duration_ms / total * 100.0)
+        color = _KIND_COLORS.get(span.kind.value, _KIND_COLORS["unknown"])
+        indent = node.depth * 16
