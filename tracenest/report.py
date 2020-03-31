@@ -71,3 +71,7 @@ def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
         meta = f"{span.kind.value} · {_fmt_ms(span.duration_ms)}"
         rows.append(
             f'<div class="{" ".join(classes)}" style="padding-left:{indent}px">'
+            f'<div class="lbl" title="{label}">{label}'
+            f'<span class="sub">{html.escape(meta)}</span></div>'
+            f'<div class="track"><div class="bar" '
+            f'style="left:{left:.3f}%;width:{width:.3f}%;background:{color}"></div></div>'
