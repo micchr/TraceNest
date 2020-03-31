@@ -66,3 +66,8 @@ def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
         if span.span_id in crit:
             classes.append("crit")
         if span.status is SpanStatus.ERROR:
+            classes.append("err")
+        label = html.escape(span.name)
+        meta = f"{span.kind.value} · {_fmt_ms(span.duration_ms)}"
+        rows.append(
+            f'<div class="{" ".join(classes)}" style="padding-left:{indent}px">'
