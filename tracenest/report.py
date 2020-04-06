@@ -75,3 +75,8 @@ def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
             f'<span class="sub">{html.escape(meta)}</span></div>'
             f'<div class="track"><div class="bar" '
             f'style="left:{left:.3f}%;width:{width:.3f}%;background:{color}"></div></div>'
+            f"</div>"
+        )
+    return "\n".join(rows)
+
+
