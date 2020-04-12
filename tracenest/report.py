@@ -80,3 +80,7 @@ def _bars(tree: SpanTree, analysis: TraceAnalysis) -> str:
     return "\n".join(rows)
 
 
+def _legend() -> str:
+    items = []
+    for kind, color in _KIND_COLORS.items():
+        if kind == "unknown":
