@@ -84,3 +84,7 @@ def _legend() -> str:
     items = []
     for kind, color in _KIND_COLORS.items():
         if kind == "unknown":
+            continue
+        items.append(
+            f'<span class="chip"><i style="background:{color}"></i>{kind}</span>'
+        )
