@@ -97,3 +97,7 @@ def _summary_cards(analysis: TraceAnalysis) -> str:
         ("spans", str(analysis.span_count)),
         ("depth", str(analysis.max_depth)),
         ("critical path", _fmt_ms(analysis.critical_path_ms)),
+        ("errors", str(len(analysis.error_span_ids))),
+        ("retry groups", str(len(analysis.retries))),
+    ]
+    return "".join(
