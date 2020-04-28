@@ -88,3 +88,8 @@ def _legend() -> str:
         items.append(
             f'<span class="chip"><i style="background:{color}"></i>{kind}</span>'
         )
+    return "".join(items)
+
+
+def _summary_cards(analysis: TraceAnalysis) -> str:
+    cards = [
