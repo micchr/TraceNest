@@ -93,3 +93,7 @@ def _legend() -> str:
 
 def _summary_cards(analysis: TraceAnalysis) -> str:
     cards = [
+        ("total", _fmt_ms(analysis.total_ms)),
+        ("spans", str(analysis.span_count)),
+        ("depth", str(analysis.max_depth)),
+        ("critical path", _fmt_ms(analysis.critical_path_ms)),
