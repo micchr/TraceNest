@@ -101,3 +101,8 @@ def _summary_cards(analysis: TraceAnalysis) -> str:
         ("retry groups", str(len(analysis.retries))),
     ]
     return "".join(
+        f'<div class="card"><div class="k">{html.escape(k)}</div>'
+        f'<div class="v">{html.escape(v)}</div></div>'
+        for k, v in cards
+    )
+
