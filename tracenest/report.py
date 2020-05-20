@@ -106,3 +106,7 @@ def _summary_cards(analysis: TraceAnalysis) -> str:
         for k, v in cards
     )
 
+
+def _retry_rows(analysis: TraceAnalysis) -> str:
+    if not analysis.retries:
+        return '<tr><td colspan="4" class="muted">no retry clusters detected</td></tr>'
