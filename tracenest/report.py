@@ -115,3 +115,7 @@ def _retry_rows(analysis: TraceAnalysis) -> str:
         state = "recovered" if r.recovered else ("failing" if r.errors else "repeated")
         out.append(
             f"<tr><td>{html.escape(r.name)}</td><td>{r.attempts}</td>"
+            f"<td>{r.errors}</td><td>{state}</td></tr>"
+        )
+    return "".join(out)
+
