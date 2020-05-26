@@ -110,3 +110,8 @@ def _summary_cards(analysis: TraceAnalysis) -> str:
 def _retry_rows(analysis: TraceAnalysis) -> str:
     if not analysis.retries:
         return '<tr><td colspan="4" class="muted">no retry clusters detected</td></tr>'
+    out = []
+    for r in analysis.retries:
+        state = "recovered" if r.recovered else ("failing" if r.errors else "repeated")
+        out.append(
+            f"<tr><td>{html.escape(r.name)}</td><td>{r.attempts}</td>"
