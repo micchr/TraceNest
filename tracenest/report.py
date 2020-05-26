@@ -132,3 +132,7 @@ def render_html(tree: SpanTree, analysis: TraceAnalysis, *, title: str = "tracen
         payload=payload.replace("</", "<\\/"),
     )
 
+
+_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
