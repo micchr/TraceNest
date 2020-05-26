@@ -119,3 +119,7 @@ def _retry_rows(analysis: TraceAnalysis) -> str:
         )
     return "".join(out)
 
+
+def render_html(tree: SpanTree, analysis: TraceAnalysis, *, title: str = "tracenest report") -> str:
+    """Render a single self-contained HTML report."""
+    payload = json.dumps(_report_dict(tree, analysis))
