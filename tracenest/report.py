@@ -128,3 +128,7 @@ def render_html(tree: SpanTree, analysis: TraceAnalysis, *, title: str = "tracen
         cards=_summary_cards(analysis),
         legend=_legend(),
         bars=_bars(tree, analysis),
+        retries=_retry_rows(analysis),
+        payload=payload.replace("</", "<\\/"),
+    )
+
