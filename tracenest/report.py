@@ -145,3 +145,8 @@ _TEMPLATE = """<!doctype html>
   --muted:#8a94a6; --neon:#39ff14; --line:#242c38;
 }}
 * {{ box-sizing:border-box; }}
+body {{ margin:0; background:var(--bg); color:var(--ink);
+  font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }}
+header {{ padding:20px 24px; border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,#12161d,#0e1116); }}
+header h1 {{ margin:0; font-size:18px; letter-spacing:.5px; }}
