@@ -154,3 +154,7 @@ header h1 span {{ color:var(--neon); }}
 .wrap {{ max-width:1080px; margin:0 auto; padding:20px 24px 60px; }}
 .cards {{ display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin:18px 0; }}
 .card {{ background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; }}
+.card .k {{ color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.8px; }}
+.card .v {{ color:var(--neon); font-size:20px; margin-top:4px; }}
+h2 {{ font-size:13px; text-transform:uppercase; letter-spacing:1px; color:var(--muted);
