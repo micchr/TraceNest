@@ -163,3 +163,7 @@ h2 {{ font-size:13px; text-transform:uppercase; letter-spacing:1px; color:var(--
 .chip {{ display:inline-flex; align-items:center; gap:6px; color:var(--muted); font-size:12px; }}
 .chip i {{ width:10px; height:10px; border-radius:2px; display:inline-block; }}
 .waterfall {{ background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:8px; }}
+.row {{ display:grid; grid-template-columns:280px 1fr; gap:12px; align-items:center;
+  padding:3px 6px; border-radius:6px; }}
+.row:hover {{ background:var(--panel2); }}
