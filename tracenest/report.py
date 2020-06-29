@@ -167,3 +167,7 @@ h2 {{ font-size:13px; text-transform:uppercase; letter-spacing:1px; color:var(--
 .row {{ display:grid; grid-template-columns:280px 1fr; gap:12px; align-items:center;
   padding:3px 6px; border-radius:6px; }}
 .row:hover {{ background:var(--panel2); }}
+.row.crit {{ box-shadow:inset 3px 0 0 var(--neon); }}
+.row.err .lbl {{ color:#ff6b6b; }}
+.lbl {{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
+.lbl .sub {{ color:var(--muted); font-size:11px; margin-left:8px; }}
