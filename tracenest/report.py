@@ -171,3 +171,8 @@ h2 {{ font-size:13px; text-transform:uppercase; letter-spacing:1px; color:var(--
 .row.err .lbl {{ color:#ff6b6b; }}
 .lbl {{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
 .lbl .sub {{ color:var(--muted); font-size:11px; margin-left:8px; }}
+.track {{ position:relative; height:16px; background:#0c0f14; border-radius:4px; }}
+.bar {{ position:absolute; top:2px; height:12px; border-radius:3px; opacity:.9;
+  transition:filter .15s; }}
+.row.crit .bar {{ box-shadow:0 0 8px var(--neon); }}
+.row:hover .bar {{ filter:brightness(1.25); }}
