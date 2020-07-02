@@ -12,3 +12,6 @@ from dataclasses import dataclass, field
 from typing import Dict, Iterable, Iterator, List, Optional
 
 from .model import Span, SpanKind, SpanStatus
+
+
+@dataclass
