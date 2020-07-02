@@ -176,3 +176,7 @@ h2 {{ font-size:13px; text-transform:uppercase; letter-spacing:1px; color:var(--
   transition:filter .15s; }}
 .row.crit .bar {{ box-shadow:0 0 8px var(--neon); }}
 .row:hover .bar {{ filter:brightness(1.25); }}
+table {{ width:100%; border-collapse:collapse; background:var(--panel);
+  border:1px solid var(--line); border-radius:10px; overflow:hidden; }}
+th,td {{ text-align:left; padding:8px 12px; border-bottom:1px solid var(--line); }}
+th {{ color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; }}
