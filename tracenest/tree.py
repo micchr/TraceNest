@@ -1,0 +1,14 @@
+"""Span tree assembly.
+
+Turns a flat list of spans into a navigable forest. Orphan spans (those
+whose ``parent_id`` points at a missing span) are re-attached under a
+synthetic root so nothing is silently dropped. Cycles are broken
+defensively.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Dict, Iterable, Iterator, List, Optional
+
+from .model import Span, SpanKind, SpanStatus
