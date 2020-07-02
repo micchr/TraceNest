@@ -15,3 +15,6 @@ from .model import Span, SpanKind, SpanStatus
 
 
 @dataclass
+class TreeNode:
+    """A span plus its ordered children and computed depth."""
+
