@@ -180,3 +180,7 @@ table {{ width:100%; border-collapse:collapse; background:var(--panel);
   border:1px solid var(--line); border-radius:10px; overflow:hidden; }}
 th,td {{ text-align:left; padding:8px 12px; border-bottom:1px solid var(--line); }}
 th {{ color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; }}
+.muted {{ color:var(--muted); }}
+footer {{ color:var(--muted); font-size:11px; padding:20px 24px; border-top:1px solid var(--line); }}
+</style>
+</head>
