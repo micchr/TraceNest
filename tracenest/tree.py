@@ -18,3 +18,7 @@ from .model import Span, SpanKind, SpanStatus
 class TreeNode:
     """A span plus its ordered children and computed depth."""
 
+    span: Span
+    depth: int = 0
+    children: List["TreeNode"] = field(default_factory=list)
+
