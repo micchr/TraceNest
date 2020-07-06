@@ -25,3 +25,6 @@ class TreeNode:
     @property
     def span_id(self) -> str:
         return self.span.span_id
+
+    def walk(self) -> Iterator["TreeNode"]:
+        """Depth-first pre-order traversal, self first."""
