@@ -22,3 +22,6 @@ class TreeNode:
     depth: int = 0
     children: List["TreeNode"] = field(default_factory=list)
 
+    @property
+    def span_id(self) -> str:
+        return self.span.span_id
