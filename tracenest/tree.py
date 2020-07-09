@@ -32,3 +32,6 @@ class TreeNode:
         for child in self.children:
             yield from child.walk()
 
+
+@dataclass
+class SpanTree:
