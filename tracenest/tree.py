@@ -28,3 +28,7 @@ class TreeNode:
 
     def walk(self) -> Iterator["TreeNode"]:
         """Depth-first pre-order traversal, self first."""
+        yield self
+        for child in self.children:
+            yield from child.walk()
+
