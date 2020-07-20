@@ -35,3 +35,6 @@ class TreeNode:
 
 @dataclass
 class SpanTree:
+    """A forest of spans with helpers for traversal and lookup."""
+
+    roots: List[TreeNode]
