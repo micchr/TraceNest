@@ -38,3 +38,7 @@ class SpanTree:
     """A forest of spans with helpers for traversal and lookup."""
 
     roots: List[TreeNode]
+    index: Dict[str, TreeNode]
+    synthetic_root_id: Optional[str] = None
+
+    def __iter__(self) -> Iterator[TreeNode]:
