@@ -42,3 +42,6 @@ class SpanTree:
     synthetic_root_id: Optional[str] = None
 
     def __iter__(self) -> Iterator[TreeNode]:
+        for root in self.roots:
+            yield from root.walk()
+
