@@ -45,3 +45,6 @@ class SpanTree:
         for root in self.roots:
             yield from root.walk()
 
+    def __len__(self) -> int:
+        return len(self.index)
+
