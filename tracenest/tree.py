@@ -48,3 +48,7 @@ class SpanTree:
     def __len__(self) -> int:
         return len(self.index)
 
+    def get(self, span_id: str) -> Optional[TreeNode]:
+        return self.index.get(span_id)
+
+    def spans(self) -> List[Span]:
