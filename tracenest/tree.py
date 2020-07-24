@@ -52,3 +52,6 @@ class SpanTree:
         return self.index.get(span_id)
 
     def spans(self) -> List[Span]:
+        return [node.span for node in self]
+
+    def max_depth(self) -> int:
