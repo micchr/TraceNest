@@ -58,3 +58,7 @@ class SpanTree:
         return max((node.depth for node in self), default=0)
 
 
+_SYNTHETIC_ID = "__tracenest_root__"
+
+
+def build_tree(spans: Iterable[Span]) -> SpanTree:
