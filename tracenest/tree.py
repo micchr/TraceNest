@@ -55,3 +55,6 @@ class SpanTree:
         return [node.span for node in self]
 
     def max_depth(self) -> int:
+        return max((node.depth for node in self), default=0)
+
+
