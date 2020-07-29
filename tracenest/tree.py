@@ -62,3 +62,6 @@ _SYNTHETIC_ID = "__tracenest_root__"
 
 
 def build_tree(spans: Iterable[Span]) -> SpanTree:
+    """Assemble a :class:`SpanTree` from a flat span iterable.
+
+    Spans are attached to their declared parent when present. Missing
