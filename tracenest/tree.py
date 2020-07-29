@@ -65,3 +65,6 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
     """Assemble a :class:`SpanTree` from a flat span iterable.
 
     Spans are attached to their declared parent when present. Missing
+    parents cause the span to be treated as a root. If more than one
+    root results, a synthetic root is inserted so the report always has
+    a single entry point spanning the whole trace.
