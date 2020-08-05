@@ -68,3 +68,7 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
     parents cause the span to be treated as a root. If more than one
     root results, a synthetic root is inserted so the report always has
     a single entry point spanning the whole trace.
+    """
+    span_list = list(spans)
+    nodes: Dict[str, TreeNode] = {}
+    for span in span_list:
