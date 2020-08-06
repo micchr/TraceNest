@@ -78,3 +78,7 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
     roots: List[TreeNode] = []
     for node in nodes.values():
         parent_id = node.span.parent_id
+        if parent_id is not None and parent_id in nodes and parent_id != node.span_id:
+            nodes[parent_id].children.append(node)
+        else:
+            roots.append(node)
