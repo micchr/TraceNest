@@ -88,3 +88,7 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
     # Order children and roots by start time for stable, readable output.
     for node in nodes.values():
         node.children.sort(key=lambda n: (n.span.start_ms, n.span.span_id))
+    roots.sort(key=lambda n: (n.span.start_ms, n.span.span_id))
+
+    synthetic_id: Optional[str] = None
+    if len(roots) > 1:
