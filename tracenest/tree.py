@@ -75,3 +75,6 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
         # Later duplicates overwrite earlier ones deterministically.
         nodes[span.span_id] = TreeNode(span=span)
 
+    roots: List[TreeNode] = []
+    for node in nodes.values():
+        parent_id = node.span.parent_id
