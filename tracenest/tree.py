@@ -82,3 +82,6 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
             nodes[parent_id].children.append(node)
         else:
             roots.append(node)
+
+    _break_cycles(nodes, roots)
+
