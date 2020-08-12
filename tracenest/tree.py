@@ -95,3 +95,6 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
         synthetic_id = _SYNTHETIC_ID
         start = min(n.span.start_ms for n in roots)
         end = max(n.span.end_ms for n in roots)
+        synthetic = TreeNode(
+            span=Span(
+                span_id=synthetic_id,
