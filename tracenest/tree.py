@@ -108,3 +108,7 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
             ),
             children=list(roots),
         )
+        nodes[synthetic_id] = synthetic
+        roots = [synthetic]
+
+    _assign_depth(roots, 0)
