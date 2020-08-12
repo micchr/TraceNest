@@ -98,3 +98,7 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
         synthetic = TreeNode(
             span=Span(
                 span_id=synthetic_id,
+                name="trace",
+                start_ms=start,
+                end_ms=end,
+                parent_id=None,
