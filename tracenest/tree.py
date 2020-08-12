@@ -105,3 +105,6 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
                 kind=SpanKind.ROOT,
                 status=SpanStatus.OK,
                 attributes={"synthetic": True, "root_count": len(roots)},
+            ),
+            children=list(roots),
+        )
