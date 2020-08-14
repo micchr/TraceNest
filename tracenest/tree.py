@@ -112,3 +112,6 @@ def build_tree(spans: Iterable[Span]) -> SpanTree:
         roots = [synthetic]
 
     _assign_depth(roots, 0)
+    return SpanTree(roots=roots, index=nodes, synthetic_root_id=synthetic_id)
+
+
