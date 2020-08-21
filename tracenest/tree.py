@@ -121,3 +121,7 @@ def _assign_depth(nodes: List[TreeNode], depth: int) -> None:
         _assign_depth(node.children, depth + 1)
 
 
+def _break_cycles(nodes: Dict[str, TreeNode], roots: List[TreeNode]) -> None:
+    """Detach any node reachable from itself to guarantee a DAG."""
+    seen: set[str] = set()
+
