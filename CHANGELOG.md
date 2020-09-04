@@ -17,3 +17,6 @@ uses [Semantic Versioning](https://semver.org/).
   same millisecond (tie broken by span id, matching the tree order).
 - Waterfall rows no longer overlap by a pixel when a span's duration is
   shorter than the minimum bar width.
+
+## [1.0.0] - 2026-09-01
+
