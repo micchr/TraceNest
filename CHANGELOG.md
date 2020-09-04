@@ -24,3 +24,6 @@ uses [Semantic Versioning](https://semver.org/).
 - Flexible trace parser accepting JSON arrays, object envelopes
   (`spans` / `trace` / `events`), and JSONL/NDJSON, with alias matching
   for `id`/`parent`/`start`/`end`/`duration`/`kind`/`status` fields.
+- Millisecond and ISO-8601 timestamp normalization, with automatic
+  rebasing so the earliest span starts at zero.
+- Span tree builder that reattaches orphan spans, inserts a synthetic
