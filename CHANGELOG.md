@@ -20,3 +20,7 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [1.0.0] - 2026-09-01
 
+### Added
+- Flexible trace parser accepting JSON arrays, object envelopes
+  (`spans` / `trace` / `events`), and JSONL/NDJSON, with alias matching
+  for `id`/`parent`/`start`/`end`/`duration`/`kind`/`status` fields.
