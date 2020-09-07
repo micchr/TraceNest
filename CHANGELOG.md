@@ -27,3 +27,7 @@ uses [Semantic Versioning](https://semver.org/).
 - Millisecond and ISO-8601 timestamp normalization, with automatic
   rebasing so the earliest span starts at zero.
 - Span tree builder that reattaches orphan spans, inserts a synthetic
+  root when multiple roots exist, and breaks accidental cycles.
+- Analysis engine computing total time, per-kind and self-time
+  breakdowns, status counts, and a critical path maximizing cumulative
+  self time.
