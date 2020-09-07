@@ -31,3 +31,6 @@ uses [Semantic Versioning](https://semver.org/).
 - Analysis engine computing total time, per-kind and self-time
   breakdowns, status counts, and a critical path maximizing cumulative
   self time.
+- Retry-cluster detection over same-named sibling spans and explicit
+  retry attribute markers, flagging the recovered pattern.
+- Self-contained HTML report (graphite/neon-green theme) with an inline
