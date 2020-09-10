@@ -34,3 +34,7 @@ uses [Semantic Versioning](https://semver.org/).
 - Retry-cluster detection over same-named sibling spans and explicit
   retry attribute markers, flagging the recovered pattern.
 - Self-contained HTML report (graphite/neon-green theme) with an inline
+  nested waterfall, summary cards, retry table, and embedded JSON, plus
+  a normalized JSON report.
+- Python CLI (`python -m tracenest`) and a Go CLI (`nest`) with matching
+  `analyze`, `tree`, and `report` subcommands producing identical
