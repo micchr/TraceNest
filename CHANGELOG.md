@@ -38,3 +38,6 @@ uses [Semantic Versioning](https://semver.org/).
   a normalized JSON report.
 - Python CLI (`python -m tracenest`) and a Go CLI (`nest`) with matching
   `analyze`, `tree`, and `report` subcommands producing identical
+  summaries from the same trace file.
+- Two animated SVG assets (pipeline, waterfall) and bundled example
+  fixtures.
