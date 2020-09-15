@@ -41,3 +41,7 @@ uses [Semantic Versioning](https://semver.org/).
   summaries from the same trace file.
 - Two animated SVG assets (pipeline, waterfall) and bundled example
   fixtures.
+
+## [0.9.9] - 2025-12-09
+
+### Changed
