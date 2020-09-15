@@ -45,3 +45,6 @@ uses [Semantic Versioning](https://semver.org/).
 ## [0.9.9] - 2025-12-09
 
 ### Changed
+- Report ordering is fully deterministic: roots and children sort by
+  start time, then id, so repeated runs render byte-identical HTML.
+- The embedded JSON payload is emitted with stable key order.
