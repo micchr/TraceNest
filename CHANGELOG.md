@@ -48,3 +48,6 @@ uses [Semantic Versioning](https://semver.org/).
 - Report ordering is fully deterministic: roots and children sort by
   start time, then id, so repeated runs render byte-identical HTML.
 - The embedded JSON payload is emitted with stable key order.
+
+### Fixed
+- Empty traces (zero spans) render an empty state instead of a blank
