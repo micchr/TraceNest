@@ -55,3 +55,6 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [0.9.7] - 2025-06-17
 
+### Added
+- `examples/rag_session.jsonl` — a retrieval-augmented session fixture
+  covering the JSONL path, `id`/`parent` aliases and `start`+`duration`
