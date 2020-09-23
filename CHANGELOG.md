@@ -62,3 +62,6 @@ uses [Semantic Versioning](https://semver.org/).
 - Full alias tables in `docs/trace-format.md`, including the attribute
   keys read by retry detection.
 
+## [0.9.4] - 2024-12-10
+
+### Fixed
