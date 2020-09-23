@@ -58,3 +58,7 @@ uses [Semantic Versioning](https://semver.org/).
 ### Added
 - `examples/rag_session.jsonl` — a retrieval-augmented session fixture
   covering the JSONL path, `id`/`parent` aliases and `start`+`duration`
+  spans.
+- Full alias tables in `docs/trace-format.md`, including the attribute
+  keys read by retry detection.
+
