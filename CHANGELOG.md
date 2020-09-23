@@ -51,3 +51,7 @@ uses [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 - Empty traces (zero spans) render an empty state instead of a blank
+  page with a missing summary.
+
+## [0.9.7] - 2025-06-17
+
