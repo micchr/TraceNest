@@ -65,3 +65,7 @@ uses [Semantic Versioning](https://semver.org/).
 ## [0.9.4] - 2024-12-10
 
 ### Fixed
+- Numeric timestamp strings ("1340") are now accepted, not only JSON
+  numbers.
+- ISO-8601 timestamps with a trailing `Z` parse on both CLIs.
+
