@@ -69,3 +69,6 @@ uses [Semantic Versioning](https://semver.org/).
   numbers.
 - ISO-8601 timestamps with a trailing `Z` parse on both CLIs.
 
+### Changed
+- `kind` aliases expanded (`completion`, `generation` -> `llm`;
+  `embed` -> `retrieval`).
