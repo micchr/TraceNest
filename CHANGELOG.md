@@ -72,3 +72,7 @@ uses [Semantic Versioning](https://semver.org/).
 ### Changed
 - `kind` aliases expanded (`completion`, `generation` -> `llm`;
   `embed` -> `retrieval`).
+
+## [0.9.0] - 2023-11-28
+
+### Added
