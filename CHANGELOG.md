@@ -79,3 +79,7 @@ uses [Semantic Versioning](https://semver.org/).
 - Critical-path rail: rows on the critical path carry a glowing neon
   edge in the waterfall.
 - Retry table states (`recovered`, `failing`, `repeated`).
+
+## [0.8.1] - 2022-10-18
+
+### Fixed
