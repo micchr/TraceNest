@@ -90,3 +90,6 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [0.7.0] - 2021-11-09
 
+### Added
+- Summary cards (total time, span count, max depth, critical-path time,
+  error count, retry-group count).
