@@ -86,3 +86,7 @@ uses [Semantic Versioning](https://semver.org/).
 - Accidental cycles in the parent graph are broken by re-rooting the
   offending child instead of recursing forever.
 - Orphan spans reattach as roots even when their declared parent appears
+  later in the file.
+
+## [0.7.0] - 2021-11-09
+
