@@ -93,3 +93,7 @@ uses [Semantic Versioning](https://semver.org/).
 ### Added
 - Summary cards (total time, span count, max depth, critical-path time,
   error count, retry-group count).
+- The complete normalized report embedded in the HTML output under
+  `window.tracenest`.
+
+## [0.6.0] - 2020-12-15
