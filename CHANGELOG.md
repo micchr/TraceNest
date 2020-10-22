@@ -100,3 +100,7 @@ uses [Semantic Versioning](https://semver.org/).
 
 ### Added
 - JSONL / NDJSON input on both CLIs.
+- Automatic rebasing of all timestamps to a zero origin.
+
+## [0.5.0] - 2019-10-29
+
