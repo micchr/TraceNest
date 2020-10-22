@@ -97,3 +97,6 @@ uses [Semantic Versioning](https://semver.org/).
   `window.tracenest`.
 
 ## [0.6.0] - 2020-12-15
+
+### Added
+- JSONL / NDJSON input on both CLIs.
