@@ -107,3 +107,7 @@ uses [Semantic Versioning](https://semver.org/).
 ### Added
 - Go implementation of the full pipeline (`nest/`), with an
   `analyze` / `tree` / `report` CLI matching the Python one.
+
+### Changed
+- Shared test fixtures introduced so the two implementations are
+  checked against the same traces.
