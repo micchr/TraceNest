@@ -111,3 +111,6 @@ uses [Semantic Versioning](https://semver.org/).
 ### Changed
 - Shared test fixtures introduced so the two implementations are
   checked against the same traces.
+
+## [0.4.0] - 2018-11-06
+
