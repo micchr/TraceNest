@@ -114,3 +114,7 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [0.4.0] - 2018-11-06
 
+### Added
+- Self-contained HTML report with the nested span waterfall, colored by
+  kind.
+- `--format json` normalized report on both CLIs.
