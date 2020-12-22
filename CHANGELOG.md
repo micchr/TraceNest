@@ -118,3 +118,6 @@ uses [Semantic Versioning](https://semver.org/).
 - Self-contained HTML report with the nested span waterfall, colored by
   kind.
 - `--format json` normalized report on both CLIs.
+
+## [0.3.0] - 2017-10-24
+
