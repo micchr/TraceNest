@@ -135,3 +135,6 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [0.1.0] - 2015-10-14
 
+### Added
+- First release: permissive trace reader (JSON array and object
+  envelope), span nesting into a tree, and a plain-text timing summary.
