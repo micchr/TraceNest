@@ -125,3 +125,6 @@ uses [Semantic Versioning](https://semver.org/).
 - Retry-cluster detection: same-named sibling attempts grouped with
   attempt/error counts and the recovered pattern flagged.
 
+## [0.2.0] - 2016-09-13
+
+### Added
