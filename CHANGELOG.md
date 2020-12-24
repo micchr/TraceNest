@@ -128,3 +128,7 @@ uses [Semantic Versioning](https://semver.org/).
 ## [0.2.0] - 2016-09-13
 
 ### Added
+- Analysis engine: total time, per-kind breakdowns, and the critical
+  path maximizing cumulative self time.
+- Self time computed over the merged union of child intervals so
+  concurrent children never double-count.
