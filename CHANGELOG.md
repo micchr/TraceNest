@@ -132,3 +132,6 @@ uses [Semantic Versioning](https://semver.org/).
   path maximizing cumulative self time.
 - Self time computed over the merged union of child intervals so
   concurrent children never double-count.
+
+## [0.1.0] - 2015-10-14
+
