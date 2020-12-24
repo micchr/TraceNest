@@ -121,3 +121,7 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [0.3.0] - 2017-10-24
 
+### Added
+- Retry-cluster detection: same-named sibling attempts grouped with
+  attempt/error counts and the recovered pattern flagged.
+
