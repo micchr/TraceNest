@@ -6,3 +6,4 @@ below marked complete map directly to code in this repository.
 ## Completed
 
 - [x] **Flexible trace ingestion** — JSON array, object envelope, and
+  JSONL parsers with field-alias matching and timestamp normalization
