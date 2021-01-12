@@ -16,3 +16,4 @@ below marked complete map directly to code in this repository.
   (`tracenest/analyze.py`, `nest/trace/analyze.go`).
 - [x] **Self-contained reporting** — HTML waterfall plus normalized JSON,
   wired to both CLIs with `analyze` / `tree` / `report` commands
+  (`tracenest/report.py`, `nest/trace/report.go`, `nest/main.go`).
