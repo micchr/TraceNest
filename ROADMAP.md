@@ -12,3 +12,4 @@ below marked complete map directly to code in this repository.
   cycle breaking, and depth assignment
   (`tracenest/tree.py`, `nest/trace/tree.go`).
 - [x] **Critical path & retry analysis** — self-time computation,
+  critical-path selection, per-kind timing, and retry clustering
