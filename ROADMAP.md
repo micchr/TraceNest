@@ -14,3 +14,4 @@ below marked complete map directly to code in this repository.
 - [x] **Critical path & retry analysis** — self-time computation,
   critical-path selection, per-kind timing, and retry clustering
   (`tracenest/analyze.py`, `nest/trace/analyze.go`).
+- [x] **Self-contained reporting** — HTML waterfall plus normalized JSON,
