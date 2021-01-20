@@ -20,3 +20,4 @@ below marked complete map directly to code in this repository.
 
 ## Planned
 
+- [ ] Span diffing between two traces to surface latency regressions.
