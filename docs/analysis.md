@@ -8,3 +8,5 @@ A span's **self time** is its own duration minus the union of its
 children's intervals:
 
 ```
+self(s) = duration(s) - measure( union of [child.start, child.end] )
+```
