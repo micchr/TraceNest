@@ -10,3 +10,5 @@ children's intervals:
 ```
 self(s) = duration(s) - measure( union of [child.start, child.end] )
 ```
+
+Because the child intervals are merged before subtracting, overlapping
