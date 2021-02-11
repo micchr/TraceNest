@@ -16,3 +16,5 @@ children (concurrent tool calls) are never double-counted, and self time
 is clamped at zero. Self time answers "how much wall-clock time is spent
 in *this* span rather than in the work it delegates?"
 
+## Critical path
+
