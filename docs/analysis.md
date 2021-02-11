@@ -20,3 +20,5 @@ in *this* span rather than in the work it delegates?"
 
 The **critical path** is the root-to-leaf chain that maximizes the sum of
 self times along it. It is computed with a single post-order pass:
+
+```
