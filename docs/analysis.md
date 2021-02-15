@@ -22,3 +22,5 @@ The **critical path** is the root-to-leaf chain that maximizes the sum of
 self times along it. It is computed with a single post-order pass:
 
 ```
+best(leaf)   = self(leaf)
+best(parent) = self(parent) + max(best(child) for child in children)
