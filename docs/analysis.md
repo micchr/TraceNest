@@ -24,3 +24,5 @@ self times along it. It is computed with a single post-order pass:
 ```
 best(leaf)   = self(leaf)
 best(parent) = self(parent) + max(best(child) for child in children)
+```
+
