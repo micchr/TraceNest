@@ -26,3 +26,5 @@ best(leaf)   = self(leaf)
 best(parent) = self(parent) + max(best(child) for child in children)
 ```
 
+The reported `critical_path` is the sequence of span ids from the highest
+root down through the best child at each level; `critical_path_ms` is the
