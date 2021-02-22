@@ -28,3 +28,5 @@ best(parent) = self(parent) + max(best(child) for child in children)
 
 The reported `critical_path` is the sequence of span ids from the highest
 root down through the best child at each level; `critical_path_ms` is the
+accumulated self time. This is the chain most responsible for total
+latency — the place to optimize first. In the HTML report these spans get
