@@ -32,3 +32,5 @@ accumulated self time. This is the chain most responsible for total
 latency — the place to optimize first. In the HTML report these spans get
 a neon rail on their left edge.
 
+## Timing breakdowns
+
