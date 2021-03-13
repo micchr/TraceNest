@@ -34,3 +34,5 @@ a neon rail on their left edge.
 
 ## Timing breakdowns
 
+- `total_ms` — span of the whole trace: max end minus min start across
+  roots.
