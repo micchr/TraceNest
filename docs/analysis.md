@@ -36,3 +36,5 @@ a neon rail on their left edge.
 
 - `total_ms` — span of the whole trace: max end minus min start across
   roots.
+- `kind_ms` / `kind_counts` — summed duration and count per kind.
+- `self_ms` — summed self time per kind, useful for attributing latency.
