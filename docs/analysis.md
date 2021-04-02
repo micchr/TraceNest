@@ -38,3 +38,5 @@ a neon rail on their left edge.
   roots.
 - `kind_ms` / `kind_counts` — summed duration and count per kind.
 - `self_ms` — summed self time per kind, useful for attributing latency.
+- `status_counts` — how many spans ended `ok` / `error` / etc.
+
