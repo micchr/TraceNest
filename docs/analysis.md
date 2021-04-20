@@ -40,3 +40,5 @@ a neon rail on their left edge.
 - `self_ms` — summed self time per kind, useful for attributing latency.
 - `status_counts` — how many spans ended `ok` / `error` / etc.
 
+## Retry clusters
+
