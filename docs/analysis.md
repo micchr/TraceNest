@@ -42,3 +42,4 @@ a neon rail on their left edge.
 
 ## Retry clusters
 
+Sibling spans (same parent) that share a `name` are grouped. A group is
