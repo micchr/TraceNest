@@ -47,3 +47,5 @@ reported as a retry cluster when it has two or more members, or when any
 member carries a retry attribute marker. For each cluster tracenest
 reports:
 
+- `attempts` — number of same-named siblings,
+- `errors` — how many ended in `error`,
