@@ -43,3 +43,5 @@ a neon rail on their left edge.
 ## Retry clusters
 
 Sibling spans (same parent) that share a `name` are grouped. A group is
+reported as a retry cluster when it has two or more members, or when any
+member carries a retry attribute marker. For each cluster tracenest
