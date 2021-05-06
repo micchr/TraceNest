@@ -49,3 +49,5 @@ reports:
 
 - `attempts` — number of same-named siblings,
 - `errors` — how many ended in `error`,
+- `recovered` — `true` when at least one attempt errored **and** the last
+  attempt (by start time) ended `ok`,
