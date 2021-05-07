@@ -53,3 +53,5 @@ reports:
   attempt (by start time) ended `ok`,
 - `span_ids` — the attempts in start order.
 
+Clusters are sorted by attempt count descending.
+
