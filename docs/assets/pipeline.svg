@@ -5,3 +5,5 @@
       <stop offset="0" stop-color="#12161d"/>
       <stop offset="1" stop-color="#0e1116"/>
     </linearGradient>
+    <radialGradient id="node" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#1c2230"/>
