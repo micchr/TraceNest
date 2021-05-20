@@ -10,3 +10,5 @@
       <stop offset="1" stop-color="#161b22"/>
     </radialGradient>
     <filter id="pglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
