@@ -7,3 +7,6 @@
     </linearGradient>
     <radialGradient id="node" cx="0.5" cy="0.4" r="0.7">
       <stop offset="0" stop-color="#1c2230"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </radialGradient>
+    <filter id="pglow" x="-40%" y="-40%" width="180%" height="180%">
