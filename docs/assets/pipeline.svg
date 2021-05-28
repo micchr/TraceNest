@@ -18,3 +18,5 @@
   <rect width="720" height="260" fill="url(#pbg)"/>
   <text x="20" y="30" font-family="ui-monospace,Consolas,monospace" font-size="15" fill="#d7e0ea">trace<tspan fill="#39ff14">nest</tspan> · ingest → nest → analyze → report</text>
 
+  <!-- connecting rails -->
+  <g stroke="#242c38" stroke-width="2" fill="none">
