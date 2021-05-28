@@ -14,3 +14,5 @@
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
+
+  <rect width="720" height="260" fill="url(#pbg)"/>
