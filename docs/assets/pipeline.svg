@@ -20,3 +20,6 @@
 
   <!-- connecting rails -->
   <g stroke="#242c38" stroke-width="2" fill="none">
+    <line x1="150" y1="140" x2="270" y2="140"/>
+    <line x1="390" y1="140" x2="510" y2="140"/>
+    <line x1="270" y1="140" x2="390" y2="140"/>
