@@ -29,3 +29,5 @@
   <!-- flowing neon packets along the rails -->
   <g fill="#39ff14" filter="url(#pglow)">
     <circle r="4" cx="0" cy="140">
+      <animate attributeName="cx" values="150;630" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite"/>
