@@ -27,3 +27,5 @@
   </g>
 
   <!-- flowing neon packets along the rails -->
+  <g fill="#39ff14" filter="url(#pglow)">
+    <circle r="4" cx="0" cy="140">
