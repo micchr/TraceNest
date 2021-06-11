@@ -40,3 +40,5 @@
 
   <!-- stage nodes -->
   <g font-family="ui-monospace,Consolas,monospace" font-size="12" text-anchor="middle">
+    <g>
+      <circle cx="90" cy="140" r="40" fill="url(#node)" stroke="#5bd6ff" stroke-width="1.5"/>
