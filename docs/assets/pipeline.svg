@@ -49,3 +49,5 @@
     <g>
       <circle cx="330" cy="140" r="40" fill="url(#node)" stroke="#c8ff5b" stroke-width="1.5"/>
       <text x="330" y="136" fill="#d7e0ea">nest</text>
+      <text x="330" y="152" fill="#8a94a6" font-size="10">tree</text>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.7s" repeatCount="indefinite"/>
