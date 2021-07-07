@@ -53,3 +53,5 @@
       <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.7s" repeatCount="indefinite"/>
     </g>
     <g>
+      <circle cx="450" cy="140" r="40" fill="url(#node)" stroke="#00e0a4" stroke-width="1.5"/>
+      <text x="450" y="132" fill="#d7e0ea">analyze</text>
