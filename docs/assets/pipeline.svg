@@ -60,3 +60,5 @@
       <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1.4s" repeatCount="indefinite"/>
     </g>
     <g>
+      <circle cx="600" cy="140" r="40" fill="url(#node)" stroke="#39ff14" stroke-width="1.5" filter="url(#pglow)"/>
+      <text x="600" y="136" fill="#d7e0ea">report</text>
