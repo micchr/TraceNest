@@ -57,3 +57,6 @@
       <text x="450" y="132" fill="#d7e0ea">analyze</text>
       <text x="450" y="148" fill="#8a94a6" font-size="10">crit path</text>
       <text x="450" y="162" fill="#8a94a6" font-size="10">retries</text>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+    </g>
+    <g>
