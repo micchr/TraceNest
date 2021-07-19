@@ -8,3 +8,5 @@
 
   <!-- gridlines for the time axis -->
   <g stroke="#242c38" stroke-width="1">
+    <line x1="240" y1="44" x2="240" y2="284"/>
+    <line x1="380" y1="44" x2="380" y2="284"/>
