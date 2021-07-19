@@ -64,3 +64,5 @@
       <text x="600" y="136" fill="#d7e0ea">report</text>
       <text x="600" y="152" fill="#8a94a6" font-size="10">HTML/JSON</text>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
