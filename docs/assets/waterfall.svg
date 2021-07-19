@@ -4,3 +4,5 @@
   <desc id="wfDesc">A nested span waterfall for the sample agent run. Bars are positioned by start offset and sized by duration, indented by nesting depth, colored by kind. The reasoner.llm and code.exec rows carry a green rail marking the critical path, and the errored code.exec attempt is labeled in red.</desc>
   <rect width="720" height="300" fill="#12161d"/>
   <rect x="0" y="0" width="720" height="34" fill="#161b22"/>
+  <text x="20" y="22" font-family="ui-monospace,Consolas,monospace" font-size="15" fill="#d7e0ea">trace<tspan fill="#39ff14">nest</tspan> · span waterfall</text>
+
