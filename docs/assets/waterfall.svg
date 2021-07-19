@@ -6,3 +6,5 @@
   <rect x="0" y="0" width="720" height="34" fill="#161b22"/>
   <text x="20" y="22" font-family="ui-monospace,Consolas,monospace" font-size="15" fill="#d7e0ea">trace<tspan fill="#39ff14">nest</tspan> · span waterfall</text>
 
+  <!-- gridlines for the time axis -->
+  <g stroke="#242c38" stroke-width="1">
