@@ -14,3 +14,5 @@
     <line x1="660" y1="44" x2="660" y2="284"/>
   </g>
 
+  <!-- critical-path rail down the left edge of the dominant chain rows -->
+  <rect x="232" y="146" width="4" height="80" fill="#39ff14"/>
