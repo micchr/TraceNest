@@ -16,3 +16,5 @@
 
   <!-- critical-path rail down the left edge of the dominant chain rows -->
   <rect x="232" y="146" width="4" height="80" fill="#39ff14"/>
+
+  <g font-family="ui-monospace,Consolas,monospace" font-size="11">
