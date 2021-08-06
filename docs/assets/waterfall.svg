@@ -18,3 +18,5 @@
   <rect x="232" y="146" width="4" height="80" fill="#39ff14"/>
 
   <g font-family="ui-monospace,Consolas,monospace" font-size="11">
+    <!-- agent.run (chain) -->
+    <text x="20" y="66" fill="#8a94a6">agent.run</text>
