@@ -20,3 +20,4 @@
   <g font-family="ui-monospace,Consolas,monospace" font-size="11">
     <!-- agent.run (chain) -->
     <text x="20" y="66" fill="#8a94a6">agent.run</text>
+    <rect x="240" y="56" width="420" height="12" rx="2" fill="#c8ff5b">
