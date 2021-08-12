@@ -21,3 +21,5 @@
     <!-- agent.run (chain) -->
     <text x="20" y="66" fill="#8a94a6">agent.run</text>
     <rect x="240" y="56" width="420" height="12" rx="2" fill="#c8ff5b">
+      <animate attributeName="width" from="0" to="420" dur="1.2s" fill="freeze"/>
+    </rect>
