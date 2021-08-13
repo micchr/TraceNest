@@ -25,3 +25,5 @@
     </rect>
 
     <!-- planner.llm -->
+    <text x="34" y="96" fill="#8a94a6">planner.llm</text>
+    <rect x="242" y="86" width="62" height="12" rx="2" fill="#39ff14">
