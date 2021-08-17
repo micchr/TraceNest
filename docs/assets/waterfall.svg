@@ -35,3 +35,5 @@
     <rect x="306" y="116" width="52" height="12" rx="2" fill="#5bd6ff">
       <animate attributeName="width" from="0" to="52" dur="0.4s" begin="0.4s" fill="freeze"/>
     </rect>
+
+    <!-- reasoner.llm (on critical path) -->
