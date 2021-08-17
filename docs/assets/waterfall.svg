@@ -37,3 +37,5 @@
     </rect>
 
     <!-- reasoner.llm (on critical path) -->
+    <text x="34" y="156" fill="#d7e0ea">reasoner.llm</text>
+    <rect x="374" y="146" width="186" height="12" rx="2" fill="#39ff14">
