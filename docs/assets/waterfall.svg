@@ -39,3 +39,5 @@
     <!-- reasoner.llm (on critical path) -->
     <text x="34" y="156" fill="#d7e0ea">reasoner.llm</text>
     <rect x="374" y="146" width="186" height="12" rx="2" fill="#39ff14">
+      <animate attributeName="width" from="0" to="186" dur="0.9s" begin="0.6s" fill="freeze"/>
+    </rect>
