@@ -43,3 +43,5 @@
     </rect>
 
     <!-- code.exec x3 nested under reasoner (on critical path) -->
+    <text x="48" y="186" fill="#d7e0ea">code.exec x3</text>
+    <rect x="392" y="176" width="130" height="12" rx="2" fill="#00e0a4">
