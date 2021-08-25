@@ -50,3 +50,5 @@
     <text x="530" y="186" fill="#ff6b6b" font-size="10">1 error, recovered</text>
 
     <!-- verifier.llm -->
+    <text x="34" y="216" fill="#8a94a6">verifier.llm</text>
+    <rect x="562" y="206" width="76" height="12" rx="2" fill="#39ff14">
