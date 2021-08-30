@@ -54,3 +54,5 @@
     <rect x="562" y="206" width="76" height="12" rx="2" fill="#39ff14">
       <animate attributeName="width" from="0" to="76" dur="0.5s" begin="1.3s" fill="freeze"/>
     </rect>
+
+    <!-- output.write (tool) -->
