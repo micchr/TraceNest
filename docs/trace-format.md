@@ -6,3 +6,5 @@ frameworks parse without a translation layer.
 
 ## Container shapes
 
+A trace file may be any one of:
+
