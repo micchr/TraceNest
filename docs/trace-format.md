@@ -8,3 +8,6 @@ frameworks parse without a translation layer.
 
 A trace file may be any one of:
 
+| Shape          | Detection            | Example                              |
+|----------------|----------------------|--------------------------------------|
+| JSON array     | first char is `[`    | `[{...}, {...}]`                     |
