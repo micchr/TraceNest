@@ -13,3 +13,5 @@ A trace file may be any one of:
 | JSON array     | first char is `[`    | `[{...}, {...}]`                     |
 | Object envelope| first char is `{`    | `{"spans": [{...}]}`                 |
 | JSONL / NDJSON | one object per line  | `{...}\n{...}\n`                     |
+
+For the object envelope, the first present key among `spans`, `trace`,
