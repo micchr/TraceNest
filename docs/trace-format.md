@@ -15,3 +15,6 @@ A trace file may be any one of:
 | JSONL / NDJSON | one object per line  | `{...}\n{...}\n`                     |
 
 For the object envelope, the first present key among `spans`, `trace`,
+`events` is used as the span list. If an object has none of those, it is
+treated as a single-span trace.
+
