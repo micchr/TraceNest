@@ -20,3 +20,6 @@ treated as a single-span trace.
 
 ## Span fields
 
+Every span is a JSON object. Field names are matched flexibly; the first
+present alias wins.
+
