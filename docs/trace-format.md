@@ -25,3 +25,5 @@ present alias wins.
 
 | Canonical    | Accepted aliases                                   | Required |
 |--------------|----------------------------------------------------|----------|
+| `span_id`    | `span_id`, `spanId`, `id`                           | no*      |
+| `parent_id`  | `parent_id`, `parentSpanId`, `parentId`, `parent`  | no       |
