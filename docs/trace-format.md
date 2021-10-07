@@ -32,3 +32,6 @@ present alias wins.
 | `end_ms`     | `end_ms`, `endTime`, `end`, `endedAt`              | no       |
 | `duration_ms`| `duration_ms`, `duration`, `elapsed_ms`, `elapsed` | no       |
 | `kind`       | `kind`, `type`, `category`                         | no       |
+| `status`     | `status`, `state`, `outcome`, `result`             | no       |
+
+\* If `span_id` is absent it is synthesized as `span-N` by ordinal
