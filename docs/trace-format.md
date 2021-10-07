@@ -30,3 +30,5 @@ present alias wins.
 | `name`       | `name`, `label`, `operation`, `op`                 | no*      |
 | `start_ms`   | `start_ms`, `startTime`, `start`, `startedAt`, `ts`| **yes**  |
 | `end_ms`     | `end_ms`, `endTime`, `end`, `endedAt`              | no       |
+| `duration_ms`| `duration_ms`, `duration`, `elapsed_ms`, `elapsed` | no       |
+| `kind`       | `kind`, `type`, `category`                         | no       |
