@@ -35,3 +35,5 @@ present alias wins.
 | `status`     | `status`, `state`, `outcome`, `result`             | no       |
 
 \* If `span_id` is absent it is synthesized as `span-N` by ordinal
+position; if `name` is absent it defaults to the span id.
+
