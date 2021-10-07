@@ -27,3 +27,6 @@ present alias wins.
 |--------------|----------------------------------------------------|----------|
 | `span_id`    | `span_id`, `spanId`, `id`                           | no*      |
 | `parent_id`  | `parent_id`, `parentSpanId`, `parentId`, `parent`  | no       |
+| `name`       | `name`, `label`, `operation`, `op`                 | no*      |
+| `start_ms`   | `start_ms`, `startTime`, `start`, `startedAt`, `ts`| **yes**  |
+| `end_ms`     | `end_ms`, `endTime`, `end`, `endedAt`              | no       |
