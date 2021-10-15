@@ -47,3 +47,5 @@ A timestamp may be:
 - a number (milliseconds), or
 - a numeric string, or
 - an ISO-8601 datetime string (a trailing `Z` is accepted).
+
+All timestamps are converted to a millisecond float and then **rebased**
