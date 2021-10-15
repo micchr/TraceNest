@@ -42,3 +42,5 @@ Only `start` is strictly required. If `end` is missing, tracenest uses
 
 ## Timestamps
 
+A timestamp may be:
+
