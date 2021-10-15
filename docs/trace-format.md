@@ -44,3 +44,6 @@ Only `start` is strictly required. If `end` is missing, tracenest uses
 
 A timestamp may be:
 
+- a number (milliseconds), or
+- a numeric string, or
+- an ISO-8601 datetime string (a trailing `Z` is accepted).
