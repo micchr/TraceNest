@@ -39,3 +39,6 @@ position; if `name` is absent it defaults to the span id.
 
 Only `start` is strictly required. If `end` is missing, tracenest uses
 `start + duration`; if both are missing the span is zero-length.
+
+## Timestamps
+
