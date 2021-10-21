@@ -49,3 +49,5 @@ A timestamp may be:
 - an ISO-8601 datetime string (a trailing `Z` is accepted).
 
 All timestamps are converted to a millisecond float and then **rebased**
+so the earliest span in the trace starts at zero. Reports therefore show
+offsets relative to trace start, not wall-clock epoch.
