@@ -56,3 +56,6 @@ offsets relative to trace start, not wall-clock epoch.
 
 `kind` is normalized to one of: `root`, `llm`, `tool`, `retrieval`,
 `chain`, `event`, `unknown`. Common aliases are folded in:
+
+- `model`, `completion`, `generation` → `llm`
+- `function`, `action` → `tool`
