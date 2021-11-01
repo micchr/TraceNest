@@ -59,3 +59,5 @@ offsets relative to trace start, not wall-clock epoch.
 
 - `model`, `completion`, `generation` → `llm`
 - `function`, `action` → `tool`
+- `search`, `embed` → `retrieval`
+- `span` → `event`
