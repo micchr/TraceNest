@@ -61,3 +61,5 @@ offsets relative to trace start, not wall-clock epoch.
 - `function`, `action` → `tool`
 - `search`, `embed` → `retrieval`
 - `span` → `event`
+
+## Status
