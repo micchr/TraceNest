@@ -63,3 +63,6 @@ offsets relative to trace start, not wall-clock epoch.
 - `span` → `event`
 
 ## Status
+
+`status` normalizes to `ok`, `error`, `cancelled`, or `unknown`. Aliases
+such as `success`, `succeeded`, `completed` map to `ok`; `failed`,
