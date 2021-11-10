@@ -66,3 +66,5 @@ offsets relative to trace start, not wall-clock epoch.
 
 `status` normalizes to `ok`, `error`, `cancelled`, or `unknown`. Aliases
 such as `success`, `succeeded`, `completed` map to `ok`; `failed`,
+`failure`, `exception` map to `error`; `aborted`, `canceled` map to
+`cancelled`.
