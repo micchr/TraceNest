@@ -1,2 +1,3 @@
 [
   {"id": "root", "name": "agent.run", "kind": "chain", "status": "ok", "start": 0, "end": 4200},
+  {"id": "plan", "name": "planner.llm", "parent": "root", "kind": "llm", "status": "ok", "start": 20, "end": 640, "attributes": {"model": "gpt-mini", "prompt_tokens": 812, "completion_tokens": 96}},
