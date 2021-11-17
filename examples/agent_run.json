@@ -2,3 +2,4 @@
   {"id": "root", "name": "agent.run", "kind": "chain", "status": "ok", "start": 0, "end": 4200},
   {"id": "plan", "name": "planner.llm", "parent": "root", "kind": "llm", "status": "ok", "start": 20, "end": 640, "attributes": {"model": "gpt-mini", "prompt_tokens": 812, "completion_tokens": 96}},
   {"id": "search1", "name": "web.search", "parent": "root", "kind": "retrieval", "status": "error", "start": 660, "end": 900, "attributes": {"query": "trace format spec", "error": "timeout"}},
+  {"id": "search2", "name": "web.search", "parent": "root", "kind": "retrieval", "status": "ok", "start": 920, "end": 1180, "attributes": {"query": "trace format spec", "retry": 1, "hits": 8}},
