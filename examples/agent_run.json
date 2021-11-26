@@ -6,3 +6,4 @@
   {"id": "read", "name": "fs.read_file", "parent": "root", "kind": "tool", "status": "ok", "start": 1200, "end": 1320, "attributes": {"path": "spec.md", "bytes": 4096}},
   {"id": "reason", "name": "reasoner.llm", "parent": "root", "kind": "llm", "status": "ok", "start": 1340, "end": 3200, "attributes": {"model": "gpt-large", "prompt_tokens": 2200, "completion_tokens": 540}},
   {"id": "tool_a", "name": "code.exec", "parent": "reason", "kind": "tool", "status": "ok", "start": 1500, "end": 1980, "attributes": {"lang": "python"}},
+  {"id": "tool_b", "name": "code.exec", "parent": "reason", "kind": "tool", "status": "error", "start": 2000, "end": 2300, "attributes": {"lang": "python", "error": "NameError"}},
