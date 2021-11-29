@@ -8,3 +8,4 @@
   {"id": "tool_a", "name": "code.exec", "parent": "reason", "kind": "tool", "status": "ok", "start": 1500, "end": 1980, "attributes": {"lang": "python"}},
   {"id": "tool_b", "name": "code.exec", "parent": "reason", "kind": "tool", "status": "error", "start": 2000, "end": 2300, "attributes": {"lang": "python", "error": "NameError"}},
   {"id": "tool_c", "name": "code.exec", "parent": "reason", "kind": "tool", "status": "ok", "start": 2320, "end": 2700, "attributes": {"lang": "python", "retry": 1}},
+  {"id": "verify", "name": "verifier.llm", "parent": "root", "kind": "llm", "status": "ok", "start": 3220, "end": 3980, "attributes": {"model": "gpt-mini"}},
