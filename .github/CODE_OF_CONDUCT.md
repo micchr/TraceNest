@@ -60,3 +60,6 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement by opening a
+confidential report through the repository's security contact. All complaints
+will be reviewed and investigated promptly and fairly.
+
