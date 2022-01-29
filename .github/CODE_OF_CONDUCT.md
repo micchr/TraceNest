@@ -98,3 +98,6 @@ ban.
 sustained inappropriate behavior.
 
 **Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
