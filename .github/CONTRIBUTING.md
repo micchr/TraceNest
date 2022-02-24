@@ -9,3 +9,5 @@ and dependency-free, and contributions keep it that way.
   standard library; Go uses only the standard library. A patch that adds a
   dependency will not be merged.
 - Both implementations stay in lockstep. A behaviour change in
+  `tracenest/` must land with the matching change in `nest/`, and both
+  must produce the same summary on the bundled fixtures.
