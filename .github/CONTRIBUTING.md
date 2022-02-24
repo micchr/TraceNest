@@ -11,3 +11,5 @@ and dependency-free, and contributions keep it that way.
 - Both implementations stay in lockstep. A behaviour change in
   `tracenest/` must land with the matching change in `nest/`, and both
   must produce the same summary on the bundled fixtures.
+- Every behavioural change comes with a fixture or a test-free repro
+  explained in the pull request description (the project keeps its test
