@@ -55,3 +55,9 @@ reports:
 
 Clusters are sorted by attempt count descending.
 
+## Tree normalization guarantees
+
+- Orphan spans (parent id points at a missing span) become roots.
+- When more than one root exists, a synthetic `trace` root spans them so
+  every report has a single entry point. The synthetic root is excluded
+  from counts, kind sums, and the reported critical path.
