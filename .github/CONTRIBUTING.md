@@ -15,3 +15,5 @@ and dependency-free, and contributions keep it that way.
   explained in the pull request description (the project keeps its test
   surface in `examples/`).
 
+## Getting started
+
