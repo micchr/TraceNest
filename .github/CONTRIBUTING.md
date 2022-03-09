@@ -13,3 +13,5 @@ and dependency-free, and contributions keep it that way.
   must produce the same summary on the bundled fixtures.
 - Every behavioural change comes with a fixture or a test-free repro
   explained in the pull request description (the project keeps its test
+  surface in `examples/`).
+
