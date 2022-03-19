@@ -18,3 +18,5 @@ and dependency-free, and contributions keep it that way.
 ## Getting started
 
 ```bash
+git clone https://github.com/micchr/tracenest.git
+cd tracenest
