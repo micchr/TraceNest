@@ -22,3 +22,5 @@ git clone https://github.com/micchr/tracenest.git
 cd tracenest
 
 # Python side
+python -m compileall -q tracenest
+python -m tracenest analyze examples/agent_run.json
