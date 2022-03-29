@@ -35,3 +35,5 @@ go run . analyze ../examples/agent_run.json
 Or `make compile && make demo` from the repository root.
 
 ## Pull requests
+
+1. Keep the change scoped: one behaviour or one document per pull request.
