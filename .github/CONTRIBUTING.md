@@ -37,3 +37,5 @@ Or `make compile && make demo` from the repository root.
 ## Pull requests
 
 1. Keep the change scoped: one behaviour or one document per pull request.
+2. Run `make compile` (or the explicit commands above) before pushing.
+3. Match the existing style: standard library only, deterministic output,
