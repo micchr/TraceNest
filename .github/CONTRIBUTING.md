@@ -39,3 +39,5 @@ Or `make compile && make demo` from the repository root.
 1. Keep the change scoped: one behaviour or one document per pull request.
 2. Run `make compile` (or the explicit commands above) before pushing.
 3. Match the existing style: standard library only, deterministic output,
+   no logging on the happy path.
+4. Describe the *why* in the description — what trace shape or report
