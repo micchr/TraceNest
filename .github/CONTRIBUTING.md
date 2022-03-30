@@ -41,3 +41,5 @@ Or `make compile && make demo` from the repository root.
 3. Match the existing style: standard library only, deterministic output,
    no logging on the happy path.
 4. Describe the *why* in the description — what trace shape or report
+   problem the change addresses.
+
