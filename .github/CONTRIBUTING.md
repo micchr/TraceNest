@@ -43,3 +43,4 @@ Or `make compile && make demo` from the repository root.
 4. Describe the *why* in the description — what trace shape or report
    problem the change addresses.
 
+## Reporting bugs
