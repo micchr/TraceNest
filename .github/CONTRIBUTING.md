@@ -44,3 +44,5 @@ Or `make compile && make demo` from the repository root.
    problem the change addresses.
 
 ## Reporting bugs
+
+Open an issue with the `bug` label. Include:
