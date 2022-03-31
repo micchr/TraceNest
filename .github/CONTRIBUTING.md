@@ -50,3 +50,5 @@ Open an issue with the `bug` label. Include:
 - the command you ran (Python or Go CLI),
 - the smallest trace snippet that reproduces the problem,
 - what you expected and what you got.
+
+If the trace contains sensitive data, trim the attributes down to the
