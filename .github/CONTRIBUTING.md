@@ -46,3 +46,5 @@ Or `make compile && make demo` from the repository root.
 ## Reporting bugs
 
 Open an issue with the `bug` label. Include:
+
+- the command you ran (Python or Go CLI),
