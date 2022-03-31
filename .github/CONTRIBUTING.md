@@ -48,3 +48,5 @@ Or `make compile && make demo` from the repository root.
 Open an issue with the `bug` label. Include:
 
 - the command you ran (Python or Go CLI),
+- the smallest trace snippet that reproduces the problem,
+- what you expected and what you got.
