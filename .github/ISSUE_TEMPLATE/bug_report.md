@@ -17,3 +17,5 @@ assignees: ""
 ```
 
 **Minimal trace snippet**
+
+```json
