@@ -16,3 +16,4 @@ assignees: ""
 
 ```
 
+**Minimal trace snippet**
