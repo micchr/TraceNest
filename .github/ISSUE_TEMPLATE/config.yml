@@ -3,3 +3,4 @@ contact_links:
   - name: Usage questions
     url: https://github.com/micchr/tracenest/blob/main/SUPPORT.md
     about: Check the support checklist before opening an issue.
+  - name: Trace format reference
