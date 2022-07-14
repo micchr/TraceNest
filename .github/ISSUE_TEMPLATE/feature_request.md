@@ -11,3 +11,4 @@ assignees: ""
 **Describe the solution you'd like**
 
 **Which part does it touch?**
+- [ ] Parser / trace format
