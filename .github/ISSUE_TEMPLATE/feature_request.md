@@ -13,3 +13,4 @@ assignees: ""
 **Which part does it touch?**
 - [ ] Parser / trace format
 - [ ] Tree building
+- [ ] Analysis (self time, critical path, retries)
