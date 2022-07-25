@@ -14,3 +14,4 @@ assignees: ""
 - [ ] Parser / trace format
 - [ ] Tree building
 - [ ] Analysis (self time, critical path, retries)
+- [ ] Report (HTML / JSON)
