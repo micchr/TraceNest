@@ -5,3 +5,4 @@
 ## Checklist
 
 - [ ] `make compile` passes (Python compile + Go build/vet)
+- [ ] Both CLIs produce the same summary on the fixtures
