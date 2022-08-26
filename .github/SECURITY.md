@@ -10,3 +10,5 @@ track security-relevant reports for the current release line.
 | 1.0.x   | :white_check_mark: |
 | < 1.0   | :x:                |
 
+## Reporting a vulnerability
+
