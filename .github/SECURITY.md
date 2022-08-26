@@ -13,3 +13,4 @@ track security-relevant reports for the current release line.
 ## Reporting a vulnerability
 
 Please report suspected vulnerabilities privately using GitHub's
+**Report a vulnerability** button on the repository's Security tab
