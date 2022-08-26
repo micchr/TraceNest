@@ -12,3 +12,4 @@ track security-relevant reports for the current release line.
 
 ## Reporting a vulnerability
 
+Please report suspected vulnerabilities privately using GitHub's
