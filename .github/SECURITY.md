@@ -14,3 +14,4 @@ track security-relevant reports for the current release line.
 
 Please report suspected vulnerabilities privately using GitHub's
 **Report a vulnerability** button on the repository's Security tab
+(Security advisories). Do not open a public issue for security reports.
