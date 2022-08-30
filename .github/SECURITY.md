@@ -20,3 +20,5 @@ Include:
 
 - the affected version and which CLI you were running,
 - a minimal trace file or command that demonstrates the problem,
+- the impact you believe it has.
+
