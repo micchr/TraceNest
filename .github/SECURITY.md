@@ -24,3 +24,4 @@ Include:
 
 You can expect an acknowledgement within a few days. Because tracenest
 parses untrusted trace files without executing them, the most relevant
+classes of report are parser crashes, unbounded memory use on crafted
