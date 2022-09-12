@@ -27,3 +27,4 @@ parses untrusted trace files without executing them, the most relevant
 classes of report are parser crashes, unbounded memory use on crafted
 input, and HTML output escaping issues in the report renderer.
 
+## Scope
