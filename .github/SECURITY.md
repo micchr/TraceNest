@@ -28,3 +28,4 @@ classes of report are parser crashes, unbounded memory use on crafted
 input, and HTML output escaping issues in the report renderer.
 
 ## Scope
+
