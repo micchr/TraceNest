@@ -31,3 +31,4 @@ input, and HTML output escaping issues in the report renderer.
 
 In scope:
 
+- `tracenest/` (Python package)
