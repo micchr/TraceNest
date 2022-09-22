@@ -29,3 +29,5 @@ input, and HTML output escaping issues in the report renderer.
 
 ## Scope
 
+In scope:
+
