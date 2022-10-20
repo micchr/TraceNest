@@ -4,3 +4,4 @@ updates:
     directory: /nest
     schedule:
       interval: weekly
+  - package-ecosystem: github-actions
