@@ -5,3 +5,5 @@ on:
     branches: [ main ]
   pull_request:
 
+jobs:
+  python:
