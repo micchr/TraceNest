@@ -8,3 +8,4 @@ on:
 jobs:
   python:
     runs-on: ubuntu-latest
+    steps:
