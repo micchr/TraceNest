@@ -17,3 +17,4 @@ jobs:
         run: python -m compileall -q tracenest
       - name: Smoke run (analyze)
         run: python -m tracenest analyze examples/agent_run.json
+      - name: Smoke run (tree)
