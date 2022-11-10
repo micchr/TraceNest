@@ -18,3 +18,4 @@ jobs:
       - name: Smoke run (analyze)
         run: python -m tracenest analyze examples/agent_run.json
       - name: Smoke run (tree)
+        run: python -m tracenest tree examples/rag_session.jsonl
