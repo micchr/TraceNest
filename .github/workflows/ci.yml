@@ -20,3 +20,5 @@ jobs:
       - name: Smoke run (tree)
         run: python -m tracenest tree examples/rag_session.jsonl
       - name: Render JSON report
+        run: python -m tracenest report examples/agent_run.json --format json --out tracenest.report.json
+
