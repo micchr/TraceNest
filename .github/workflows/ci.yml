@@ -24,3 +24,4 @@ jobs:
 
   go:
     runs-on: ubuntu-latest
+    steps:
