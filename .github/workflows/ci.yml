@@ -32,3 +32,4 @@ jobs:
       - name: Build
         working-directory: nest
         run: go build ./...
+      - name: Vet
