@@ -31,3 +31,4 @@ jobs:
           go-version: "1.21"
       - name: Build
         working-directory: nest
+        run: go build ./...
