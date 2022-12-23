@@ -61,3 +61,7 @@ Clusters are sorted by attempt count descending.
 - When more than one root exists, a synthetic `trace` root spans them so
   every report has a single entry point. The synthetic root is excluded
   from counts, kind sums, and the reported critical path.
+- Cycles (a span reachable from itself) are broken by re-rooting the
+  offending child, so analysis always runs on a DAG.
+
+<!-- draft note 67 -->
