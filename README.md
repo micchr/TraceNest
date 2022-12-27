@@ -369,3 +369,44 @@ tracenest/
 │       ├── parser.go
 │       ├── tree.go
 │       ├── analyze.go
+│       └── report.go
+├── examples/
+│   ├── agent_run.json
+│   └── rag_session.jsonl
+├── docs/
+│   ├── trace-format.md
+│   ├── analysis.md
+│   └── assets/
+│       ├── pipeline.svg
+│       └── waterfall.svg
+├── .github/workflows/ci.yml
+├── Makefile
+├── CHANGELOG.md
+├── ROADMAP.md
+├── LICENSE
+└── README.md
+```
+
+---
+
+## Design notes
+
+- **No dependencies.** Python uses `json`, `dataclasses`, `enum`,
+  `argparse`, `html`; Go uses `encoding/json`, `html`, `sort`, `strings`,
+  `time`. Nothing is fetched from a network.
+- **Permissive in, strict out.** The parser tolerates messy real-world
+  traces (missing ids, aliased fields, mixed timestamp types) but always
+  emits a clean, normalized model.
+- **Deterministic output.** Children and roots are sorted by start time
+  then id, so the same trace always renders the same report.
+- **Nothing dropped.** Orphans become roots, multiple roots gain a
+  synthetic parent, and cycles are broken rather than causing a crash —
+  every input span appears in the output.
+
+---
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+<!-- draft note 68 -->
