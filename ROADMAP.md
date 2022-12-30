@@ -22,3 +22,8 @@ below marked complete map directly to code in this repository.
 
 - [ ] Span diffing between two traces to surface latency regressions.
 - [ ] Percentile aggregation across many traces of the same workflow.
+- [ ] OpenTelemetry OTLP/JSON span import mapping.
+- [ ] Collapsible subtrees and search in the HTML report.
+- [ ] Token-cost overlay driven by per-span attribute annotations.
+
+<!-- draft note 70 -->
