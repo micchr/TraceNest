@@ -138,3 +138,22 @@ uses [Semantic Versioning](https://semver.org/).
 ### Added
 - First release: permissive trace reader (JSON array and object
   envelope), span nesting into a tree, and a plain-text timing summary.
+- `python -m tracenest analyze <trace>` entry point.
+
+[Unreleased]: https://github.com/micchr/tracenest/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/micchr/tracenest/releases/tag/v1.0.1
+[1.0.0]: https://github.com/micchr/tracenest/releases/tag/v1.0.0
+[0.9.9]: https://github.com/micchr/tracenest/releases/tag/v0.9.9
+[0.9.7]: https://github.com/micchr/tracenest/releases/tag/v0.9.7
+[0.9.4]: https://github.com/micchr/tracenest/releases/tag/v0.9.4
+[0.9.0]: https://github.com/micchr/tracenest/releases/tag/v0.9.0
+[0.8.1]: https://github.com/micchr/tracenest/releases/tag/v0.8.1
+[0.7.0]: https://github.com/micchr/tracenest/releases/tag/v0.7.0
+[0.6.0]: https://github.com/micchr/tracenest/releases/tag/v0.6.0
+[0.5.0]: https://github.com/micchr/tracenest/releases/tag/v0.5.0
+[0.4.0]: https://github.com/micchr/tracenest/releases/tag/v0.4.0
+[0.3.0]: https://github.com/micchr/tracenest/releases/tag/v0.3.0
+[0.2.0]: https://github.com/micchr/tracenest/releases/tag/v0.2.0
+[0.1.0]: https://github.com/micchr/tracenest/releases/tag/v0.1.0
+
+<!-- draft note 69 -->
