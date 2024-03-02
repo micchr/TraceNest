@@ -205,3 +205,24 @@ h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)
 .bar{position:absolute;top:2px;height:12px;border-radius:3px;opacity:.9;}
 .row.crit .bar{box-shadow:0 0 8px var(--neon);}
 .row:hover .bar{filter:brightness(1.25);}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);}
+th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;}
+.muted{color:var(--muted);}
+footer{color:var(--muted);font-size:11px;padding:20px 24px;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+<header><h1>trace<span>nest</span></h1></header>
+<div class="wrap">
+  <div class="cards">{{CARDS}}</div>
+  <h2>span waterfall</h2>
+  <div class="legend">{{LEGEND}}</div>
+  <div class="waterfall">{{BARS}}</div>
+  <h2>retry clusters</h2>
+  <table><thead><tr><th>name</th><th>attempts</th><th>errors</th><th>state</th></tr></thead>
+  <tbody>{{RETRIES}}</tbody></table>
+</div>
+<footer>rendered by tracenest — critical path highlighted with a neon rail on the left edge</footer>
+<script id="tracenest-data" type="application/json">{{PAYLOAD}}</script>
+<script>window.tracenest=JSON.parse(document.getElementById("tracenest-data").textContent);</script>
