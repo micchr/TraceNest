@@ -26,4 +26,4 @@ below marked complete map directly to code in this repository.
 - [ ] Collapsible subtrees and search in the HTML report.
 - [ ] Token-cost overlay driven by per-span attribute annotations.
 
-<!-- draft note 286 -->
+<!-- draft note 290 -->
