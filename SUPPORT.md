@@ -33,3 +33,7 @@ Open a GitHub issue with the `question` label. Include the command, the
 toolchain (Python 3.11+ and/or a Go toolchain), and the smallest trace
 snippet that shows the behaviour.
 
+## Reporting bugs
+
+Use the `bug` label and follow [CONTRIBUTING.md](CONTRIBUTING.md). The
+smallest reproduction wins.
