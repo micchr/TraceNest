@@ -33,3 +33,8 @@ In scope:
 
 - `tracenest/` (Python package)
 - `nest/` (Go module)
+
+Out of scope:
+
+- traces you feed to the tool (the tool never executes trace content),
+- the bundled fixtures under `examples/`.
