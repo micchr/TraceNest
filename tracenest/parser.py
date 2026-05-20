@@ -195,3 +195,25 @@ def parse_spans(text: str) -> List[Span]:
     if not isinstance(records, list):
         raise ParseError("trace did not resolve to a list of spans")
 
+    spans = [_span_from_obj(obj, i) for i, obj in enumerate(records)]
+    return _rebase(spans)
+
+
+def _parse_jsonl(text: str) -> List[Any]:
+    records: List[Any] = []
+    for lineno, line in enumerate(text.splitlines(), start=1):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            records.append(json.loads(line))
+        except json.JSONDecodeError as exc:
+            raise ParseError(f"invalid JSONL on line {lineno}: {exc}") from exc
+    return records
+
+
+def load_spans(path: PathLike) -> List[Span]:
+    """Read a trace file from disk and parse it into spans."""
+    p = Path(path)
+    if not p.exists():
+        raise ParseError(f"trace file not found: {p}")
