@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Go
+nest/nest
+nest/nest.exe
+*.test
+*.out
+
+# Reports / generated artifacts
+*.report.html
+*.report.json
+out.html
+out.json
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
