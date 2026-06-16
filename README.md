@@ -407,3 +407,6 @@ tracenest/
 
 ## License
 
+MIT. See [LICENSE](LICENSE).
+
+<!-- draft note 624 -->
