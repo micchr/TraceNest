@@ -1,3 +1,4 @@
 {"span_id": "s0", "name": "session", "kind": "chain", "status": "ok", "start_ms": 1000, "end_ms": 2600}
 {"span_id": "s1", "name": "retriever", "parent_id": "s0", "kind": "retrieval", "status": "ok", "start_ms": 1010, "duration_ms": 220, "attributes": {"k": 5}}
 {"span_id": "s2", "name": "llm.answer", "parent_id": "s0", "kind": "llm", "status": "ok", "start_ms": 1250, "end_ms": 2550, "attributes": {"model": "local-7b", "completion_tokens": 310}}
+{"span_id": "s3", "name": "guard.check", "parent_id": "s2", "kind": "tool", "status": "ok", "start_ms": 2560, "end_ms": 2590}
