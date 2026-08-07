@@ -71,3 +71,12 @@ such as `success`, `succeeded`, `completed` map to `ok`; `failed`,
 
 ## Attributes
 
+Any object under `attributes`, `attrs`, `meta`, `metadata`, or `tags` is
+merged into the span attribute bag. In addition, any top-level key that
+is not one of the reserved field aliases is folded into attributes, so
+`{"id": "x", "start": 0, "model": "local-7b"}` keeps `model` as an
+attribute.
+
+Attributes named `retry`, `retries`, `attempt`, or `retry_count` are read
+by retry detection (truthy boolean, positive number, or the strings
+`true` / `yes` / `retry`).
