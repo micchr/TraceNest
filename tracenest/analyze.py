@@ -205,3 +205,27 @@ def analyze(tree: SpanTree) -> TraceAnalysis:
         total = max(r.span.end_ms for r in tree.roots) - min(
             r.span.start_ms for r in tree.roots
         )
+    else:
+        total = 0.0
+
+    path, path_ms = _critical_path(tree)
+    # Drop the synthetic root from the reported path.
+    path = [pid for pid in path if pid != tree.synthetic_root_id]
+
+    real_count = sum(
+        1 for s in spans if s.span_id != tree.synthetic_root_id
+    )
+
+    return TraceAnalysis(
+        total_ms=max(0.0, total),
+        span_count=real_count,
+        max_depth=tree.max_depth(),
+        kind_ms=dict(kind_ms),
+        kind_counts=dict(kind_counts),
+        status_counts=dict(status_counts),
+        self_ms=dict(self_ms),
+        critical_path=path,
+        critical_path_ms=path_ms,
+        retries=_detect_retries(tree),
+        error_span_ids=error_ids,
+    )
