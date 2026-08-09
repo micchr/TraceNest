@@ -184,3 +184,25 @@ th {{ color:var(--muted); font-weight:600; font-size:11px; text-transform:upperc
 footer {{ color:var(--muted); font-size:11px; padding:20px 24px; border-top:1px solid var(--line); }}
 </style>
 </head>
+<body>
+<header><h1>trace<span>nest</span></h1></header>
+<div class="wrap">
+  <div class="cards">{cards}</div>
+  <h2>span waterfall</h2>
+  <div class="legend">{legend}</div>
+  <div class="waterfall">{bars}</div>
+  <h2>retry clusters</h2>
+  <table>
+    <thead><tr><th>name</th><th>attempts</th><th>errors</th><th>state</th></tr></thead>
+    <tbody>{retries}</tbody>
+  </table>
+</div>
+<footer>rendered by tracenest — critical path highlighted with a neon rail on the left edge</footer>
+<script id="tracenest-data" type="application/json">{payload}</script>
+<script>
+// The full normalized report is embedded above for downstream tooling.
+window.tracenest = JSON.parse(document.getElementById("tracenest-data").textContent);
+</script>
+</body>
+</html>
+"""
