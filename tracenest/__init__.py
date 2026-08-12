@@ -31,3 +31,8 @@ __all__ = [
     "SpanTree",
     "build_tree",
     "TraceAnalysis",
+    "analyze",
+    "render_html",
+    "render_json",
+    "__version__",
+]
