@@ -217,3 +217,4 @@ def load_spans(path: PathLike) -> List[Span]:
     p = Path(path)
     if not p.exists():
         raise ParseError(f"trace file not found: {p}")
+    return parse_spans(p.read_text(encoding="utf-8"))
