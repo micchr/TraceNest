@@ -115,3 +115,17 @@ class Span:
         return max(0.0, self.end_ms - self.start_ms)
 
     def attr(self, key: str, default: Any = None) -> Any:
+        return self.attributes.get(key, default)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "span_id": self.span_id,
+            "name": self.name,
+            "start_ms": self.start_ms,
+            "end_ms": self.end_ms,
+            "duration_ms": self.duration_ms,
+            "parent_id": self.parent_id,
+            "kind": self.kind.value,
+            "status": self.status.value,
+            "attributes": self.attributes,
+        }
