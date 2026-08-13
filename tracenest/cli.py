@@ -121,3 +121,18 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def main(argv: Optional[List[str]] = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    try:
+        return args.func(args)
+    except ParseError as exc:
+        print(f"tracenest: parse error: {exc}", file=sys.stderr)
+        return 2
+    except FileNotFoundError as exc:
+        print(f"tracenest: {exc}", file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
