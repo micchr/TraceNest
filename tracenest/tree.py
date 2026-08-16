@@ -125,3 +125,18 @@ def _break_cycles(nodes: Dict[str, TreeNode], roots: List[TreeNode]) -> None:
     """Detach any node reachable from itself to guarantee a DAG."""
     seen: set[str] = set()
 
+    def visit(node: TreeNode, ancestors: set[str]) -> None:
+        surviving: List[TreeNode] = []
+        for child in node.children:
+            if child.span_id in ancestors:
+                # Cycle edge; re-root the child instead of recursing.
+                roots.append(child)
+                continue
+            surviving.append(child)
+        node.children = surviving
+        seen.add(node.span_id)
+        for child in node.children:
+            visit(child, ancestors | {node.span_id})
+
+    for root in list(roots):
+        visit(root, {root.span_id})
