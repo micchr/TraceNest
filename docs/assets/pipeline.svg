@@ -66,3 +66,12 @@
       <animate attributeName="opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
     </g>
   </g>
+
+  <!-- pulsing ring on the final node -->
+  <circle cx="600" cy="140" r="40" fill="none" stroke="#39ff14" stroke-width="1.5">
+    <animate attributeName="r" values="40;54;40" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="20" y="240" font-family="ui-monospace,Consolas,monospace" font-size="10" fill="#8a94a6">standard-library pipeline · Python and Go produce identical summaries</text>
+</svg>
