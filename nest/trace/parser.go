@@ -223,3 +223,28 @@ func firstContainer(doc map[string]interface{}) []map[string]interface{} {
 		if arr, ok := doc[key].([]interface{}); ok {
 			out := make([]map[string]interface{}, 0, len(arr))
 			for _, item := range arr {
+				if m, ok := item.(map[string]interface{}); ok {
+					out = append(out, m)
+				}
+			}
+			return out
+		}
+	}
+	return nil
+}
+
+func parseJSONL(text string) ([]map[string]interface{}, error) {
+	var records []map[string]interface{}
+	for i, line := range strings.Split(text, "\n") {
+		line = strings.TrimSpace(line)
+		if line == "" {
+			continue
+		}
+		var obj map[string]interface{}
+		if err := json.Unmarshal([]byte(line), &obj); err != nil {
+			return nil, &ParseError{Msg: fmt.Sprintf("invalid JSONL on line %d: %s", i+1, err)}
+		}
+		records = append(records, obj)
+	}
+	return records, nil
+}
