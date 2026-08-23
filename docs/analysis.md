@@ -63,5 +63,3 @@ Clusters are sorted by attempt count descending.
   from counts, kind sums, and the reported critical path.
 - Cycles (a span reachable from itself) are broken by re-rooting the
   offending child, so analysis always runs on a DAG.
-
-<!-- draft note 623 -->
