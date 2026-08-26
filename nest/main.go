@@ -212,3 +212,27 @@ func cmdReport(args []string) int {
 	}
 	a := trace.Analyze(t)
 	format := flags["format"]
+	if format == "" {
+		format = "html"
+	}
+	var out string
+	if format == "json" {
+		out, err = trace.RenderJSON(t, a)
+	} else {
+		out, err = trace.RenderHTML(t, a)
+	}
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "nest: %v\n", err)
+		return 1
+	}
+	if dest := flags["out"]; dest != "" && dest != "true" {
+		if werr := os.WriteFile(dest, []byte(out), 0o644); werr != nil {
+			fmt.Fprintf(os.Stderr, "nest: %v\n", werr)
+			return 1
+		}
+		fmt.Printf("wrote %s (%d bytes)\n", dest, len(out))
+	} else {
+		fmt.Print(out)
+	}
+	return 0
+}
