@@ -71,3 +71,12 @@ type Span struct {
 	Status     Status                 `json:"status"`
 	Attributes map[string]interface{} `json:"attributes,omitempty"`
 }
+
+// DurationMS returns the elapsed time, never negative.
+func (s Span) DurationMS() float64 {
+	d := s.EndMS - s.StartMS
+	if d < 0 {
+		return 0
+	}
+	return d
+}
