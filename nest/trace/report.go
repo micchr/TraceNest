@@ -226,3 +226,5 @@ footer{color:var(--muted);font-size:11px;padding:20px 24px;border-top:1px solid 
 <footer>rendered by tracenest — critical path highlighted with a neon rail on the left edge</footer>
 <script id="tracenest-data" type="application/json">{{PAYLOAD}}</script>
 <script>window.tracenest=JSON.parse(document.getElementById("tracenest-data").textContent);</script>
+</body>
+</html>`
