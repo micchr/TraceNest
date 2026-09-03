@@ -234,3 +234,29 @@ func Analyze(t *Tree) Analysis {
 		}
 		total = maxE - minS
 	}
+	if total < 0 {
+		total = 0
+	}
+
+	path, pathMS := criticalPath(t, selfCache)
+	filtered := path[:0:0]
+	for _, id := range path {
+		if id != t.SyntheticRoot {
+			filtered = append(filtered, id)
+		}
+	}
+
+	count := 0
+	t.Walk(func(n *Node) {
+		if n.Span.ID != t.SyntheticRoot {
+			count++
+		}
+	})
+
+	return Analysis{
+		TotalMS: total, SpanCount: count, MaxDepth: t.MaxDepth(),
+		KindMS: kindMS, KindCounts: kindCounts, StatusCounts: statusCounts,
+		SelfMS: selfMS, CriticalPath: filtered, CriticalPathMS: pathMS,
+		Retries: detectRetries(t), ErrorSpanIDs: errorIDs,
+	}
+}
