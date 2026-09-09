@@ -140,3 +140,19 @@ func breakCycles(nodes map[string]*Node, roots []*Node) []*Node {
 				continue
 			}
 			surviving = append(surviving, c)
+		}
+		n.Children = surviving
+		next := map[string]bool{}
+		for k := range ancestors {
+			next[k] = true
+		}
+		next[n.Span.ID] = true
+		for _, c := range n.Children {
+			visit(c, next)
+		}
+	}
+	for _, r := range roots {
+		visit(r, map[string]bool{r.Span.ID: true})
+	}
+	return roots
+}
