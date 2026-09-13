@@ -25,5 +25,3 @@ below marked complete map directly to code in this repository.
 - [ ] OpenTelemetry OTLP/JSON span import mapping.
 - [ ] Collapsible subtrees and search in the HTML report.
 - [ ] Token-cost overlay driven by per-span attribute annotations.
-
-<!-- draft note 647 -->
