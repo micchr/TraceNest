@@ -35,3 +35,8 @@ json: compile
 report: compile
 	$(PY) -m tracenest report $(TRACE) --format html --out tracenest.report.html
 	@echo "open tracenest.report.html"
+
+clean:
+	$(PY) -c "import pathlib,shutil; [shutil.rmtree(p, ignore_errors=True) for p in pathlib.Path('.').rglob('__pycache__')]"
+	cd nest && $(GO) clean
+	-rm -f tracenest.report.html tracenest.report.json out.html nest/nest nest/nest.exe
