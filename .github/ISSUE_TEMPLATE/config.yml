@@ -5,3 +5,4 @@ contact_links:
     about: Check the support checklist before opening an issue.
   - name: Trace format reference
     url: https://github.com/micchr/tracenest/blob/main/docs/trace-format.md
+    about: Field aliases, container shapes and timestamp handling.
