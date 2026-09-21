@@ -10,3 +10,5 @@
 - [ ] Docs updated if behaviour or accepted fields changed
 
 ## Related issues
+
+<!-- e.g. Closes #12 -->
