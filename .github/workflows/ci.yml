@@ -33,3 +33,8 @@ jobs:
         working-directory: nest
         run: go build ./...
       - name: Vet
+        working-directory: nest
+        run: go vet ./...
+      - name: Smoke run (analyze)
+        working-directory: nest
+        run: go run . analyze ../examples/agent_run.json
