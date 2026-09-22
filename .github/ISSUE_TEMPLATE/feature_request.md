@@ -15,3 +15,6 @@ assignees: ""
 - [ ] Tree building
 - [ ] Analysis (self time, critical path, retries)
 - [ ] Report (HTML / JSON)
+- [ ] CLI
+
+**Anything else?**
