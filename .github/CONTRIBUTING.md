@@ -52,3 +52,10 @@ Open an issue with the `bug` label. Include:
 - what you expected and what you got.
 
 If the trace contains sensitive data, trim the attributes down to the
+field names involved — tracenest only needs the structure to reproduce a
+nesting or timing issue.
+
+## Code of conduct
+
+This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). By
+participating you are expected to uphold it.
