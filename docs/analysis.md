@@ -53,7 +53,8 @@ reports:
   attempt (by start time) ended `ok`,
 - `span_ids` — the attempts in start order.
 
-Clusters are sorted by attempt count descending.
+Clusters are sorted by attempt count descending. Ties are broken by the start time of the
+first attempt, matching the order the spans appear in the tree.
 
 ## Tree normalization guarantees
 
