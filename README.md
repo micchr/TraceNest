@@ -249,6 +249,8 @@ python -m tracenest report examples/agent_run.json --format html --out report.ht
 
 **Pipe a trace in from another tool:**
 
+This also works from a wrapper script that appends spans to a log while the run is live.
+
 ```bash
 cat run.jsonl | python -m tracenest analyze -
 ```
