@@ -38,7 +38,8 @@ present alias wins.
 position; if `name` is absent it defaults to the span id.
 
 Only `start` is strictly required. If `end` is missing, tracenest uses
-`start + duration`; if both are missing the span is zero-length.
+`start + duration`; if both are missing the span is zero-length. Either CLI accepts `-` in
+place of the trace path to read the trace from standard input.
 
 ## Timestamps
 
