@@ -34,6 +34,8 @@ go run . analyze ../examples/agent_run.json
 
 Or `make compile && make demo` from the repository root.
 
+If you only touch the Go side, `cd nest && go build ./... && go vet ./...` is the fast loop; the Python side is unchanged by Go edits.
+
 ## Pull requests
 
 1. Keep the change scoped: one behaviour or one document per pull request.
